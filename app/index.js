@@ -3,7 +3,8 @@ import {connect} from 'cerebral-view-react'
 
 export default connect({
   // State connections:
-
+  formats: [ 'formats' ],
+  vocabs: [ 'vocabs' ],
 }, {
   // Signal connections:
 },
@@ -13,8 +14,12 @@ export default connect({
 
     return (
       <div>
-
-        Hello.
+        
+        Types: <br/>
+        <pre>{JSON.stringify(props.formats, '  ', false)}</pre>
+        <hr/>
+        Vocab: <br/>
+        <pre>{JSON.stringify(props.vocabs, '  ', false)}</pre>
 
       </div>
     );

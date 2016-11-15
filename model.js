@@ -1,15 +1,9 @@
 import _ from 'lodash';
 import Model from 'cerebral/models/immutable'
 
-import oadaVocab from '../lib/oada-vocab'
-import types from './types'
+import formats from './build/formats'
+import vocabs from './build/vocabs'
 
-
-const model = Model({
-
-  vocab: oadaVocab,
-  types: types,
-
-})
+const model = Model({ vocabs, formats })
 
 export default model
