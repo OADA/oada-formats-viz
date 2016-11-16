@@ -23,13 +23,27 @@ module.exports = {
   ],
 
   module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      loader: 'babel',
-      query: {
-        presets: [ 'react', 'es2015', 'stage-0' ],
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loader: 'babel',
+        query: {
+          presets: [ 'react', 'es2015', 'stage-0' ],
+        },
       },
-    }],
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader!postcss-loader',
+      },
+      {
+        test: /\.lcss/,
+        loader: 'style-loader!css-loader?modules&localIdentName=[path][name]---[local]---[hash:base64:5]!postcss-loader?modules',
+      },
+    ],
+  },
+
+  postcss: function() {
+    return [ require('autoprefixer') ];
   },
 
 };

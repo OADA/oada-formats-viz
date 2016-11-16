@@ -2,17 +2,15 @@ import {Controller} from 'cerebral'
 import model from './model'
 import Devtools from 'cerebral-module-devtools'
 
-import updateItemTitle from './chains/updateItemTitle'
-import addNewItem from './chains/addNewItem'
+import toggleFormatsVocabSwitch from './chains/toggleFormatsVocabSwitch'
 
 const controller = Controller(model)
 
 controller.addSignals({
-  newItemTitleChanged: {
-    chain: updateItemTitle,
+  formatsVocabSwitchClicked: {
+    chain: toggleFormatsVocabSwitch,
     immediate: true
   },
-  newItemTitleSubmitted: addNewItem
 })
 
 controller.addModules({

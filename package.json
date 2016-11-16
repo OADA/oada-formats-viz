@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/oada/oada-formats-viz#readme",
   "dependencies": {
+    "autoprefixer": "^6.5.3",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.9.0",
@@ -27,9 +28,14 @@
     "cerebral": "^1.0.0",
     "cerebral-module-devtools": "^0.7.0",
     "cerebral-view-react": "^0.12.4",
+    "classnames": "^2.2.5",
     "html-webpack-plugin": "^2.21.0",
+    "postcss-loader": "^1.1.1",
+    "pure-css": "^1.0.4",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
+    "react-pure": "^0.3.1",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
