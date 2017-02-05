@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import Model from 'cerebral/models/immutable'
 
-import formats from '../build/formats'
-import vocabs from '../build/vocabs'
+import formats from '../tools-build/formats'
+import vocabs from '../tools-build/vocabs'
 
 const model = Model({ 
   vocabs, 
