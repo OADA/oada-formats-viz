@@ -5,10 +5,11 @@ import {Container} from 'cerebral-view-react'
 import controller from './controller'
 import App from './app'
 
-import purecss from 'pure-css'
+import 'pure-css'
+import './global.css'
 
 render((
   <Container controller={controller}>
     <App />
   </Container>
-), document.querySelector('#app'))
+), document.querySelector('#root'))

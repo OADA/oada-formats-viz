@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,600');
+
+/* From https://purecss.io/grids/#using-grids-with-custom-fonts */
+html, header, content, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+ /* Set your content font stack here: */
+ font-family: Georgia, Times, "Times New Roman", serif;
+ font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  font-size: 3em;
+}
+header h1 {
+  margin-bottom: 0px;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+header h2 {
+  margin-top: 0px;
+}
+
+.description {
+  font-weight:500;
+  text-align: left;
+}
+

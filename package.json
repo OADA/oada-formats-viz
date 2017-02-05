@@ -4,9 +4,12 @@
   "description": "OADA Formats Visualizer",
   "main": "index.js",
   "scripts": {
-    "start": "node tools/buildFormatRequiresFromDirs.js && node tools/buildVocabRequiresFromDirs.js && webpack-dev-server --port 3000",
-    "build": "node tools/buildFormatRequiresFromDirs.js && node tools/buildVocabRequiresFromDirs.js && webpack --config webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-old": "node tools/buildFormatRequiresFromDirs.js && node tools/buildVocabRequiresFromDirs.js && webpack-dev-server --port 3000",
+    "prep": "node tools/buildFormatRequiresFromDirs.js && node tools/buildVocabRequiresFromDirs.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -32,9 +35,11 @@
     "html-webpack-plugin": "^2.21.0",
     "postcss-loader": "^1.1.1",
     "pure-css": "^1.0.4",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "react-pure": "^0.3.1",
+    "react-scripts": "^0.8.5",
+    "react-select": "^1.0.0-rc.3",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
