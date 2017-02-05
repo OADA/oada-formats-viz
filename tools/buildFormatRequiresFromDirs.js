@@ -12,7 +12,7 @@ var config = {
   formats_path_in_repo: 'formats/',
   output_path: pwd + '/'
                + (pwd.match(/tools/) ? '../' : './')
-               + 'build/formats.js',
+               + 'tools-build/formats.js',
 };
 config.repos_path = path.normalize(config.repos_path);
 config.formats_path_in_repo = path.normalize(config.formats_path_in_repo);

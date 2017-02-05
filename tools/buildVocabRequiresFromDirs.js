@@ -12,7 +12,7 @@ var config = {
   vocabs_path_in_repo: 'vocabs/',
   output_path: pwd + '/'
                + (pwd.match(/tools/) ? '../' : './')
-               + 'build/vocabs.js',
+               + 'tools-build/vocabs.js',
 };
 config.repos_path = path.normalize(config.repos_path);
 config.vocabs_path_in_repo = path.normalize(config.vocabs_path_in_repo);
