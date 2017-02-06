@@ -12,7 +12,7 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build && gh-pages -d build"
   },
-  "homepage": "https://github.com/oada/oada-formats-viz#readme",
+  "homepage": "https://oada.github.com/oada-formats-viz",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oada/oada-formats-viz"
