@@ -51,6 +51,9 @@ export default connect({
       <a href='#' onClick={exampleClicked} >Example</a>
   );
 
+  const  schemaclass = ( (props.view && props.view.schemaExpanded ) ? 'pure-u-1-1 pure-u-md-1-2' : 'pure-u-1-2 pure-u-md-1-12');
+  const exampleclass = ( (props.view && props.view.exampleExpanded) ? 'pure-u-1-1 pure-u-md-1-2' : 'pure-u-1-2 pure-u-md-1-12');
+
   return (
     <div style={pad}>
       <div className='pure-g'>
@@ -65,10 +68,10 @@ export default connect({
         </div>
       </div>
       <div className='pure-g'>
-        <div className='pure-u-1-2 pure-u-md-1-12' style={center}>
+        <div className={schemaclass} style={(props.view && props.view.schemaExpanded) ? {} : center }>
           {renderSchema()}
         </div>
-        <div className='pure-u-1-2 pure-u-md-1-12' style={center}>
+        <div className={exampleclass} style={(props.view && props.view.exampleExpanded) ? {} : center }>
           {renderExample()}
         </div>
       </div>
