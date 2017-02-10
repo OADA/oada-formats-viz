@@ -62,7 +62,6 @@ function getKnownRepos(basepath) {
 //-----------------------------------------------------------
 
 var repos = getKnownRepos(config.repos_path);
-// returns: repos[repo_name][vocab_name] = "require(...)"
 
 //----------------------------------------------------------
 // Build a string with final file contents and write file.

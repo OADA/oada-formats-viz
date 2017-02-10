@@ -3,6 +3,7 @@ import model from './model'
 import Devtools from 'cerebral-module-devtools'
 
 import toggleFormatsVocabSwitch from './chains/toggleFormatsVocabSwitch'
+import { toggleSchemaExpander, toggleExampleExpander } from './chains/vocabitems';
 
 const controller = Controller(model)
 
@@ -11,6 +12,8 @@ controller.addSignals({
     chain: toggleFormatsVocabSwitch,
     immediate: true
   },
+  schemaExpanderClicked: toggleSchemaExpander,
+  exampleExpanderClicked: toggleExampleExpander,
 })
 
 controller.addModules({

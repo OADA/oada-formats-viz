@@ -9,6 +9,7 @@ const model = Model({
   formats,
   formatsActiveNotVocab: false, // default to vocabs
   activeCore: 'oada-formats:fpad', // which core vocab/format is selected now
+  vocabsView: {},
 })
 
 export default model

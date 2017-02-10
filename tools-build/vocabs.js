@@ -6,19 +6,31 @@ module.exports = {
         "description": "name is a string, typically the name of the object the key appears in.",
         "type": "string",
         "id": "oada-formats://vocab/fpad/name",
-        "registrationOrder": 0
+        "vocab": {
+          "module": "fpad",
+          "term": "name",
+          "registrationOrder": 0
+        }
       },
       "description": {
         "description": "a string description of an object, usually longer than \"name\"",
         "type": "string",
         "id": "oada-formats://vocab/fpad/description",
-        "registrationOrder": 1
+        "vocab": {
+          "module": "fpad",
+          "term": "description",
+          "registrationOrder": 1
+        }
       },
       "version": {
         "description": "version is a string which describes the version of the schema used for the current audit.",
         "type": "string",
         "id": "oada-formats://vocab/fpad/version",
-        "registrationOrder": 2
+        "vocab": {
+          "module": "fpad",
+          "term": "version",
+          "registrationOrder": 2
+        }
       },
       "scheme": {
         "description": "the set of descriptors for identifying the current audit scheme for this document.",
@@ -35,22 +47,38 @@ module.exports = {
             "description": "name is a string, typically the name of the object the key appears in.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/name",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "fpad",
+              "term": "name",
+              "registrationOrder": 0
+            }
           },
           "version": {
             "description": "version is a string which describes the version of the schema used for the current audit.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/version",
-            "registrationOrder": 2
+            "vocab": {
+              "module": "fpad",
+              "term": "version",
+              "registrationOrder": 2
+            }
           }
         },
-        "registrationOrder": 3
+        "vocab": {
+          "module": "fpad",
+          "term": "scheme",
+          "registrationOrder": 3
+        }
       },
       "registration_number": {
         "description": "\"registration_number\" is the number given to the certifying body when they register with the scheme owner.",
         "type": "string",
         "id": "oada-formats://vocab/fpad/registration_number",
-        "registrationOrder": 4
+        "vocab": {
+          "module": "fpad",
+          "term": "registration_number",
+          "registrationOrder": 4
+        }
       },
       "person": {
         "description": "person is a key that never appears anywhere, but anywhere a person-type of thing exists (auditor, contact, etc.) it is one of these things.",
@@ -66,10 +94,18 @@ module.exports = {
             "description": "name is a string, typically the name of the object the key appears in.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/name",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "fpad",
+              "term": "name",
+              "registrationOrder": 0
+            }
           }
         },
-        "registrationOrder": 5
+        "vocab": {
+          "module": "fpad",
+          "term": "person",
+          "registrationOrder": 5
+        }
       },
       "auditor": {
         "description": "\"auditor\" is the person performing the audit for the certifying body",
@@ -85,10 +121,18 @@ module.exports = {
             "description": "name is a string, typically the name of the object the key appears in.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/name",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "fpad",
+              "term": "name",
+              "registrationOrder": 0
+            }
           }
         },
-        "registrationOrder": 6
+        "vocab": {
+          "module": "fpad",
+          "term": "auditor",
+          "registrationOrder": 6
+        }
       },
       "certifying_body": {
         "description": "specifies the credentials of the organization is performing the audit along with the specific individual performing the audit.",
@@ -106,13 +150,21 @@ module.exports = {
             "description": "\"registration_number\" is the number given to the certifying body when they register with the scheme owner.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/registration_number",
-            "registrationOrder": 4
+            "vocab": {
+              "module": "fpad",
+              "term": "registration_number",
+              "registrationOrder": 4
+            }
           },
           "name": {
             "description": "name is a string, typically the name of the object the key appears in.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/name",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "fpad",
+              "term": "name",
+              "registrationOrder": 0
+            }
           },
           "auditor": {
             "description": "\"auditor\" is the person performing the audit for the certifying body",
@@ -128,13 +180,25 @@ module.exports = {
                 "description": "name is a string, typically the name of the object the key appears in.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/name",
-                "registrationOrder": 0
+                "vocab": {
+                  "module": "fpad",
+                  "term": "name",
+                  "registrationOrder": 0
+                }
               }
             },
-            "registrationOrder": 6
+            "vocab": {
+              "module": "fpad",
+              "term": "auditor",
+              "registrationOrder": 6
+            }
           }
         },
-        "registrationOrder": 7
+        "vocab": {
+          "module": "fpad",
+          "term": "certifying_body",
+          "registrationOrder": 7
+        }
       },
       "contact": {
         "description": "contact describes an individuals who may be contacted in reference to this audit.",
@@ -150,10 +214,18 @@ module.exports = {
             "description": "name is a string, typically the name of the object the key appears in.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/name",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "fpad",
+              "term": "name",
+              "registrationOrder": 0
+            }
           }
         },
-        "registrationOrder": 8
+        "vocab": {
+          "module": "fpad",
+          "term": "contact",
+          "registrationOrder": 8
+        }
       },
       "contacts": {
         "description": "contacts is a list of contact people for an organization.",
@@ -172,61 +244,105 @@ module.exports = {
               "description": "name is a string, typically the name of the object the key appears in.",
               "type": "string",
               "id": "oada-formats://vocab/fpad/name",
-              "registrationOrder": 0
+              "vocab": {
+                "module": "fpad",
+                "term": "name",
+                "registrationOrder": 0
+              }
             }
           },
-          "registrationOrder": 8
+          "vocab": {
+            "module": "fpad",
+            "term": "contact",
+            "registrationOrder": 8
+          }
         },
         "id": "oada-formats://vocab/fpad/contacts",
-        "registrationOrder": 9
+        "vocab": {
+          "module": "fpad",
+          "term": "contacts",
+          "registrationOrder": 9
+        }
       },
       "primus_gfs_id": {
         "description": "This id registers the combined organization and a set of products with PrimusGFS.",
         "type": "string",
         "id": "oada-formats://vocab/fpad/primus_gfs_id",
-        "registrationOrder": 10
+        "vocab": {
+          "module": "fpad",
+          "term": "primus_gfs_id",
+          "registrationOrder": 10
+        }
       },
       "certification_number": {
         "description": "consecutive audits under the same primus_gfs_id are assigned a \"certification\" number that increments by one with each audit.",
         "type": "string",
         "id": "oada-formats://vocab/fpad/certification_number",
-        "registrationOrder": 11
+        "vocab": {
+          "module": "fpad",
+          "term": "certification_number",
+          "registrationOrder": 11
+        }
       },
       "street_address": {
         "description": "The street name and mailbox number of a postal address.",
         "type": "string",
         "id": "oada-formats://vocab/fpad/street_address",
-        "registrationOrder": 12
+        "vocab": {
+          "module": "fpad",
+          "term": "street_address",
+          "registrationOrder": 12
+        }
       },
       "postal_code": {
         "description": "postal_code is the postal code used in a postal address",
         "type": "string",
         "id": "oada-formats://vocab/fpad/postal_code",
-        "registrationOrder": 13
+        "vocab": {
+          "module": "fpad",
+          "term": "postal_code",
+          "registrationOrder": 13
+        }
       },
       "city": {
         "description": "The name of the city, usually in a postal address.",
         "type": "string",
         "id": "oada-formats://vocab/fpad/city",
-        "registrationOrder": 14
+        "vocab": {
+          "module": "fpad",
+          "term": "city",
+          "registrationOrder": 14
+        }
       },
       "state": {
         "description": "The name of the state or major region, usually in a postal address.",
         "type": "string",
         "id": "oada-formats://vocab/fpad/state",
-        "registrationOrder": 15
+        "vocab": {
+          "module": "fpad",
+          "term": "state",
+          "registrationOrder": 15
+        }
       },
       "country": {
         "description": "The name of the country, usually in a postal address.",
         "type": "string",
         "id": "oada-formats://vocab/fpad/country",
-        "registrationOrder": 16
+        "vocab": {
+          "module": "fpad",
+          "term": "country",
+          "registrationOrder": 16
+        }
       },
       "phone": {
         "description": "phone describes the phone number with country code and area code.",
         "type": "string",
         "id": "oada-formats://vocab/fpad/phone",
-        "registrationOrder": 17
+        "vocab": {
+          "module": "fpad",
+          "term": "phone",
+          "registrationOrder": 17
+        }
       },
       "location": {
         "description": "location describes the postal address used to identify where something is.",
@@ -246,34 +362,58 @@ module.exports = {
             "description": "postal_code is the postal code used in a postal address",
             "type": "string",
             "id": "oada-formats://vocab/fpad/postal_code",
-            "registrationOrder": 13
+            "vocab": {
+              "module": "fpad",
+              "term": "postal_code",
+              "registrationOrder": 13
+            }
           },
           "street_address": {
             "description": "The street name and mailbox number of a postal address.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/street_address",
-            "registrationOrder": 12
+            "vocab": {
+              "module": "fpad",
+              "term": "street_address",
+              "registrationOrder": 12
+            }
           },
           "city": {
             "description": "The name of the city, usually in a postal address.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/city",
-            "registrationOrder": 14
+            "vocab": {
+              "module": "fpad",
+              "term": "city",
+              "registrationOrder": 14
+            }
           },
           "state": {
             "description": "The name of the state or major region, usually in a postal address.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/state",
-            "registrationOrder": 15
+            "vocab": {
+              "module": "fpad",
+              "term": "state",
+              "registrationOrder": 15
+            }
           },
           "country": {
             "description": "The name of the country, usually in a postal address.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/country",
-            "registrationOrder": 16
+            "vocab": {
+              "module": "fpad",
+              "term": "country",
+              "registrationOrder": 16
+            }
           }
         },
-        "registrationOrder": 18
+        "vocab": {
+          "module": "fpad",
+          "term": "location",
+          "registrationOrder": 18
+        }
       },
       "organization": {
         "description": "organization contains information about the organization under audit.",
@@ -292,7 +432,11 @@ module.exports = {
             "description": "name is a string, typically the name of the object the key appears in.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/name",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "fpad",
+              "term": "name",
+              "registrationOrder": 0
+            }
           },
           "contacts": {
             "description": "contacts is a list of contact people for an organization.",
@@ -311,13 +455,25 @@ module.exports = {
                   "description": "name is a string, typically the name of the object the key appears in.",
                   "type": "string",
                   "id": "oada-formats://vocab/fpad/name",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "name",
+                    "registrationOrder": 0
+                  }
                 }
               },
-              "registrationOrder": 8
+              "vocab": {
+                "module": "fpad",
+                "term": "contact",
+                "registrationOrder": 8
+              }
             },
             "id": "oada-formats://vocab/fpad/contacts",
-            "registrationOrder": 9
+            "vocab": {
+              "module": "fpad",
+              "term": "contacts",
+              "registrationOrder": 9
+            }
           },
           "location": {
             "description": "location describes the postal address used to identify where something is.",
@@ -337,43 +493,75 @@ module.exports = {
                 "description": "postal_code is the postal code used in a postal address",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/postal_code",
-                "registrationOrder": 13
+                "vocab": {
+                  "module": "fpad",
+                  "term": "postal_code",
+                  "registrationOrder": 13
+                }
               },
               "street_address": {
                 "description": "The street name and mailbox number of a postal address.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/street_address",
-                "registrationOrder": 12
+                "vocab": {
+                  "module": "fpad",
+                  "term": "street_address",
+                  "registrationOrder": 12
+                }
               },
               "city": {
                 "description": "The name of the city, usually in a postal address.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/city",
-                "registrationOrder": 14
+                "vocab": {
+                  "module": "fpad",
+                  "term": "city",
+                  "registrationOrder": 14
+                }
               },
               "state": {
                 "description": "The name of the state or major region, usually in a postal address.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/state",
-                "registrationOrder": 15
+                "vocab": {
+                  "module": "fpad",
+                  "term": "state",
+                  "registrationOrder": 15
+                }
               },
               "country": {
                 "description": "The name of the country, usually in a postal address.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/country",
-                "registrationOrder": 16
+                "vocab": {
+                  "module": "fpad",
+                  "term": "country",
+                  "registrationOrder": 16
+                }
               }
             },
-            "registrationOrder": 18
+            "vocab": {
+              "module": "fpad",
+              "term": "location",
+              "registrationOrder": 18
+            }
           },
           "phone": {
             "description": "phone describes the phone number with country code and area code.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/phone",
-            "registrationOrder": 17
+            "vocab": {
+              "module": "fpad",
+              "term": "phone",
+              "registrationOrder": 17
+            }
           }
         },
-        "registrationOrder": 19
+        "vocab": {
+          "module": "fpad",
+          "term": "organization",
+          "registrationOrder": 19
+        }
       },
       "product": {
         "description": "product describes the particular type of item being evaluated in the audit. May describe the fruit, vegetable, etc. as well as other descriptors such as \"chopped\", \"pitted\", \"organic\", etc.",
@@ -389,10 +577,18 @@ module.exports = {
             "description": "name is a string, typically the name of the object the key appears in.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/name",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "fpad",
+              "term": "name",
+              "registrationOrder": 0
+            }
           }
         },
-        "registrationOrder": 20
+        "vocab": {
+          "module": "fpad",
+          "term": "product",
+          "registrationOrder": 20
+        }
       },
       "products_observed": {
         "description": "The set of products evaluated in the audit.",
@@ -411,13 +607,25 @@ module.exports = {
               "description": "name is a string, typically the name of the object the key appears in.",
               "type": "string",
               "id": "oada-formats://vocab/fpad/name",
-              "registrationOrder": 0
+              "vocab": {
+                "module": "fpad",
+                "term": "name",
+                "registrationOrder": 0
+              }
             }
           },
-          "registrationOrder": 20
+          "vocab": {
+            "module": "fpad",
+            "term": "product",
+            "registrationOrder": 20
+          }
         },
         "id": "oada-formats://vocab/fpad/products_observed",
-        "registrationOrder": 21
+        "vocab": {
+          "module": "fpad",
+          "term": "products_observed",
+          "registrationOrder": 21
+        }
       },
       "similar_products_not_observed": {
         "description": "array of products not under evaulation that may be similar to those observed in the audit.",
@@ -436,13 +644,25 @@ module.exports = {
               "description": "name is a string, typically the name of the object the key appears in.",
               "type": "string",
               "id": "oada-formats://vocab/fpad/name",
-              "registrationOrder": 0
+              "vocab": {
+                "module": "fpad",
+                "term": "name",
+                "registrationOrder": 0
+              }
             }
           },
-          "registrationOrder": 20
+          "vocab": {
+            "module": "fpad",
+            "term": "product",
+            "registrationOrder": 20
+          }
         },
         "id": "oada-formats://vocab/fpad/products_observed",
-        "registrationOrder": 22
+        "vocab": {
+          "module": "fpad",
+          "term": "similar_products_not_observed",
+          "registrationOrder": 22
+        }
       },
       "products_applied_for_but_not_observed": {
         "description": "array of products that had been applied for but are not under evaulation in this particular audit.",
@@ -461,13 +681,25 @@ module.exports = {
               "description": "name is a string, typically the name of the object the key appears in.",
               "type": "string",
               "id": "oada-formats://vocab/fpad/name",
-              "registrationOrder": 0
+              "vocab": {
+                "module": "fpad",
+                "term": "name",
+                "registrationOrder": 0
+              }
             }
           },
-          "registrationOrder": 20
+          "vocab": {
+            "module": "fpad",
+            "term": "product",
+            "registrationOrder": 20
+          }
         },
         "id": "oada-formats://vocab/fpad/products_observed",
-        "registrationOrder": 23
+        "vocab": {
+          "module": "fpad",
+          "term": "products_applied_for_but_not_observed",
+          "registrationOrder": 23
+        }
       },
       "operation_type": {
         "description": "type of a given operation",
@@ -478,7 +710,11 @@ module.exports = {
           "Cold Storage"
         ],
         "id": "oada-formats://vocab/fpad/operation_type",
-        "registrationOrder": 24
+        "vocab": {
+          "module": "fpad",
+          "term": "operation_type",
+          "registrationOrder": 24
+        }
       },
       "shipper": {
         "description": "shipper is the parent organization who will be responsible for moving the product(s) to their next destination.",
@@ -494,10 +730,18 @@ module.exports = {
             "description": "name is a string, typically the name of the object the key appears in.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/name",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "fpad",
+              "term": "name",
+              "registrationOrder": 0
+            }
           }
         },
-        "registrationOrder": 25
+        "vocab": {
+          "module": "fpad",
+          "term": "shipper",
+          "registrationOrder": 25
+        }
       },
       "crew": {
         "description": "crew is used to detail the information about operations of type \"Harvest Crew\". For facility-related operation types, the \"crew\" key is replaced by the \"facility\" key.",
@@ -528,19 +772,35 @@ module.exports = {
                   "description": "name is a string, typically the name of the object the key appears in.",
                   "type": "string",
                   "id": "oada-formats://vocab/fpad/name",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "name",
+                    "registrationOrder": 0
+                  }
                 }
               },
-              "registrationOrder": 8
+              "vocab": {
+                "module": "fpad",
+                "term": "contact",
+                "registrationOrder": 8
+              }
             },
             "id": "oada-formats://vocab/fpad/contacts",
-            "registrationOrder": 9
+            "vocab": {
+              "module": "fpad",
+              "term": "contacts",
+              "registrationOrder": 9
+            }
           },
           "name": {
             "description": "name is a string, typically the name of the object the key appears in.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/name",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "fpad",
+              "term": "name",
+              "registrationOrder": 0
+            }
           },
           "location": {
             "description": "location describes the postal address used to identify where something is.",
@@ -560,37 +820,65 @@ module.exports = {
                 "description": "postal_code is the postal code used in a postal address",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/postal_code",
-                "registrationOrder": 13
+                "vocab": {
+                  "module": "fpad",
+                  "term": "postal_code",
+                  "registrationOrder": 13
+                }
               },
               "street_address": {
                 "description": "The street name and mailbox number of a postal address.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/street_address",
-                "registrationOrder": 12
+                "vocab": {
+                  "module": "fpad",
+                  "term": "street_address",
+                  "registrationOrder": 12
+                }
               },
               "city": {
                 "description": "The name of the city, usually in a postal address.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/city",
-                "registrationOrder": 14
+                "vocab": {
+                  "module": "fpad",
+                  "term": "city",
+                  "registrationOrder": 14
+                }
               },
               "state": {
                 "description": "The name of the state or major region, usually in a postal address.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/state",
-                "registrationOrder": 15
+                "vocab": {
+                  "module": "fpad",
+                  "term": "state",
+                  "registrationOrder": 15
+                }
               },
               "country": {
                 "description": "The name of the country, usually in a postal address.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/country",
-                "registrationOrder": 16
+                "vocab": {
+                  "module": "fpad",
+                  "term": "country",
+                  "registrationOrder": 16
+                }
               }
             },
-            "registrationOrder": 18
+            "vocab": {
+              "module": "fpad",
+              "term": "location",
+              "registrationOrder": 18
+            }
           }
         },
-        "registrationOrder": 26
+        "vocab": {
+          "module": "fpad",
+          "term": "crew",
+          "registrationOrder": 26
+        }
       },
       "operation": {
         "description": "an object describing the operation that is under audit",
@@ -613,7 +901,11 @@ module.exports = {
               "Cold Storage"
             ],
             "id": "oada-formats://vocab/fpad/operation_type",
-            "registrationOrder": 24
+            "vocab": {
+              "module": "fpad",
+              "term": "operation_type",
+              "registrationOrder": 24
+            }
           },
           "crew": {
             "description": "crew is used to detail the information about operations of type \"Harvest Crew\". For facility-related operation types, the \"crew\" key is replaced by the \"facility\" key.",
@@ -644,19 +936,35 @@ module.exports = {
                       "description": "name is a string, typically the name of the object the key appears in.",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/name",
-                      "registrationOrder": 0
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "name",
+                        "registrationOrder": 0
+                      }
                     }
                   },
-                  "registrationOrder": 8
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "contact",
+                    "registrationOrder": 8
+                  }
                 },
                 "id": "oada-formats://vocab/fpad/contacts",
-                "registrationOrder": 9
+                "vocab": {
+                  "module": "fpad",
+                  "term": "contacts",
+                  "registrationOrder": 9
+                }
               },
               "name": {
                 "description": "name is a string, typically the name of the object the key appears in.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/name",
-                "registrationOrder": 0
+                "vocab": {
+                  "module": "fpad",
+                  "term": "name",
+                  "registrationOrder": 0
+                }
               },
               "location": {
                 "description": "location describes the postal address used to identify where something is.",
@@ -676,37 +984,65 @@ module.exports = {
                     "description": "postal_code is the postal code used in a postal address",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/postal_code",
-                    "registrationOrder": 13
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "postal_code",
+                      "registrationOrder": 13
+                    }
                   },
                   "street_address": {
                     "description": "The street name and mailbox number of a postal address.",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/street_address",
-                    "registrationOrder": 12
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "street_address",
+                      "registrationOrder": 12
+                    }
                   },
                   "city": {
                     "description": "The name of the city, usually in a postal address.",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/city",
-                    "registrationOrder": 14
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "city",
+                      "registrationOrder": 14
+                    }
                   },
                   "state": {
                     "description": "The name of the state or major region, usually in a postal address.",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/state",
-                    "registrationOrder": 15
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "state",
+                      "registrationOrder": 15
+                    }
                   },
                   "country": {
                     "description": "The name of the country, usually in a postal address.",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/country",
-                    "registrationOrder": 16
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "country",
+                      "registrationOrder": 16
+                    }
                   }
                 },
-                "registrationOrder": 18
+                "vocab": {
+                  "module": "fpad",
+                  "term": "location",
+                  "registrationOrder": 18
+                }
               }
             },
-            "registrationOrder": 26
+            "vocab": {
+              "module": "fpad",
+              "term": "crew",
+              "registrationOrder": 26
+            }
           },
           "shipper": {
             "description": "shipper is the parent organization who will be responsible for moving the product(s) to their next destination.",
@@ -722,13 +1058,25 @@ module.exports = {
                 "description": "name is a string, typically the name of the object the key appears in.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/name",
-                "registrationOrder": 0
+                "vocab": {
+                  "module": "fpad",
+                  "term": "name",
+                  "registrationOrder": 0
+                }
               }
             },
-            "registrationOrder": 25
+            "vocab": {
+              "module": "fpad",
+              "term": "shipper",
+              "registrationOrder": 25
+            }
           }
         },
-        "registrationOrder": 27
+        "vocab": {
+          "module": "fpad",
+          "term": "operation",
+          "registrationOrder": 27
+        }
       },
       "scope": {
         "description": "scope describes the breadth of the audit in terms of operations, personnel, products, etc.",
@@ -748,7 +1096,11 @@ module.exports = {
             "description": "a string description of an object, usually longer than \"name\"",
             "type": "string",
             "id": "oada-formats://vocab/fpad/description",
-            "registrationOrder": 1
+            "vocab": {
+              "module": "fpad",
+              "term": "description",
+              "registrationOrder": 1
+            }
           },
           "operation": {
             "description": "an object describing the operation that is under audit",
@@ -771,7 +1123,11 @@ module.exports = {
                   "Cold Storage"
                 ],
                 "id": "oada-formats://vocab/fpad/operation_type",
-                "registrationOrder": 24
+                "vocab": {
+                  "module": "fpad",
+                  "term": "operation_type",
+                  "registrationOrder": 24
+                }
               },
               "crew": {
                 "description": "crew is used to detail the information about operations of type \"Harvest Crew\". For facility-related operation types, the \"crew\" key is replaced by the \"facility\" key.",
@@ -802,19 +1158,35 @@ module.exports = {
                           "description": "name is a string, typically the name of the object the key appears in.",
                           "type": "string",
                           "id": "oada-formats://vocab/fpad/name",
-                          "registrationOrder": 0
+                          "vocab": {
+                            "module": "fpad",
+                            "term": "name",
+                            "registrationOrder": 0
+                          }
                         }
                       },
-                      "registrationOrder": 8
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "contact",
+                        "registrationOrder": 8
+                      }
                     },
                     "id": "oada-formats://vocab/fpad/contacts",
-                    "registrationOrder": 9
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "contacts",
+                      "registrationOrder": 9
+                    }
                   },
                   "name": {
                     "description": "name is a string, typically the name of the object the key appears in.",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/name",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "name",
+                      "registrationOrder": 0
+                    }
                   },
                   "location": {
                     "description": "location describes the postal address used to identify where something is.",
@@ -834,37 +1206,65 @@ module.exports = {
                         "description": "postal_code is the postal code used in a postal address",
                         "type": "string",
                         "id": "oada-formats://vocab/fpad/postal_code",
-                        "registrationOrder": 13
+                        "vocab": {
+                          "module": "fpad",
+                          "term": "postal_code",
+                          "registrationOrder": 13
+                        }
                       },
                       "street_address": {
                         "description": "The street name and mailbox number of a postal address.",
                         "type": "string",
                         "id": "oada-formats://vocab/fpad/street_address",
-                        "registrationOrder": 12
+                        "vocab": {
+                          "module": "fpad",
+                          "term": "street_address",
+                          "registrationOrder": 12
+                        }
                       },
                       "city": {
                         "description": "The name of the city, usually in a postal address.",
                         "type": "string",
                         "id": "oada-formats://vocab/fpad/city",
-                        "registrationOrder": 14
+                        "vocab": {
+                          "module": "fpad",
+                          "term": "city",
+                          "registrationOrder": 14
+                        }
                       },
                       "state": {
                         "description": "The name of the state or major region, usually in a postal address.",
                         "type": "string",
                         "id": "oada-formats://vocab/fpad/state",
-                        "registrationOrder": 15
+                        "vocab": {
+                          "module": "fpad",
+                          "term": "state",
+                          "registrationOrder": 15
+                        }
                       },
                       "country": {
                         "description": "The name of the country, usually in a postal address.",
                         "type": "string",
                         "id": "oada-formats://vocab/fpad/country",
-                        "registrationOrder": 16
+                        "vocab": {
+                          "module": "fpad",
+                          "term": "country",
+                          "registrationOrder": 16
+                        }
                       }
                     },
-                    "registrationOrder": 18
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "location",
+                      "registrationOrder": 18
+                    }
                   }
                 },
-                "registrationOrder": 26
+                "vocab": {
+                  "module": "fpad",
+                  "term": "crew",
+                  "registrationOrder": 26
+                }
               },
               "shipper": {
                 "description": "shipper is the parent organization who will be responsible for moving the product(s) to their next destination.",
@@ -880,13 +1280,25 @@ module.exports = {
                     "description": "name is a string, typically the name of the object the key appears in.",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/name",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "name",
+                      "registrationOrder": 0
+                    }
                   }
                 },
-                "registrationOrder": 25
+                "vocab": {
+                  "module": "fpad",
+                  "term": "shipper",
+                  "registrationOrder": 25
+                }
               }
             },
-            "registrationOrder": 27
+            "vocab": {
+              "module": "fpad",
+              "term": "operation",
+              "registrationOrder": 27
+            }
           },
           "products_observed": {
             "description": "The set of products evaluated in the audit.",
@@ -905,13 +1317,25 @@ module.exports = {
                   "description": "name is a string, typically the name of the object the key appears in.",
                   "type": "string",
                   "id": "oada-formats://vocab/fpad/name",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "name",
+                    "registrationOrder": 0
+                  }
                 }
               },
-              "registrationOrder": 20
+              "vocab": {
+                "module": "fpad",
+                "term": "product",
+                "registrationOrder": 20
+              }
             },
             "id": "oada-formats://vocab/fpad/products_observed",
-            "registrationOrder": 21
+            "vocab": {
+              "module": "fpad",
+              "term": "products_observed",
+              "registrationOrder": 21
+            }
           },
           "similar_products_not_observed": {
             "description": "array of products not under evaulation that may be similar to those observed in the audit.",
@@ -930,13 +1354,25 @@ module.exports = {
                   "description": "name is a string, typically the name of the object the key appears in.",
                   "type": "string",
                   "id": "oada-formats://vocab/fpad/name",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "name",
+                    "registrationOrder": 0
+                  }
                 }
               },
-              "registrationOrder": 20
+              "vocab": {
+                "module": "fpad",
+                "term": "product",
+                "registrationOrder": 20
+              }
             },
             "id": "oada-formats://vocab/fpad/products_observed",
-            "registrationOrder": 22
+            "vocab": {
+              "module": "fpad",
+              "term": "similar_products_not_observed",
+              "registrationOrder": 22
+            }
           },
           "products_applied_for_but_not_observed": {
             "description": "array of products that had been applied for but are not under evaulation in this particular audit.",
@@ -955,28 +1391,52 @@ module.exports = {
                   "description": "name is a string, typically the name of the object the key appears in.",
                   "type": "string",
                   "id": "oada-formats://vocab/fpad/name",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "name",
+                    "registrationOrder": 0
+                  }
                 }
               },
-              "registrationOrder": 20
+              "vocab": {
+                "module": "fpad",
+                "term": "product",
+                "registrationOrder": 20
+              }
             },
             "id": "oada-formats://vocab/fpad/products_observed",
-            "registrationOrder": 23
+            "vocab": {
+              "module": "fpad",
+              "term": "products_applied_for_but_not_observed",
+              "registrationOrder": 23
+            }
           }
         },
-        "registrationOrder": 28
+        "vocab": {
+          "module": "fpad",
+          "term": "scope",
+          "registrationOrder": 28
+        }
       },
       "start": {
         "description": "start describes the date and time when the audit started",
         "type": "string",
         "id": "oada-formats://vocab/fpad/start",
-        "registrationOrder": 29
+        "vocab": {
+          "module": "fpad",
+          "term": "start",
+          "registrationOrder": 29
+        }
       },
       "end": {
         "description": "end describes the date and time when the audit was completed.",
         "type": "string",
         "id": "oada-formats://vocab/fpad/end",
-        "registrationOrder": 30
+        "vocab": {
+          "module": "fpad",
+          "term": "end",
+          "registrationOrder": 30
+        }
       },
       "FSMS_observed_date": {
         "description": "the period (beginning and ending times) of the FSMS portion of the audit.",
@@ -993,16 +1453,28 @@ module.exports = {
             "description": "start describes the date and time when the audit started",
             "type": "string",
             "id": "oada-formats://vocab/fpad/start",
-            "registrationOrder": 29
+            "vocab": {
+              "module": "fpad",
+              "term": "start",
+              "registrationOrder": 29
+            }
           },
           "end": {
             "description": "end describes the date and time when the audit was completed.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/end",
-            "registrationOrder": 30
+            "vocab": {
+              "module": "fpad",
+              "term": "end",
+              "registrationOrder": 30
+            }
           }
         },
-        "registrationOrder": 31
+        "vocab": {
+          "module": "fpad",
+          "term": "FSMS_observed_date",
+          "registrationOrder": 31
+        }
       },
       "operation_observed_date": {
         "description": "the period (beginning and ending times) of the walk-through/field operations portion of the audit.",
@@ -1019,40 +1491,68 @@ module.exports = {
             "description": "start describes the date and time when the audit started",
             "type": "string",
             "id": "oada-formats://vocab/fpad/start",
-            "registrationOrder": 29
+            "vocab": {
+              "module": "fpad",
+              "term": "start",
+              "registrationOrder": 29
+            }
           },
           "end": {
             "description": "end describes the date and time when the audit was completed.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/end",
-            "registrationOrder": 30
+            "vocab": {
+              "module": "fpad",
+              "term": "end",
+              "registrationOrder": 30
+            }
           }
         },
-        "registrationOrder": 32
+        "vocab": {
+          "module": "fpad",
+          "term": "operation_observed_date",
+          "registrationOrder": 32
+        }
       },
       "value": {
         "description": "a numeric or qualitative value, represented as a string",
         "type": "string",
         "id": "oada-formats://vocab/fpad/value",
-        "registrationOrder": 33
+        "vocab": {
+          "module": "fpad",
+          "term": "value",
+          "registrationOrder": 33
+        }
       },
       "units": {
         "description": "the units used to interpret the associated value.",
         "type": "string",
         "id": "oada-formats://vocab/fpad/units",
-        "registrationOrder": 34
+        "vocab": {
+          "module": "fpad",
+          "term": "units",
+          "registrationOrder": 34
+        }
       },
       "compliance": {
         "description": "written description indicating the level of satisfaction of the control point. E.g., \"Total Compliance\", \"Minor Deficiency\", or simply \"Pass\"/\"Fail\".",
         "type": "string",
         "id": "oada-formats://vocab/fpad/compliance",
-        "registrationOrder": 35
+        "vocab": {
+          "module": "fpad",
+          "term": "compliance",
+          "registrationOrder": 35
+        }
       },
       "possible": {
         "description": "Number of points possible for this control point",
         "type": "string",
         "id": "oada-formats://vocab/fpad/value",
-        "registrationOrder": 36
+        "vocab": {
+          "module": "fpad",
+          "term": "possible",
+          "registrationOrder": 36
+        }
       },
       "datum": {
         "description": "A datum is not a key that likely appears anywhere, but other vocab terms all use the form of a datum: a thing with a value, units, and optionally a 'possible' number of points",
@@ -1070,22 +1570,38 @@ module.exports = {
             "description": "a numeric or qualitative value, represented as a string",
             "type": "string",
             "id": "oada-formats://vocab/fpad/value",
-            "registrationOrder": 33
+            "vocab": {
+              "module": "fpad",
+              "term": "value",
+              "registrationOrder": 33
+            }
           },
           "units": {
             "description": "the units used to interpret the associated value.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/units",
-            "registrationOrder": 34
+            "vocab": {
+              "module": "fpad",
+              "term": "units",
+              "registrationOrder": 34
+            }
           },
           "possible": {
             "description": "Number of points possible for this control point",
             "type": "string",
             "id": "oada-formats://vocab/fpad/value",
-            "registrationOrder": 36
+            "vocab": {
+              "module": "fpad",
+              "term": "possible",
+              "registrationOrder": 36
+            }
           }
         },
-        "registrationOrder": 37
+        "vocab": {
+          "module": "fpad",
+          "term": "datum",
+          "registrationOrder": 37
+        }
       },
       "preliminary": {
         "description": "A prelimiary score for an audit",
@@ -1103,22 +1619,38 @@ module.exports = {
             "description": "a numeric or qualitative value, represented as a string",
             "type": "string",
             "id": "oada-formats://vocab/fpad/value",
-            "registrationOrder": 33
+            "vocab": {
+              "module": "fpad",
+              "term": "value",
+              "registrationOrder": 33
+            }
           },
           "units": {
             "description": "the units used to interpret the associated value.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/units",
-            "registrationOrder": 34
+            "vocab": {
+              "module": "fpad",
+              "term": "units",
+              "registrationOrder": 34
+            }
           },
           "possible": {
             "description": "Number of points possible for this control point",
             "type": "string",
             "id": "oada-formats://vocab/fpad/value",
-            "registrationOrder": 36
+            "vocab": {
+              "module": "fpad",
+              "term": "possible",
+              "registrationOrder": 36
+            }
           }
         },
-        "registrationOrder": 38
+        "vocab": {
+          "module": "fpad",
+          "term": "preliminary",
+          "registrationOrder": 38
+        }
       },
       "final": {
         "description": "The final score for an audit",
@@ -1136,22 +1668,38 @@ module.exports = {
             "description": "a numeric or qualitative value, represented as a string",
             "type": "string",
             "id": "oada-formats://vocab/fpad/value",
-            "registrationOrder": 33
+            "vocab": {
+              "module": "fpad",
+              "term": "value",
+              "registrationOrder": 33
+            }
           },
           "units": {
             "description": "the units used to interpret the associated value.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/units",
-            "registrationOrder": 34
+            "vocab": {
+              "module": "fpad",
+              "term": "units",
+              "registrationOrder": 34
+            }
           },
           "possible": {
             "description": "Number of points possible for this control point",
             "type": "string",
             "id": "oada-formats://vocab/fpad/value",
-            "registrationOrder": 36
+            "vocab": {
+              "module": "fpad",
+              "term": "possible",
+              "registrationOrder": 36
+            }
           }
         },
-        "registrationOrder": 39
+        "vocab": {
+          "module": "fpad",
+          "term": "final",
+          "registrationOrder": 39
+        }
       },
       "score": {
         "description": "score presents the quanititative performance of a control point, section, or overall audit.",
@@ -1171,19 +1719,31 @@ module.exports = {
             "description": "a numeric or qualitative value, represented as a string",
             "type": "string",
             "id": "oada-formats://vocab/fpad/value",
-            "registrationOrder": 33
+            "vocab": {
+              "module": "fpad",
+              "term": "value",
+              "registrationOrder": 33
+            }
           },
           "units": {
             "description": "the units used to interpret the associated value.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/units",
-            "registrationOrder": 34
+            "vocab": {
+              "module": "fpad",
+              "term": "units",
+              "registrationOrder": 34
+            }
           },
           "possible": {
             "description": "Number of points possible for this control point",
             "type": "string",
             "id": "oada-formats://vocab/fpad/value",
-            "registrationOrder": 36
+            "vocab": {
+              "module": "fpad",
+              "term": "possible",
+              "registrationOrder": 36
+            }
           },
           "preliminary": {
             "description": "A prelimiary score for an audit",
@@ -1201,22 +1761,38 @@ module.exports = {
                 "description": "a numeric or qualitative value, represented as a string",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/value",
-                "registrationOrder": 33
+                "vocab": {
+                  "module": "fpad",
+                  "term": "value",
+                  "registrationOrder": 33
+                }
               },
               "units": {
                 "description": "the units used to interpret the associated value.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/units",
-                "registrationOrder": 34
+                "vocab": {
+                  "module": "fpad",
+                  "term": "units",
+                  "registrationOrder": 34
+                }
               },
               "possible": {
                 "description": "Number of points possible for this control point",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/value",
-                "registrationOrder": 36
+                "vocab": {
+                  "module": "fpad",
+                  "term": "possible",
+                  "registrationOrder": 36
+                }
               }
             },
-            "registrationOrder": 38
+            "vocab": {
+              "module": "fpad",
+              "term": "preliminary",
+              "registrationOrder": 38
+            }
           },
           "final": {
             "description": "The final score for an audit",
@@ -1234,32 +1810,56 @@ module.exports = {
                 "description": "a numeric or qualitative value, represented as a string",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/value",
-                "registrationOrder": 33
+                "vocab": {
+                  "module": "fpad",
+                  "term": "value",
+                  "registrationOrder": 33
+                }
               },
               "units": {
                 "description": "the units used to interpret the associated value.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/units",
-                "registrationOrder": 34
+                "vocab": {
+                  "module": "fpad",
+                  "term": "units",
+                  "registrationOrder": 34
+                }
               },
               "possible": {
                 "description": "Number of points possible for this control point",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/value",
-                "registrationOrder": 36
+                "vocab": {
+                  "module": "fpad",
+                  "term": "possible",
+                  "registrationOrder": 36
+                }
               }
             },
-            "registrationOrder": 39
+            "vocab": {
+              "module": "fpad",
+              "term": "final",
+              "registrationOrder": 39
+            }
           }
         },
-        "registrationOrder": 40
+        "vocab": {
+          "module": "fpad",
+          "term": "score",
+          "registrationOrder": 40
+        }
       },
       "control_pointid": {
         "description": "control_pointid is the id associated with a particular control point.",
         "type": "string",
         "pattern": "*",
         "id": "oada-formats://vocab/fpad/control_pointid",
-        "registrationOrder": 41
+        "vocab": {
+          "module": "fpad",
+          "term": "control_pointid",
+          "registrationOrder": 41
+        }
       },
       "control_pointids": {
         "description": "control_pointids lists the array of control point ids associated with the given section.",
@@ -1269,16 +1869,28 @@ module.exports = {
           "type": "string",
           "pattern": "*",
           "id": "oada-formats://vocab/fpad/control_pointid",
-          "registrationOrder": 41
+          "vocab": {
+            "module": "fpad",
+            "term": "control_pointid",
+            "registrationOrder": 41
+          }
         },
         "id": "oada-formats://vocab/fpad/control_pointids",
-        "registrationOrder": 42
+        "vocab": {
+          "module": "fpad",
+          "term": "control_pointids",
+          "registrationOrder": 42
+        }
       },
       "sectionid": {
         "description": "sectionid is the string id associated with a particular section. sectionid is constructed by prefixing the id with any parent sections, separated by periods (e.g., sectionid '2.3' is a section that is inside of a parent section with sectionid '2').",
         "type": "string",
         "id": "oada-formats://vocab/fpad/sectionid",
-        "registrationOrder": 43
+        "vocab": {
+          "module": "fpad",
+          "term": "sectionid",
+          "registrationOrder": 43
+        }
       },
       "section": {
         "description": "a section is a recursively defined partition of the audit, meaning that it may contain other \"child\" sections within it.",
@@ -1297,13 +1909,21 @@ module.exports = {
             "description": "name is a string, typically the name of the object the key appears in.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/name",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "fpad",
+              "term": "name",
+              "registrationOrder": 0
+            }
           },
           "sectionid": {
             "description": "sectionid is the string id associated with a particular section. sectionid is constructed by prefixing the id with any parent sections, separated by periods (e.g., sectionid '2.3' is a section that is inside of a parent section with sectionid '2').",
             "type": "string",
             "id": "oada-formats://vocab/fpad/sectionid",
-            "registrationOrder": 43
+            "vocab": {
+              "module": "fpad",
+              "term": "sectionid",
+              "registrationOrder": 43
+            }
           },
           "score": {
             "description": "score presents the quanititative performance of a control point, section, or overall audit.",
@@ -1323,19 +1943,31 @@ module.exports = {
                 "description": "a numeric or qualitative value, represented as a string",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/value",
-                "registrationOrder": 33
+                "vocab": {
+                  "module": "fpad",
+                  "term": "value",
+                  "registrationOrder": 33
+                }
               },
               "units": {
                 "description": "the units used to interpret the associated value.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/units",
-                "registrationOrder": 34
+                "vocab": {
+                  "module": "fpad",
+                  "term": "units",
+                  "registrationOrder": 34
+                }
               },
               "possible": {
                 "description": "Number of points possible for this control point",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/value",
-                "registrationOrder": 36
+                "vocab": {
+                  "module": "fpad",
+                  "term": "possible",
+                  "registrationOrder": 36
+                }
               },
               "preliminary": {
                 "description": "A prelimiary score for an audit",
@@ -1353,22 +1985,38 @@ module.exports = {
                     "description": "a numeric or qualitative value, represented as a string",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/value",
-                    "registrationOrder": 33
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "value",
+                      "registrationOrder": 33
+                    }
                   },
                   "units": {
                     "description": "the units used to interpret the associated value.",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/units",
-                    "registrationOrder": 34
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "units",
+                      "registrationOrder": 34
+                    }
                   },
                   "possible": {
                     "description": "Number of points possible for this control point",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/value",
-                    "registrationOrder": 36
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "possible",
+                      "registrationOrder": 36
+                    }
                   }
                 },
-                "registrationOrder": 38
+                "vocab": {
+                  "module": "fpad",
+                  "term": "preliminary",
+                  "registrationOrder": 38
+                }
               },
               "final": {
                 "description": "The final score for an audit",
@@ -1386,25 +2034,45 @@ module.exports = {
                     "description": "a numeric or qualitative value, represented as a string",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/value",
-                    "registrationOrder": 33
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "value",
+                      "registrationOrder": 33
+                    }
                   },
                   "units": {
                     "description": "the units used to interpret the associated value.",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/units",
-                    "registrationOrder": 34
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "units",
+                      "registrationOrder": 34
+                    }
                   },
                   "possible": {
                     "description": "Number of points possible for this control point",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/value",
-                    "registrationOrder": 36
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "possible",
+                      "registrationOrder": 36
+                    }
                   }
                 },
-                "registrationOrder": 39
+                "vocab": {
+                  "module": "fpad",
+                  "term": "final",
+                  "registrationOrder": 39
+                }
               }
             },
-            "registrationOrder": 40
+            "vocab": {
+              "module": "fpad",
+              "term": "score",
+              "registrationOrder": 40
+            }
           },
           "control_pointids": {
             "description": "control_pointids lists the array of control point ids associated with the given section.",
@@ -1414,14 +2082,26 @@ module.exports = {
               "type": "string",
               "pattern": "*",
               "id": "oada-formats://vocab/fpad/control_pointid",
-              "registrationOrder": 41
+              "vocab": {
+                "module": "fpad",
+                "term": "control_pointid",
+                "registrationOrder": 41
+              }
             },
             "id": "oada-formats://vocab/fpad/control_pointids",
-            "registrationOrder": 42
+            "vocab": {
+              "module": "fpad",
+              "term": "control_pointids",
+              "registrationOrder": 42
+            }
           }
         },
         "id": "oada-formats://vocab/fpad/section",
-        "registrationOrder": 44
+        "vocab": {
+          "module": "fpad",
+          "term": "section",
+          "registrationOrder": 44
+        }
       },
       "sections": {
         "description": "sections is a list of sections objects, used for organizing control points into groupings.",
@@ -1443,13 +2123,21 @@ module.exports = {
               "description": "name is a string, typically the name of the object the key appears in.",
               "type": "string",
               "id": "oada-formats://vocab/fpad/name",
-              "registrationOrder": 0
+              "vocab": {
+                "module": "fpad",
+                "term": "name",
+                "registrationOrder": 0
+              }
             },
             "sectionid": {
               "description": "sectionid is the string id associated with a particular section. sectionid is constructed by prefixing the id with any parent sections, separated by periods (e.g., sectionid '2.3' is a section that is inside of a parent section with sectionid '2').",
               "type": "string",
               "id": "oada-formats://vocab/fpad/sectionid",
-              "registrationOrder": 43
+              "vocab": {
+                "module": "fpad",
+                "term": "sectionid",
+                "registrationOrder": 43
+              }
             },
             "score": {
               "description": "score presents the quanititative performance of a control point, section, or overall audit.",
@@ -1469,19 +2157,31 @@ module.exports = {
                   "description": "a numeric or qualitative value, represented as a string",
                   "type": "string",
                   "id": "oada-formats://vocab/fpad/value",
-                  "registrationOrder": 33
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "value",
+                    "registrationOrder": 33
+                  }
                 },
                 "units": {
                   "description": "the units used to interpret the associated value.",
                   "type": "string",
                   "id": "oada-formats://vocab/fpad/units",
-                  "registrationOrder": 34
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "units",
+                    "registrationOrder": 34
+                  }
                 },
                 "possible": {
                   "description": "Number of points possible for this control point",
                   "type": "string",
                   "id": "oada-formats://vocab/fpad/value",
-                  "registrationOrder": 36
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "possible",
+                    "registrationOrder": 36
+                  }
                 },
                 "preliminary": {
                   "description": "A prelimiary score for an audit",
@@ -1499,22 +2199,38 @@ module.exports = {
                       "description": "a numeric or qualitative value, represented as a string",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/value",
-                      "registrationOrder": 33
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "value",
+                        "registrationOrder": 33
+                      }
                     },
                     "units": {
                       "description": "the units used to interpret the associated value.",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/units",
-                      "registrationOrder": 34
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "units",
+                        "registrationOrder": 34
+                      }
                     },
                     "possible": {
                       "description": "Number of points possible for this control point",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/value",
-                      "registrationOrder": 36
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "possible",
+                        "registrationOrder": 36
+                      }
                     }
                   },
-                  "registrationOrder": 38
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "preliminary",
+                    "registrationOrder": 38
+                  }
                 },
                 "final": {
                   "description": "The final score for an audit",
@@ -1532,25 +2248,45 @@ module.exports = {
                       "description": "a numeric or qualitative value, represented as a string",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/value",
-                      "registrationOrder": 33
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "value",
+                        "registrationOrder": 33
+                      }
                     },
                     "units": {
                       "description": "the units used to interpret the associated value.",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/units",
-                      "registrationOrder": 34
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "units",
+                        "registrationOrder": 34
+                      }
                     },
                     "possible": {
                       "description": "Number of points possible for this control point",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/value",
-                      "registrationOrder": 36
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "possible",
+                        "registrationOrder": 36
+                      }
                     }
                   },
-                  "registrationOrder": 39
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "final",
+                    "registrationOrder": 39
+                  }
                 }
               },
-              "registrationOrder": 40
+              "vocab": {
+                "module": "fpad",
+                "term": "score",
+                "registrationOrder": 40
+              }
             },
             "control_pointids": {
               "description": "control_pointids lists the array of control point ids associated with the given section.",
@@ -1560,29 +2296,53 @@ module.exports = {
                 "type": "string",
                 "pattern": "*",
                 "id": "oada-formats://vocab/fpad/control_pointid",
-                "registrationOrder": 41
+                "vocab": {
+                  "module": "fpad",
+                  "term": "control_pointid",
+                  "registrationOrder": 41
+                }
               },
               "id": "oada-formats://vocab/fpad/control_pointids",
-              "registrationOrder": 42
+              "vocab": {
+                "module": "fpad",
+                "term": "control_pointids",
+                "registrationOrder": 42
+              }
             }
           },
           "id": "oada-formats://vocab/fpad/section",
-          "registrationOrder": 44
+          "vocab": {
+            "module": "fpad",
+            "term": "section",
+            "registrationOrder": 44
+          }
         },
         "id": "oada-formats://vocab/fpad/sections",
-        "registrationOrder": 45
+        "vocab": {
+          "module": "fpad",
+          "term": "sections",
+          "registrationOrder": 45
+        }
       },
       "comments": {
         "description": "comments from an auditor on a particular control point",
         "type": "string",
         "id": "oada-formats://vocab/fpad/comments",
-        "registrationOrder": 46
+        "vocab": {
+          "module": "fpad",
+          "term": "comments",
+          "registrationOrder": 46
+        }
       },
       "url": {
         "description": "a string representing a URL link",
         "type": "string",
         "id": "oada-formats://vocab/fpad/url",
-        "registrationOrder": 47
+        "vocab": {
+          "module": "fpad",
+          "term": "url",
+          "registrationOrder": 47
+        }
       },
       "file": {
         "description": "an object with a url at the moment, perhaps more complex later.",
@@ -1598,10 +2358,18 @@ module.exports = {
             "description": "a string representing a URL link",
             "type": "string",
             "id": "oada-formats://vocab/fpad/url",
-            "registrationOrder": 47
+            "vocab": {
+              "module": "fpad",
+              "term": "url",
+              "registrationOrder": 47
+            }
           }
         },
-        "registrationOrder": 48
+        "vocab": {
+          "module": "fpad",
+          "term": "file",
+          "registrationOrder": 48
+        }
       },
       "files": {
         "description": "a list of file URL's that go with a particular control point",
@@ -1620,13 +2388,25 @@ module.exports = {
               "description": "a string representing a URL link",
               "type": "string",
               "id": "oada-formats://vocab/fpad/url",
-              "registrationOrder": 47
+              "vocab": {
+                "module": "fpad",
+                "term": "url",
+                "registrationOrder": 47
+              }
             }
           },
-          "registrationOrder": 48
+          "vocab": {
+            "module": "fpad",
+            "term": "file",
+            "registrationOrder": 48
+          }
         },
         "id": "oada-formats://vocab/fpad/files",
-        "registrationOrder": 49
+        "vocab": {
+          "module": "fpad",
+          "term": "files",
+          "registrationOrder": 49
+        }
       },
       "control_point": {
         "description": "control_point is a single question/item to be addressed by the auditor.",
@@ -1645,7 +2425,11 @@ module.exports = {
             "description": "name is a string, typically the name of the object the key appears in.",
             "type": "string",
             "id": "oada-formats://vocab/fpad/name",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "fpad",
+              "term": "name",
+              "registrationOrder": 0
+            }
           },
           "score": {
             "description": "score presents the quanititative performance of a control point, section, or overall audit.",
@@ -1665,19 +2449,31 @@ module.exports = {
                 "description": "a numeric or qualitative value, represented as a string",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/value",
-                "registrationOrder": 33
+                "vocab": {
+                  "module": "fpad",
+                  "term": "value",
+                  "registrationOrder": 33
+                }
               },
               "units": {
                 "description": "the units used to interpret the associated value.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/units",
-                "registrationOrder": 34
+                "vocab": {
+                  "module": "fpad",
+                  "term": "units",
+                  "registrationOrder": 34
+                }
               },
               "possible": {
                 "description": "Number of points possible for this control point",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/value",
-                "registrationOrder": 36
+                "vocab": {
+                  "module": "fpad",
+                  "term": "possible",
+                  "registrationOrder": 36
+                }
               },
               "preliminary": {
                 "description": "A prelimiary score for an audit",
@@ -1695,22 +2491,38 @@ module.exports = {
                     "description": "a numeric or qualitative value, represented as a string",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/value",
-                    "registrationOrder": 33
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "value",
+                      "registrationOrder": 33
+                    }
                   },
                   "units": {
                     "description": "the units used to interpret the associated value.",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/units",
-                    "registrationOrder": 34
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "units",
+                      "registrationOrder": 34
+                    }
                   },
                   "possible": {
                     "description": "Number of points possible for this control point",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/value",
-                    "registrationOrder": 36
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "possible",
+                      "registrationOrder": 36
+                    }
                   }
                 },
-                "registrationOrder": 38
+                "vocab": {
+                  "module": "fpad",
+                  "term": "preliminary",
+                  "registrationOrder": 38
+                }
               },
               "final": {
                 "description": "The final score for an audit",
@@ -1728,31 +2540,55 @@ module.exports = {
                     "description": "a numeric or qualitative value, represented as a string",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/value",
-                    "registrationOrder": 33
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "value",
+                      "registrationOrder": 33
+                    }
                   },
                   "units": {
                     "description": "the units used to interpret the associated value.",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/units",
-                    "registrationOrder": 34
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "units",
+                      "registrationOrder": 34
+                    }
                   },
                   "possible": {
                     "description": "Number of points possible for this control point",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/value",
-                    "registrationOrder": 36
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "possible",
+                      "registrationOrder": 36
+                    }
                   }
                 },
-                "registrationOrder": 39
+                "vocab": {
+                  "module": "fpad",
+                  "term": "final",
+                  "registrationOrder": 39
+                }
               }
             },
-            "registrationOrder": 40
+            "vocab": {
+              "module": "fpad",
+              "term": "score",
+              "registrationOrder": 40
+            }
           },
           "comments": {
             "description": "comments from an auditor on a particular control point",
             "type": "string",
             "id": "oada-formats://vocab/fpad/comments",
-            "registrationOrder": 46
+            "vocab": {
+              "module": "fpad",
+              "term": "comments",
+              "registrationOrder": 46
+            }
           },
           "files": {
             "description": "a list of file URL's that go with a particular control point",
@@ -1771,16 +2607,32 @@ module.exports = {
                   "description": "a string representing a URL link",
                   "type": "string",
                   "id": "oada-formats://vocab/fpad/url",
-                  "registrationOrder": 47
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "url",
+                    "registrationOrder": 47
+                  }
                 }
               },
-              "registrationOrder": 48
+              "vocab": {
+                "module": "fpad",
+                "term": "file",
+                "registrationOrder": 48
+              }
             },
             "id": "oada-formats://vocab/fpad/files",
-            "registrationOrder": 49
+            "vocab": {
+              "module": "fpad",
+              "term": "files",
+              "registrationOrder": 49
+            }
           }
         },
-        "registrationOrder": 50
+        "vocab": {
+          "module": "fpad",
+          "term": "control_point",
+          "registrationOrder": 50
+        }
       },
       "control_points": {
         "description": "control_points is a key that contains the complete set of control points within an audit. Each control point is indexed by its control_pointid. This key is a top level key for ease of accessing any/all control points. No prior knowledge of section structure is therefore necessary to look up a particular control point of interest.",
@@ -1789,7 +2641,11 @@ module.exports = {
           "type": "string",
           "pattern": "*",
           "id": "oada-formats://vocab/fpad/control_pointid",
-          "registrationOrder": 41
+          "vocab": {
+            "module": "fpad",
+            "term": "control_pointid",
+            "registrationOrder": 41
+          }
         },
         "propertySchemaDefault": {
           "description": "control_point is a single question/item to be addressed by the auditor.",
@@ -1808,7 +2664,11 @@ module.exports = {
               "description": "name is a string, typically the name of the object the key appears in.",
               "type": "string",
               "id": "oada-formats://vocab/fpad/name",
-              "registrationOrder": 0
+              "vocab": {
+                "module": "fpad",
+                "term": "name",
+                "registrationOrder": 0
+              }
             },
             "score": {
               "description": "score presents the quanititative performance of a control point, section, or overall audit.",
@@ -1828,19 +2688,31 @@ module.exports = {
                   "description": "a numeric or qualitative value, represented as a string",
                   "type": "string",
                   "id": "oada-formats://vocab/fpad/value",
-                  "registrationOrder": 33
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "value",
+                    "registrationOrder": 33
+                  }
                 },
                 "units": {
                   "description": "the units used to interpret the associated value.",
                   "type": "string",
                   "id": "oada-formats://vocab/fpad/units",
-                  "registrationOrder": 34
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "units",
+                    "registrationOrder": 34
+                  }
                 },
                 "possible": {
                   "description": "Number of points possible for this control point",
                   "type": "string",
                   "id": "oada-formats://vocab/fpad/value",
-                  "registrationOrder": 36
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "possible",
+                    "registrationOrder": 36
+                  }
                 },
                 "preliminary": {
                   "description": "A prelimiary score for an audit",
@@ -1858,22 +2730,38 @@ module.exports = {
                       "description": "a numeric or qualitative value, represented as a string",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/value",
-                      "registrationOrder": 33
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "value",
+                        "registrationOrder": 33
+                      }
                     },
                     "units": {
                       "description": "the units used to interpret the associated value.",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/units",
-                      "registrationOrder": 34
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "units",
+                        "registrationOrder": 34
+                      }
                     },
                     "possible": {
                       "description": "Number of points possible for this control point",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/value",
-                      "registrationOrder": 36
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "possible",
+                        "registrationOrder": 36
+                      }
                     }
                   },
-                  "registrationOrder": 38
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "preliminary",
+                    "registrationOrder": 38
+                  }
                 },
                 "final": {
                   "description": "The final score for an audit",
@@ -1891,31 +2779,55 @@ module.exports = {
                       "description": "a numeric or qualitative value, represented as a string",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/value",
-                      "registrationOrder": 33
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "value",
+                        "registrationOrder": 33
+                      }
                     },
                     "units": {
                       "description": "the units used to interpret the associated value.",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/units",
-                      "registrationOrder": 34
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "units",
+                        "registrationOrder": 34
+                      }
                     },
                     "possible": {
                       "description": "Number of points possible for this control point",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/value",
-                      "registrationOrder": 36
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "possible",
+                        "registrationOrder": 36
+                      }
                     }
                   },
-                  "registrationOrder": 39
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "final",
+                    "registrationOrder": 39
+                  }
                 }
               },
-              "registrationOrder": 40
+              "vocab": {
+                "module": "fpad",
+                "term": "score",
+                "registrationOrder": 40
+              }
             },
             "comments": {
               "description": "comments from an auditor on a particular control point",
               "type": "string",
               "id": "oada-formats://vocab/fpad/comments",
-              "registrationOrder": 46
+              "vocab": {
+                "module": "fpad",
+                "term": "comments",
+                "registrationOrder": 46
+              }
             },
             "files": {
               "description": "a list of file URL's that go with a particular control point",
@@ -1934,16 +2846,32 @@ module.exports = {
                     "description": "a string representing a URL link",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/url",
-                    "registrationOrder": 47
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "url",
+                      "registrationOrder": 47
+                    }
                   }
                 },
-                "registrationOrder": 48
+                "vocab": {
+                  "module": "fpad",
+                  "term": "file",
+                  "registrationOrder": 48
+                }
               },
               "id": "oada-formats://vocab/fpad/files",
-              "registrationOrder": 49
+              "vocab": {
+                "module": "fpad",
+                "term": "files",
+                "registrationOrder": 49
+              }
             }
           },
-          "registrationOrder": 50
+          "vocab": {
+            "module": "fpad",
+            "term": "control_point",
+            "registrationOrder": 50
+          }
         },
         "id": "oada-formats://vocab/fpad/control_points",
         "patternProperties": {
@@ -1964,7 +2892,11 @@ module.exports = {
                 "description": "name is a string, typically the name of the object the key appears in.",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/name",
-                "registrationOrder": 0
+                "vocab": {
+                  "module": "fpad",
+                  "term": "name",
+                  "registrationOrder": 0
+                }
               },
               "score": {
                 "description": "score presents the quanititative performance of a control point, section, or overall audit.",
@@ -1984,19 +2916,31 @@ module.exports = {
                     "description": "a numeric or qualitative value, represented as a string",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/value",
-                    "registrationOrder": 33
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "value",
+                      "registrationOrder": 33
+                    }
                   },
                   "units": {
                     "description": "the units used to interpret the associated value.",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/units",
-                    "registrationOrder": 34
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "units",
+                      "registrationOrder": 34
+                    }
                   },
                   "possible": {
                     "description": "Number of points possible for this control point",
                     "type": "string",
                     "id": "oada-formats://vocab/fpad/value",
-                    "registrationOrder": 36
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "possible",
+                      "registrationOrder": 36
+                    }
                   },
                   "preliminary": {
                     "description": "A prelimiary score for an audit",
@@ -2014,22 +2958,38 @@ module.exports = {
                         "description": "a numeric or qualitative value, represented as a string",
                         "type": "string",
                         "id": "oada-formats://vocab/fpad/value",
-                        "registrationOrder": 33
+                        "vocab": {
+                          "module": "fpad",
+                          "term": "value",
+                          "registrationOrder": 33
+                        }
                       },
                       "units": {
                         "description": "the units used to interpret the associated value.",
                         "type": "string",
                         "id": "oada-formats://vocab/fpad/units",
-                        "registrationOrder": 34
+                        "vocab": {
+                          "module": "fpad",
+                          "term": "units",
+                          "registrationOrder": 34
+                        }
                       },
                       "possible": {
                         "description": "Number of points possible for this control point",
                         "type": "string",
                         "id": "oada-formats://vocab/fpad/value",
-                        "registrationOrder": 36
+                        "vocab": {
+                          "module": "fpad",
+                          "term": "possible",
+                          "registrationOrder": 36
+                        }
                       }
                     },
-                    "registrationOrder": 38
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "preliminary",
+                      "registrationOrder": 38
+                    }
                   },
                   "final": {
                     "description": "The final score for an audit",
@@ -2047,31 +3007,55 @@ module.exports = {
                         "description": "a numeric or qualitative value, represented as a string",
                         "type": "string",
                         "id": "oada-formats://vocab/fpad/value",
-                        "registrationOrder": 33
+                        "vocab": {
+                          "module": "fpad",
+                          "term": "value",
+                          "registrationOrder": 33
+                        }
                       },
                       "units": {
                         "description": "the units used to interpret the associated value.",
                         "type": "string",
                         "id": "oada-formats://vocab/fpad/units",
-                        "registrationOrder": 34
+                        "vocab": {
+                          "module": "fpad",
+                          "term": "units",
+                          "registrationOrder": 34
+                        }
                       },
                       "possible": {
                         "description": "Number of points possible for this control point",
                         "type": "string",
                         "id": "oada-formats://vocab/fpad/value",
-                        "registrationOrder": 36
+                        "vocab": {
+                          "module": "fpad",
+                          "term": "possible",
+                          "registrationOrder": 36
+                        }
                       }
                     },
-                    "registrationOrder": 39
+                    "vocab": {
+                      "module": "fpad",
+                      "term": "final",
+                      "registrationOrder": 39
+                    }
                   }
                 },
-                "registrationOrder": 40
+                "vocab": {
+                  "module": "fpad",
+                  "term": "score",
+                  "registrationOrder": 40
+                }
               },
               "comments": {
                 "description": "comments from an auditor on a particular control point",
                 "type": "string",
                 "id": "oada-formats://vocab/fpad/comments",
-                "registrationOrder": 46
+                "vocab": {
+                  "module": "fpad",
+                  "term": "comments",
+                  "registrationOrder": 46
+                }
               },
               "files": {
                 "description": "a list of file URL's that go with a particular control point",
@@ -2090,19 +3074,39 @@ module.exports = {
                       "description": "a string representing a URL link",
                       "type": "string",
                       "id": "oada-formats://vocab/fpad/url",
-                      "registrationOrder": 47
+                      "vocab": {
+                        "module": "fpad",
+                        "term": "url",
+                        "registrationOrder": 47
+                      }
                     }
                   },
-                  "registrationOrder": 48
+                  "vocab": {
+                    "module": "fpad",
+                    "term": "file",
+                    "registrationOrder": 48
+                  }
                 },
                 "id": "oada-formats://vocab/fpad/files",
-                "registrationOrder": 49
+                "vocab": {
+                  "module": "fpad",
+                  "term": "files",
+                  "registrationOrder": 49
+                }
               }
             },
-            "registrationOrder": 50
+            "vocab": {
+              "module": "fpad",
+              "term": "control_point",
+              "registrationOrder": 50
+            }
           }
         },
-        "registrationOrder": 51
+        "vocab": {
+          "module": "fpad",
+          "term": "control_points",
+          "registrationOrder": 51
+        }
       }
     },
     "oada": {
@@ -2120,62 +3124,102 @@ module.exports = {
           }
         ],
         "id": "oada-formats://vocab/oada/value",
-        "registrationOrder": 0
+        "vocab": {
+          "module": "oada",
+          "term": "value",
+          "registrationOrder": 0
+        }
       },
       "units": {
         "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
         "type": "string",
         "id": "oada-formats://vocab/oada/units",
-        "registrationOrder": 1
+        "vocab": {
+          "module": "oada",
+          "term": "units",
+          "registrationOrder": 1
+        }
       },
       "sum": {
         "description": "sum represents a sum of numbers.  Used in a stats object.",
         "type": "number",
         "id": "oada-formats://vocab/oada/sum",
-        "registrationOrder": 2
+        "vocab": {
+          "module": "oada",
+          "term": "sum",
+          "registrationOrder": 2
+        }
       },
       "count": {
         "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
         "type": "number",
         "id": "oada-formats://vocab/oada/count",
-        "registrationOrder": 3
+        "vocab": {
+          "module": "oada",
+          "term": "count",
+          "registrationOrder": 3
+        }
       },
       "sum-of-squares": {
         "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
         "type": "number",
         "id": "oada-formats://vocab/oada/sum-of-squares",
-        "registrationOrder": 4
+        "vocab": {
+          "module": "oada",
+          "term": "sum-of-squares",
+          "registrationOrder": 4
+        }
       },
       "id": {
         "description": "id (note this is NOT \"_id\") can be used to identify a particular data point, perhaps across documents which simply re-index the same data.",
         "type": "string",
         "id": "oada-formats://vocab/oada/id",
-        "registrationOrder": 5
+        "vocab": {
+          "module": "oada",
+          "term": "id",
+          "registrationOrder": 5
+        }
       },
       "geohash": {
         "description": "A geohash is a base 32 encoded string which represents the combination of latitude and longitude into a single number which, in general, has a property such that points close in number are close on the globe.",
         "type": "string",
         "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]+$",
         "id": "oada-formats://vocab/oada/geohash",
-        "registrationOrder": 6
+        "vocab": {
+          "module": "oada",
+          "term": "geohash",
+          "registrationOrder": 6
+        }
       },
       "latitude": {
         "description": "latitude is a number",
         "type": "number",
         "id": "oada-formats://vocab/oada/latitude",
-        "registrationOrder": 7
+        "vocab": {
+          "module": "oada",
+          "term": "latitude",
+          "registrationOrder": 7
+        }
       },
       "longitude": {
         "description": "longitude is a number",
         "type": "number",
         "id": "oada-formats://vocab/oada/longitude",
-        "registrationOrder": 8
+        "vocab": {
+          "module": "oada",
+          "term": "longitude",
+          "registrationOrder": 8
+        }
       },
       "altitude": {
         "description": "altitude is a number",
         "type": "number",
         "id": "oada-formats://vocab/oada/altitude",
-        "registrationOrder": 9
+        "vocab": {
+          "module": "oada",
+          "term": "altitude",
+          "registrationOrder": 9
+        }
       },
       "datum": {
         "description": "datum describes the model of the earth used for GPS coordinates.  It can be from a set of known strings, or an EPSG model from http://spatialreference.org",
@@ -2215,7 +3259,11 @@ module.exports = {
           }
         ],
         "id": "oada-formats://vocab/oada/datum",
-        "registrationOrder": 10
+        "vocab": {
+          "module": "oada",
+          "term": "datum",
+          "registrationOrder": 10
+        }
       },
       "location": {
         "description": "location represents a point in space, usually a GPS coordinate or geohash",
@@ -2270,41 +3318,69 @@ module.exports = {
               }
             ],
             "id": "oada-formats://vocab/oada/datum",
-            "registrationOrder": 10
+            "vocab": {
+              "module": "oada",
+              "term": "datum",
+              "registrationOrder": 10
+            }
           },
           "latitude": {
             "description": "latitude is a number",
             "type": "number",
             "id": "oada-formats://vocab/oada/latitude",
-            "registrationOrder": 7
+            "vocab": {
+              "module": "oada",
+              "term": "latitude",
+              "registrationOrder": 7
+            }
           },
           "longitude": {
             "description": "longitude is a number",
             "type": "number",
             "id": "oada-formats://vocab/oada/longitude",
-            "registrationOrder": 8
+            "vocab": {
+              "module": "oada",
+              "term": "longitude",
+              "registrationOrder": 8
+            }
           },
           "altitude": {
             "description": "altitude is a number",
             "type": "number",
             "id": "oada-formats://vocab/oada/altitude",
-            "registrationOrder": 9
+            "vocab": {
+              "module": "oada",
+              "term": "altitude",
+              "registrationOrder": 9
+            }
           },
           "geohash": {
             "description": "A geohash is a base 32 encoded string which represents the combination of latitude and longitude into a single number which, in general, has a property such that points close in number are close on the globe.",
             "type": "string",
             "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]+$",
             "id": "oada-formats://vocab/oada/geohash",
-            "registrationOrder": 6
+            "vocab": {
+              "module": "oada",
+              "term": "geohash",
+              "registrationOrder": 6
+            }
           }
         },
-        "registrationOrder": 11
+        "vocab": {
+          "module": "oada",
+          "term": "location",
+          "registrationOrder": 11
+        }
       },
       "template": {
         "description": "template sits inside a data point and gives the name of a template (key in the templates object) which serves as prototype for a given data point.  The full data point is the merge of that template object with the data point, with the data point taking precedence in key collisions. This is a string because its value is the key in templates, not the template itself.",
         "type": "string",
         "id": "oada-formats://vocab/oada/template",
-        "registrationOrder": 12
+        "vocab": {
+          "module": "oada",
+          "term": "template",
+          "registrationOrder": 12
+        }
       },
       "generic-data-value": {
         "description": "generic-data-value-with-stats does not exist in any document or URL.  It is a generic object that serves as a prototype for most data that can live in \"data\".",
@@ -2325,7 +3401,11 @@ module.exports = {
             "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
             "type": "string",
             "id": "oada-formats://vocab/oada/units",
-            "registrationOrder": 1
+            "vocab": {
+              "module": "oada",
+              "term": "units",
+              "registrationOrder": 1
+            }
           },
           "value": {
             "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -2341,28 +3421,48 @@ module.exports = {
               }
             ],
             "id": "oada-formats://vocab/oada/value",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "oada",
+              "term": "value",
+              "registrationOrder": 0
+            }
           },
           "sum": {
             "description": "sum represents a sum of numbers.  Used in a stats object.",
             "type": "number",
             "id": "oada-formats://vocab/oada/sum",
-            "registrationOrder": 2
+            "vocab": {
+              "module": "oada",
+              "term": "sum",
+              "registrationOrder": 2
+            }
           },
           "count": {
             "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
             "type": "number",
             "id": "oada-formats://vocab/oada/count",
-            "registrationOrder": 3
+            "vocab": {
+              "module": "oada",
+              "term": "count",
+              "registrationOrder": 3
+            }
           },
           "sum-of-squares": {
             "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
             "type": "number",
             "id": "oada-formats://vocab/oada/sum-of-squares",
-            "registrationOrder": 4
+            "vocab": {
+              "module": "oada",
+              "term": "sum-of-squares",
+              "registrationOrder": 4
+            }
           }
         },
-        "registrationOrder": 13
+        "vocab": {
+          "module": "oada",
+          "term": "generic-data-value",
+          "registrationOrder": 13
+        }
       },
       "moisture": {
         "description": "moisture is a data type which holds a reading of the amount of moisture in a crop. It is typically in units of % water (%H2O).",
@@ -2383,7 +3483,11 @@ module.exports = {
             "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
             "type": "string",
             "id": "oada-formats://vocab/oada/units",
-            "registrationOrder": 1
+            "vocab": {
+              "module": "oada",
+              "term": "units",
+              "registrationOrder": 1
+            }
           },
           "value": {
             "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -2399,28 +3503,48 @@ module.exports = {
               }
             ],
             "id": "oada-formats://vocab/oada/value",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "oada",
+              "term": "value",
+              "registrationOrder": 0
+            }
           },
           "sum": {
             "description": "sum represents a sum of numbers.  Used in a stats object.",
             "type": "number",
             "id": "oada-formats://vocab/oada/sum",
-            "registrationOrder": 2
+            "vocab": {
+              "module": "oada",
+              "term": "sum",
+              "registrationOrder": 2
+            }
           },
           "count": {
             "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
             "type": "number",
             "id": "oada-formats://vocab/oada/count",
-            "registrationOrder": 3
+            "vocab": {
+              "module": "oada",
+              "term": "count",
+              "registrationOrder": 3
+            }
           },
           "sum-of-squares": {
             "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
             "type": "number",
             "id": "oada-formats://vocab/oada/sum-of-squares",
-            "registrationOrder": 4
+            "vocab": {
+              "module": "oada",
+              "term": "sum-of-squares",
+              "registrationOrder": 4
+            }
           }
         },
-        "registrationOrder": 14
+        "vocab": {
+          "module": "oada",
+          "term": "moisture",
+          "registrationOrder": 14
+        }
       },
       "weight": {
         "description": "weight is a data type which holds a reading of weight, as in bushels, lbs, or kg.",
@@ -2441,7 +3565,11 @@ module.exports = {
             "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
             "type": "string",
             "id": "oada-formats://vocab/oada/units",
-            "registrationOrder": 1
+            "vocab": {
+              "module": "oada",
+              "term": "units",
+              "registrationOrder": 1
+            }
           },
           "value": {
             "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -2457,28 +3585,48 @@ module.exports = {
               }
             ],
             "id": "oada-formats://vocab/oada/value",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "oada",
+              "term": "value",
+              "registrationOrder": 0
+            }
           },
           "sum": {
             "description": "sum represents a sum of numbers.  Used in a stats object.",
             "type": "number",
             "id": "oada-formats://vocab/oada/sum",
-            "registrationOrder": 2
+            "vocab": {
+              "module": "oada",
+              "term": "sum",
+              "registrationOrder": 2
+            }
           },
           "count": {
             "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
             "type": "number",
             "id": "oada-formats://vocab/oada/count",
-            "registrationOrder": 3
+            "vocab": {
+              "module": "oada",
+              "term": "count",
+              "registrationOrder": 3
+            }
           },
           "sum-of-squares": {
             "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
             "type": "number",
             "id": "oada-formats://vocab/oada/sum-of-squares",
-            "registrationOrder": 4
+            "vocab": {
+              "module": "oada",
+              "term": "sum-of-squares",
+              "registrationOrder": 4
+            }
           }
         },
-        "registrationOrder": 15
+        "vocab": {
+          "module": "oada",
+          "term": "weight",
+          "registrationOrder": 15
+        }
       },
       "area": {
         "description": "area is a data type which holds a reading of...area...",
@@ -2499,7 +3647,11 @@ module.exports = {
             "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
             "type": "string",
             "id": "oada-formats://vocab/oada/units",
-            "registrationOrder": 1
+            "vocab": {
+              "module": "oada",
+              "term": "units",
+              "registrationOrder": 1
+            }
           },
           "value": {
             "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -2515,28 +3667,48 @@ module.exports = {
               }
             ],
             "id": "oada-formats://vocab/oada/value",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "oada",
+              "term": "value",
+              "registrationOrder": 0
+            }
           },
           "sum": {
             "description": "sum represents a sum of numbers.  Used in a stats object.",
             "type": "number",
             "id": "oada-formats://vocab/oada/sum",
-            "registrationOrder": 2
+            "vocab": {
+              "module": "oada",
+              "term": "sum",
+              "registrationOrder": 2
+            }
           },
           "count": {
             "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
             "type": "number",
             "id": "oada-formats://vocab/oada/count",
-            "registrationOrder": 3
+            "vocab": {
+              "module": "oada",
+              "term": "count",
+              "registrationOrder": 3
+            }
           },
           "sum-of-squares": {
             "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
             "type": "number",
             "id": "oada-formats://vocab/oada/sum-of-squares",
-            "registrationOrder": 4
+            "vocab": {
+              "module": "oada",
+              "term": "sum-of-squares",
+              "registrationOrder": 4
+            }
           }
         },
-        "registrationOrder": 16
+        "vocab": {
+          "module": "oada",
+          "term": "area",
+          "registrationOrder": 16
+        }
       },
       "width": {
         "description": "width is a data type which holds readings of swath width, or other widths of things.",
@@ -2557,7 +3729,11 @@ module.exports = {
             "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
             "type": "string",
             "id": "oada-formats://vocab/oada/units",
-            "registrationOrder": 1
+            "vocab": {
+              "module": "oada",
+              "term": "units",
+              "registrationOrder": 1
+            }
           },
           "value": {
             "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -2573,28 +3749,48 @@ module.exports = {
               }
             ],
             "id": "oada-formats://vocab/oada/value",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "oada",
+              "term": "value",
+              "registrationOrder": 0
+            }
           },
           "sum": {
             "description": "sum represents a sum of numbers.  Used in a stats object.",
             "type": "number",
             "id": "oada-formats://vocab/oada/sum",
-            "registrationOrder": 2
+            "vocab": {
+              "module": "oada",
+              "term": "sum",
+              "registrationOrder": 2
+            }
           },
           "count": {
             "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
             "type": "number",
             "id": "oada-formats://vocab/oada/count",
-            "registrationOrder": 3
+            "vocab": {
+              "module": "oada",
+              "term": "count",
+              "registrationOrder": 3
+            }
           },
           "sum-of-squares": {
             "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
             "type": "number",
             "id": "oada-formats://vocab/oada/sum-of-squares",
-            "registrationOrder": 4
+            "vocab": {
+              "module": "oada",
+              "term": "sum-of-squares",
+              "registrationOrder": 4
+            }
           }
         },
-        "registrationOrder": 17
+        "vocab": {
+          "module": "oada",
+          "term": "width",
+          "registrationOrder": 17
+        }
       },
       "time": {
         "description": "time is a data type which holds a reading of...time...",
@@ -2615,7 +3811,11 @@ module.exports = {
             "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
             "type": "string",
             "id": "oada-formats://vocab/oada/units",
-            "registrationOrder": 1
+            "vocab": {
+              "module": "oada",
+              "term": "units",
+              "registrationOrder": 1
+            }
           },
           "value": {
             "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -2631,28 +3831,48 @@ module.exports = {
               }
             ],
             "id": "oada-formats://vocab/oada/value",
-            "registrationOrder": 0
+            "vocab": {
+              "module": "oada",
+              "term": "value",
+              "registrationOrder": 0
+            }
           },
           "sum": {
             "description": "sum represents a sum of numbers.  Used in a stats object.",
             "type": "number",
             "id": "oada-formats://vocab/oada/sum",
-            "registrationOrder": 2
+            "vocab": {
+              "module": "oada",
+              "term": "sum",
+              "registrationOrder": 2
+            }
           },
           "count": {
             "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
             "type": "number",
             "id": "oada-formats://vocab/oada/count",
-            "registrationOrder": 3
+            "vocab": {
+              "module": "oada",
+              "term": "count",
+              "registrationOrder": 3
+            }
           },
           "sum-of-squares": {
             "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
             "type": "number",
             "id": "oada-formats://vocab/oada/sum-of-squares",
-            "registrationOrder": 4
+            "vocab": {
+              "module": "oada",
+              "term": "sum-of-squares",
+              "registrationOrder": 4
+            }
           }
         },
-        "registrationOrder": 18,
+        "vocab": {
+          "module": "oada",
+          "term": "time",
+          "registrationOrder": 18
+        },
         "units": {
           "known": [
             "unix-timestamp",
@@ -2670,7 +3890,11 @@ module.exports = {
           "wheat"
         ],
         "id": "oada-formats://vocab/oada/crop-type",
-        "registrationOrder": 19
+        "vocab": {
+          "module": "oada",
+          "term": "crop-type",
+          "registrationOrder": 19
+        }
       },
       "data-point": {
         "description": "data-point never appears as a word in any document or URL.  It is a general type of object that can hold any type of data.  It represents the type of object that can sit under \"data\" or \"templates\".",
@@ -2694,7 +3918,11 @@ module.exports = {
             "description": "id (note this is NOT \"_id\") can be used to identify a particular data point, perhaps across documents which simply re-index the same data.",
             "type": "string",
             "id": "oada-formats://vocab/oada/id",
-            "registrationOrder": 5
+            "vocab": {
+              "module": "oada",
+              "term": "id",
+              "registrationOrder": 5
+            }
           },
           "location": {
             "description": "location represents a point in space, usually a GPS coordinate or geohash",
@@ -2749,41 +3977,69 @@ module.exports = {
                   }
                 ],
                 "id": "oada-formats://vocab/oada/datum",
-                "registrationOrder": 10
+                "vocab": {
+                  "module": "oada",
+                  "term": "datum",
+                  "registrationOrder": 10
+                }
               },
               "latitude": {
                 "description": "latitude is a number",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/latitude",
-                "registrationOrder": 7
+                "vocab": {
+                  "module": "oada",
+                  "term": "latitude",
+                  "registrationOrder": 7
+                }
               },
               "longitude": {
                 "description": "longitude is a number",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/longitude",
-                "registrationOrder": 8
+                "vocab": {
+                  "module": "oada",
+                  "term": "longitude",
+                  "registrationOrder": 8
+                }
               },
               "altitude": {
                 "description": "altitude is a number",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/altitude",
-                "registrationOrder": 9
+                "vocab": {
+                  "module": "oada",
+                  "term": "altitude",
+                  "registrationOrder": 9
+                }
               },
               "geohash": {
                 "description": "A geohash is a base 32 encoded string which represents the combination of latitude and longitude into a single number which, in general, has a property such that points close in number are close on the globe.",
                 "type": "string",
                 "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]+$",
                 "id": "oada-formats://vocab/oada/geohash",
-                "registrationOrder": 6
+                "vocab": {
+                  "module": "oada",
+                  "term": "geohash",
+                  "registrationOrder": 6
+                }
               }
             },
-            "registrationOrder": 11
+            "vocab": {
+              "module": "oada",
+              "term": "location",
+              "registrationOrder": 11
+            }
           },
           "template": {
             "description": "template sits inside a data point and gives the name of a template (key in the templates object) which serves as prototype for a given data point.  The full data point is the merge of that template object with the data point, with the data point taking precedence in key collisions. This is a string because its value is the key in templates, not the template itself.",
             "type": "string",
             "id": "oada-formats://vocab/oada/template",
-            "registrationOrder": 12
+            "vocab": {
+              "module": "oada",
+              "term": "template",
+              "registrationOrder": 12
+            }
           },
           "datum": {
             "description": "datum describes the model of the earth used for GPS coordinates.  It can be from a set of known strings, or an EPSG model from http://spatialreference.org",
@@ -2823,7 +4079,11 @@ module.exports = {
               }
             ],
             "id": "oada-formats://vocab/oada/datum",
-            "registrationOrder": 10
+            "vocab": {
+              "module": "oada",
+              "term": "datum",
+              "registrationOrder": 10
+            }
           },
           "moisture": {
             "description": "moisture is a data type which holds a reading of the amount of moisture in a crop. It is typically in units of % water (%H2O).",
@@ -2844,7 +4104,11 @@ module.exports = {
                 "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/units",
-                "registrationOrder": 1
+                "vocab": {
+                  "module": "oada",
+                  "term": "units",
+                  "registrationOrder": 1
+                }
               },
               "value": {
                 "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -2860,28 +4124,48 @@ module.exports = {
                   }
                 ],
                 "id": "oada-formats://vocab/oada/value",
-                "registrationOrder": 0
+                "vocab": {
+                  "module": "oada",
+                  "term": "value",
+                  "registrationOrder": 0
+                }
               },
               "sum": {
                 "description": "sum represents a sum of numbers.  Used in a stats object.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum",
-                "registrationOrder": 2
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum",
+                  "registrationOrder": 2
+                }
               },
               "count": {
                 "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/count",
-                "registrationOrder": 3
+                "vocab": {
+                  "module": "oada",
+                  "term": "count",
+                  "registrationOrder": 3
+                }
               },
               "sum-of-squares": {
                 "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum-of-squares",
-                "registrationOrder": 4
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum-of-squares",
+                  "registrationOrder": 4
+                }
               }
             },
-            "registrationOrder": 14
+            "vocab": {
+              "module": "oada",
+              "term": "moisture",
+              "registrationOrder": 14
+            }
           },
           "weight": {
             "description": "weight is a data type which holds a reading of weight, as in bushels, lbs, or kg.",
@@ -2902,7 +4186,11 @@ module.exports = {
                 "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/units",
-                "registrationOrder": 1
+                "vocab": {
+                  "module": "oada",
+                  "term": "units",
+                  "registrationOrder": 1
+                }
               },
               "value": {
                 "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -2918,28 +4206,48 @@ module.exports = {
                   }
                 ],
                 "id": "oada-formats://vocab/oada/value",
-                "registrationOrder": 0
+                "vocab": {
+                  "module": "oada",
+                  "term": "value",
+                  "registrationOrder": 0
+                }
               },
               "sum": {
                 "description": "sum represents a sum of numbers.  Used in a stats object.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum",
-                "registrationOrder": 2
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum",
+                  "registrationOrder": 2
+                }
               },
               "count": {
                 "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/count",
-                "registrationOrder": 3
+                "vocab": {
+                  "module": "oada",
+                  "term": "count",
+                  "registrationOrder": 3
+                }
               },
               "sum-of-squares": {
                 "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum-of-squares",
-                "registrationOrder": 4
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum-of-squares",
+                  "registrationOrder": 4
+                }
               }
             },
-            "registrationOrder": 15
+            "vocab": {
+              "module": "oada",
+              "term": "weight",
+              "registrationOrder": 15
+            }
           },
           "area": {
             "description": "area is a data type which holds a reading of...area...",
@@ -2960,7 +4268,11 @@ module.exports = {
                 "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/units",
-                "registrationOrder": 1
+                "vocab": {
+                  "module": "oada",
+                  "term": "units",
+                  "registrationOrder": 1
+                }
               },
               "value": {
                 "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -2976,28 +4288,48 @@ module.exports = {
                   }
                 ],
                 "id": "oada-formats://vocab/oada/value",
-                "registrationOrder": 0
+                "vocab": {
+                  "module": "oada",
+                  "term": "value",
+                  "registrationOrder": 0
+                }
               },
               "sum": {
                 "description": "sum represents a sum of numbers.  Used in a stats object.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum",
-                "registrationOrder": 2
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum",
+                  "registrationOrder": 2
+                }
               },
               "count": {
                 "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/count",
-                "registrationOrder": 3
+                "vocab": {
+                  "module": "oada",
+                  "term": "count",
+                  "registrationOrder": 3
+                }
               },
               "sum-of-squares": {
                 "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum-of-squares",
-                "registrationOrder": 4
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum-of-squares",
+                  "registrationOrder": 4
+                }
               }
             },
-            "registrationOrder": 16
+            "vocab": {
+              "module": "oada",
+              "term": "area",
+              "registrationOrder": 16
+            }
           },
           "time": {
             "description": "time is a data type which holds a reading of...time...",
@@ -3018,7 +4350,11 @@ module.exports = {
                 "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/units",
-                "registrationOrder": 1
+                "vocab": {
+                  "module": "oada",
+                  "term": "units",
+                  "registrationOrder": 1
+                }
               },
               "value": {
                 "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -3034,28 +4370,48 @@ module.exports = {
                   }
                 ],
                 "id": "oada-formats://vocab/oada/value",
-                "registrationOrder": 0
+                "vocab": {
+                  "module": "oada",
+                  "term": "value",
+                  "registrationOrder": 0
+                }
               },
               "sum": {
                 "description": "sum represents a sum of numbers.  Used in a stats object.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum",
-                "registrationOrder": 2
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum",
+                  "registrationOrder": 2
+                }
               },
               "count": {
                 "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/count",
-                "registrationOrder": 3
+                "vocab": {
+                  "module": "oada",
+                  "term": "count",
+                  "registrationOrder": 3
+                }
               },
               "sum-of-squares": {
                 "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum-of-squares",
-                "registrationOrder": 4
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum-of-squares",
+                  "registrationOrder": 4
+                }
               }
             },
-            "registrationOrder": 18,
+            "vocab": {
+              "module": "oada",
+              "term": "time",
+              "registrationOrder": 18
+            },
             "units": {
               "known": [
                 "unix-timestamp",
@@ -3073,10 +4429,18 @@ module.exports = {
               "wheat"
             ],
             "id": "oada-formats://vocab/oada/crop-type",
-            "registrationOrder": 19
+            "vocab": {
+              "module": "oada",
+              "term": "crop-type",
+              "registrationOrder": 19
+            }
           }
         },
-        "registrationOrder": 20
+        "vocab": {
+          "module": "oada",
+          "term": "data-point",
+          "registrationOrder": 20
+        }
       },
       "stats": {
         "description": "stats sits at the top of a resource to list stats about the data inside that resource. Basic stats are sum, count, sum-of-squares.  The actual keys under stats are data names that you have stats for like weight, area, etc.  The same units and data names are valid under stats that are valid under data",
@@ -3100,7 +4464,11 @@ module.exports = {
             "description": "id (note this is NOT \"_id\") can be used to identify a particular data point, perhaps across documents which simply re-index the same data.",
             "type": "string",
             "id": "oada-formats://vocab/oada/id",
-            "registrationOrder": 5
+            "vocab": {
+              "module": "oada",
+              "term": "id",
+              "registrationOrder": 5
+            }
           },
           "location": {
             "description": "location represents a point in space, usually a GPS coordinate or geohash",
@@ -3155,41 +4523,69 @@ module.exports = {
                   }
                 ],
                 "id": "oada-formats://vocab/oada/datum",
-                "registrationOrder": 10
+                "vocab": {
+                  "module": "oada",
+                  "term": "datum",
+                  "registrationOrder": 10
+                }
               },
               "latitude": {
                 "description": "latitude is a number",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/latitude",
-                "registrationOrder": 7
+                "vocab": {
+                  "module": "oada",
+                  "term": "latitude",
+                  "registrationOrder": 7
+                }
               },
               "longitude": {
                 "description": "longitude is a number",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/longitude",
-                "registrationOrder": 8
+                "vocab": {
+                  "module": "oada",
+                  "term": "longitude",
+                  "registrationOrder": 8
+                }
               },
               "altitude": {
                 "description": "altitude is a number",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/altitude",
-                "registrationOrder": 9
+                "vocab": {
+                  "module": "oada",
+                  "term": "altitude",
+                  "registrationOrder": 9
+                }
               },
               "geohash": {
                 "description": "A geohash is a base 32 encoded string which represents the combination of latitude and longitude into a single number which, in general, has a property such that points close in number are close on the globe.",
                 "type": "string",
                 "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]+$",
                 "id": "oada-formats://vocab/oada/geohash",
-                "registrationOrder": 6
+                "vocab": {
+                  "module": "oada",
+                  "term": "geohash",
+                  "registrationOrder": 6
+                }
               }
             },
-            "registrationOrder": 11
+            "vocab": {
+              "module": "oada",
+              "term": "location",
+              "registrationOrder": 11
+            }
           },
           "template": {
             "description": "template sits inside a data point and gives the name of a template (key in the templates object) which serves as prototype for a given data point.  The full data point is the merge of that template object with the data point, with the data point taking precedence in key collisions. This is a string because its value is the key in templates, not the template itself.",
             "type": "string",
             "id": "oada-formats://vocab/oada/template",
-            "registrationOrder": 12
+            "vocab": {
+              "module": "oada",
+              "term": "template",
+              "registrationOrder": 12
+            }
           },
           "datum": {
             "description": "datum describes the model of the earth used for GPS coordinates.  It can be from a set of known strings, or an EPSG model from http://spatialreference.org",
@@ -3229,7 +4625,11 @@ module.exports = {
               }
             ],
             "id": "oada-formats://vocab/oada/datum",
-            "registrationOrder": 10
+            "vocab": {
+              "module": "oada",
+              "term": "datum",
+              "registrationOrder": 10
+            }
           },
           "moisture": {
             "description": "moisture is a data type which holds a reading of the amount of moisture in a crop. It is typically in units of % water (%H2O).",
@@ -3250,7 +4650,11 @@ module.exports = {
                 "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/units",
-                "registrationOrder": 1
+                "vocab": {
+                  "module": "oada",
+                  "term": "units",
+                  "registrationOrder": 1
+                }
               },
               "value": {
                 "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -3266,28 +4670,48 @@ module.exports = {
                   }
                 ],
                 "id": "oada-formats://vocab/oada/value",
-                "registrationOrder": 0
+                "vocab": {
+                  "module": "oada",
+                  "term": "value",
+                  "registrationOrder": 0
+                }
               },
               "sum": {
                 "description": "sum represents a sum of numbers.  Used in a stats object.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum",
-                "registrationOrder": 2
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum",
+                  "registrationOrder": 2
+                }
               },
               "count": {
                 "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/count",
-                "registrationOrder": 3
+                "vocab": {
+                  "module": "oada",
+                  "term": "count",
+                  "registrationOrder": 3
+                }
               },
               "sum-of-squares": {
                 "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum-of-squares",
-                "registrationOrder": 4
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum-of-squares",
+                  "registrationOrder": 4
+                }
               }
             },
-            "registrationOrder": 14
+            "vocab": {
+              "module": "oada",
+              "term": "moisture",
+              "registrationOrder": 14
+            }
           },
           "weight": {
             "description": "weight is a data type which holds a reading of weight, as in bushels, lbs, or kg.",
@@ -3308,7 +4732,11 @@ module.exports = {
                 "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/units",
-                "registrationOrder": 1
+                "vocab": {
+                  "module": "oada",
+                  "term": "units",
+                  "registrationOrder": 1
+                }
               },
               "value": {
                 "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -3324,28 +4752,48 @@ module.exports = {
                   }
                 ],
                 "id": "oada-formats://vocab/oada/value",
-                "registrationOrder": 0
+                "vocab": {
+                  "module": "oada",
+                  "term": "value",
+                  "registrationOrder": 0
+                }
               },
               "sum": {
                 "description": "sum represents a sum of numbers.  Used in a stats object.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum",
-                "registrationOrder": 2
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum",
+                  "registrationOrder": 2
+                }
               },
               "count": {
                 "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/count",
-                "registrationOrder": 3
+                "vocab": {
+                  "module": "oada",
+                  "term": "count",
+                  "registrationOrder": 3
+                }
               },
               "sum-of-squares": {
                 "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum-of-squares",
-                "registrationOrder": 4
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum-of-squares",
+                  "registrationOrder": 4
+                }
               }
             },
-            "registrationOrder": 15
+            "vocab": {
+              "module": "oada",
+              "term": "weight",
+              "registrationOrder": 15
+            }
           },
           "area": {
             "description": "area is a data type which holds a reading of...area...",
@@ -3366,7 +4814,11 @@ module.exports = {
                 "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/units",
-                "registrationOrder": 1
+                "vocab": {
+                  "module": "oada",
+                  "term": "units",
+                  "registrationOrder": 1
+                }
               },
               "value": {
                 "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -3382,28 +4834,48 @@ module.exports = {
                   }
                 ],
                 "id": "oada-formats://vocab/oada/value",
-                "registrationOrder": 0
+                "vocab": {
+                  "module": "oada",
+                  "term": "value",
+                  "registrationOrder": 0
+                }
               },
               "sum": {
                 "description": "sum represents a sum of numbers.  Used in a stats object.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum",
-                "registrationOrder": 2
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum",
+                  "registrationOrder": 2
+                }
               },
               "count": {
                 "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/count",
-                "registrationOrder": 3
+                "vocab": {
+                  "module": "oada",
+                  "term": "count",
+                  "registrationOrder": 3
+                }
               },
               "sum-of-squares": {
                 "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum-of-squares",
-                "registrationOrder": 4
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum-of-squares",
+                  "registrationOrder": 4
+                }
               }
             },
-            "registrationOrder": 16
+            "vocab": {
+              "module": "oada",
+              "term": "area",
+              "registrationOrder": 16
+            }
           },
           "time": {
             "description": "time is a data type which holds a reading of...time...",
@@ -3424,7 +4896,11 @@ module.exports = {
                 "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/units",
-                "registrationOrder": 1
+                "vocab": {
+                  "module": "oada",
+                  "term": "units",
+                  "registrationOrder": 1
+                }
               },
               "value": {
                 "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -3440,28 +4916,48 @@ module.exports = {
                   }
                 ],
                 "id": "oada-formats://vocab/oada/value",
-                "registrationOrder": 0
+                "vocab": {
+                  "module": "oada",
+                  "term": "value",
+                  "registrationOrder": 0
+                }
               },
               "sum": {
                 "description": "sum represents a sum of numbers.  Used in a stats object.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum",
-                "registrationOrder": 2
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum",
+                  "registrationOrder": 2
+                }
               },
               "count": {
                 "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/count",
-                "registrationOrder": 3
+                "vocab": {
+                  "module": "oada",
+                  "term": "count",
+                  "registrationOrder": 3
+                }
               },
               "sum-of-squares": {
                 "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                 "type": "number",
                 "id": "oada-formats://vocab/oada/sum-of-squares",
-                "registrationOrder": 4
+                "vocab": {
+                  "module": "oada",
+                  "term": "sum-of-squares",
+                  "registrationOrder": 4
+                }
               }
             },
-            "registrationOrder": 18,
+            "vocab": {
+              "module": "oada",
+              "term": "time",
+              "registrationOrder": 18
+            },
             "units": {
               "known": [
                 "unix-timestamp",
@@ -3479,10 +4975,18 @@ module.exports = {
               "wheat"
             ],
             "id": "oada-formats://vocab/oada/crop-type",
-            "registrationOrder": 19
+            "vocab": {
+              "module": "oada",
+              "term": "crop-type",
+              "registrationOrder": 19
+            }
           }
         },
-        "registrationOrder": 21
+        "vocab": {
+          "module": "oada",
+          "term": "stats",
+          "registrationOrder": 21
+        }
       },
       "data": {
         "description": "data is a general key for holding a collection of data points indexed by random strings.",
@@ -3513,7 +5017,11 @@ module.exports = {
               "description": "id (note this is NOT \"_id\") can be used to identify a particular data point, perhaps across documents which simply re-index the same data.",
               "type": "string",
               "id": "oada-formats://vocab/oada/id",
-              "registrationOrder": 5
+              "vocab": {
+                "module": "oada",
+                "term": "id",
+                "registrationOrder": 5
+              }
             },
             "location": {
               "description": "location represents a point in space, usually a GPS coordinate or geohash",
@@ -3568,41 +5076,69 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/datum",
-                  "registrationOrder": 10
+                  "vocab": {
+                    "module": "oada",
+                    "term": "datum",
+                    "registrationOrder": 10
+                  }
                 },
                 "latitude": {
                   "description": "latitude is a number",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/latitude",
-                  "registrationOrder": 7
+                  "vocab": {
+                    "module": "oada",
+                    "term": "latitude",
+                    "registrationOrder": 7
+                  }
                 },
                 "longitude": {
                   "description": "longitude is a number",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/longitude",
-                  "registrationOrder": 8
+                  "vocab": {
+                    "module": "oada",
+                    "term": "longitude",
+                    "registrationOrder": 8
+                  }
                 },
                 "altitude": {
                   "description": "altitude is a number",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/altitude",
-                  "registrationOrder": 9
+                  "vocab": {
+                    "module": "oada",
+                    "term": "altitude",
+                    "registrationOrder": 9
+                  }
                 },
                 "geohash": {
                   "description": "A geohash is a base 32 encoded string which represents the combination of latitude and longitude into a single number which, in general, has a property such that points close in number are close on the globe.",
                   "type": "string",
                   "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]+$",
                   "id": "oada-formats://vocab/oada/geohash",
-                  "registrationOrder": 6
+                  "vocab": {
+                    "module": "oada",
+                    "term": "geohash",
+                    "registrationOrder": 6
+                  }
                 }
               },
-              "registrationOrder": 11
+              "vocab": {
+                "module": "oada",
+                "term": "location",
+                "registrationOrder": 11
+              }
             },
             "template": {
               "description": "template sits inside a data point and gives the name of a template (key in the templates object) which serves as prototype for a given data point.  The full data point is the merge of that template object with the data point, with the data point taking precedence in key collisions. This is a string because its value is the key in templates, not the template itself.",
               "type": "string",
               "id": "oada-formats://vocab/oada/template",
-              "registrationOrder": 12
+              "vocab": {
+                "module": "oada",
+                "term": "template",
+                "registrationOrder": 12
+              }
             },
             "datum": {
               "description": "datum describes the model of the earth used for GPS coordinates.  It can be from a set of known strings, or an EPSG model from http://spatialreference.org",
@@ -3642,7 +5178,11 @@ module.exports = {
                 }
               ],
               "id": "oada-formats://vocab/oada/datum",
-              "registrationOrder": 10
+              "vocab": {
+                "module": "oada",
+                "term": "datum",
+                "registrationOrder": 10
+              }
             },
             "moisture": {
               "description": "moisture is a data type which holds a reading of the amount of moisture in a crop. It is typically in units of % water (%H2O).",
@@ -3663,7 +5203,11 @@ module.exports = {
                   "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                   "type": "string",
                   "id": "oada-formats://vocab/oada/units",
-                  "registrationOrder": 1
+                  "vocab": {
+                    "module": "oada",
+                    "term": "units",
+                    "registrationOrder": 1
+                  }
                 },
                 "value": {
                   "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -3679,28 +5223,48 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/value",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "oada",
+                    "term": "value",
+                    "registrationOrder": 0
+                  }
                 },
                 "sum": {
                   "description": "sum represents a sum of numbers.  Used in a stats object.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum",
-                  "registrationOrder": 2
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum",
+                    "registrationOrder": 2
+                  }
                 },
                 "count": {
                   "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/count",
-                  "registrationOrder": 3
+                  "vocab": {
+                    "module": "oada",
+                    "term": "count",
+                    "registrationOrder": 3
+                  }
                 },
                 "sum-of-squares": {
                   "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum-of-squares",
-                  "registrationOrder": 4
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum-of-squares",
+                    "registrationOrder": 4
+                  }
                 }
               },
-              "registrationOrder": 14
+              "vocab": {
+                "module": "oada",
+                "term": "moisture",
+                "registrationOrder": 14
+              }
             },
             "weight": {
               "description": "weight is a data type which holds a reading of weight, as in bushels, lbs, or kg.",
@@ -3721,7 +5285,11 @@ module.exports = {
                   "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                   "type": "string",
                   "id": "oada-formats://vocab/oada/units",
-                  "registrationOrder": 1
+                  "vocab": {
+                    "module": "oada",
+                    "term": "units",
+                    "registrationOrder": 1
+                  }
                 },
                 "value": {
                   "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -3737,28 +5305,48 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/value",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "oada",
+                    "term": "value",
+                    "registrationOrder": 0
+                  }
                 },
                 "sum": {
                   "description": "sum represents a sum of numbers.  Used in a stats object.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum",
-                  "registrationOrder": 2
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum",
+                    "registrationOrder": 2
+                  }
                 },
                 "count": {
                   "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/count",
-                  "registrationOrder": 3
+                  "vocab": {
+                    "module": "oada",
+                    "term": "count",
+                    "registrationOrder": 3
+                  }
                 },
                 "sum-of-squares": {
                   "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum-of-squares",
-                  "registrationOrder": 4
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum-of-squares",
+                    "registrationOrder": 4
+                  }
                 }
               },
-              "registrationOrder": 15
+              "vocab": {
+                "module": "oada",
+                "term": "weight",
+                "registrationOrder": 15
+              }
             },
             "area": {
               "description": "area is a data type which holds a reading of...area...",
@@ -3779,7 +5367,11 @@ module.exports = {
                   "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                   "type": "string",
                   "id": "oada-formats://vocab/oada/units",
-                  "registrationOrder": 1
+                  "vocab": {
+                    "module": "oada",
+                    "term": "units",
+                    "registrationOrder": 1
+                  }
                 },
                 "value": {
                   "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -3795,28 +5387,48 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/value",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "oada",
+                    "term": "value",
+                    "registrationOrder": 0
+                  }
                 },
                 "sum": {
                   "description": "sum represents a sum of numbers.  Used in a stats object.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum",
-                  "registrationOrder": 2
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum",
+                    "registrationOrder": 2
+                  }
                 },
                 "count": {
                   "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/count",
-                  "registrationOrder": 3
+                  "vocab": {
+                    "module": "oada",
+                    "term": "count",
+                    "registrationOrder": 3
+                  }
                 },
                 "sum-of-squares": {
                   "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum-of-squares",
-                  "registrationOrder": 4
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum-of-squares",
+                    "registrationOrder": 4
+                  }
                 }
               },
-              "registrationOrder": 16
+              "vocab": {
+                "module": "oada",
+                "term": "area",
+                "registrationOrder": 16
+              }
             },
             "time": {
               "description": "time is a data type which holds a reading of...time...",
@@ -3837,7 +5449,11 @@ module.exports = {
                   "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                   "type": "string",
                   "id": "oada-formats://vocab/oada/units",
-                  "registrationOrder": 1
+                  "vocab": {
+                    "module": "oada",
+                    "term": "units",
+                    "registrationOrder": 1
+                  }
                 },
                 "value": {
                   "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -3853,28 +5469,48 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/value",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "oada",
+                    "term": "value",
+                    "registrationOrder": 0
+                  }
                 },
                 "sum": {
                   "description": "sum represents a sum of numbers.  Used in a stats object.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum",
-                  "registrationOrder": 2
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum",
+                    "registrationOrder": 2
+                  }
                 },
                 "count": {
                   "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/count",
-                  "registrationOrder": 3
+                  "vocab": {
+                    "module": "oada",
+                    "term": "count",
+                    "registrationOrder": 3
+                  }
                 },
                 "sum-of-squares": {
                   "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum-of-squares",
-                  "registrationOrder": 4
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum-of-squares",
+                    "registrationOrder": 4
+                  }
                 }
               },
-              "registrationOrder": 18,
+              "vocab": {
+                "module": "oada",
+                "term": "time",
+                "registrationOrder": 18
+              },
               "units": {
                 "known": [
                   "unix-timestamp",
@@ -3892,10 +5528,18 @@ module.exports = {
                 "wheat"
               ],
               "id": "oada-formats://vocab/oada/crop-type",
-              "registrationOrder": 19
+              "vocab": {
+                "module": "oada",
+                "term": "crop-type",
+                "registrationOrder": 19
+              }
             }
           },
-          "registrationOrder": 20
+          "vocab": {
+            "module": "oada",
+            "term": "data-point",
+            "registrationOrder": 20
+          }
         },
         "id": "oada-formats://vocab/oada/data",
         "patternProperties": {
@@ -3921,7 +5565,11 @@ module.exports = {
                 "description": "id (note this is NOT \"_id\") can be used to identify a particular data point, perhaps across documents which simply re-index the same data.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/id",
-                "registrationOrder": 5
+                "vocab": {
+                  "module": "oada",
+                  "term": "id",
+                  "registrationOrder": 5
+                }
               },
               "location": {
                 "description": "location represents a point in space, usually a GPS coordinate or geohash",
@@ -3976,41 +5624,69 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/datum",
-                    "registrationOrder": 10
+                    "vocab": {
+                      "module": "oada",
+                      "term": "datum",
+                      "registrationOrder": 10
+                    }
                   },
                   "latitude": {
                     "description": "latitude is a number",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/latitude",
-                    "registrationOrder": 7
+                    "vocab": {
+                      "module": "oada",
+                      "term": "latitude",
+                      "registrationOrder": 7
+                    }
                   },
                   "longitude": {
                     "description": "longitude is a number",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/longitude",
-                    "registrationOrder": 8
+                    "vocab": {
+                      "module": "oada",
+                      "term": "longitude",
+                      "registrationOrder": 8
+                    }
                   },
                   "altitude": {
                     "description": "altitude is a number",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/altitude",
-                    "registrationOrder": 9
+                    "vocab": {
+                      "module": "oada",
+                      "term": "altitude",
+                      "registrationOrder": 9
+                    }
                   },
                   "geohash": {
                     "description": "A geohash is a base 32 encoded string which represents the combination of latitude and longitude into a single number which, in general, has a property such that points close in number are close on the globe.",
                     "type": "string",
                     "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]+$",
                     "id": "oada-formats://vocab/oada/geohash",
-                    "registrationOrder": 6
+                    "vocab": {
+                      "module": "oada",
+                      "term": "geohash",
+                      "registrationOrder": 6
+                    }
                   }
                 },
-                "registrationOrder": 11
+                "vocab": {
+                  "module": "oada",
+                  "term": "location",
+                  "registrationOrder": 11
+                }
               },
               "template": {
                 "description": "template sits inside a data point and gives the name of a template (key in the templates object) which serves as prototype for a given data point.  The full data point is the merge of that template object with the data point, with the data point taking precedence in key collisions. This is a string because its value is the key in templates, not the template itself.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/template",
-                "registrationOrder": 12
+                "vocab": {
+                  "module": "oada",
+                  "term": "template",
+                  "registrationOrder": 12
+                }
               },
               "datum": {
                 "description": "datum describes the model of the earth used for GPS coordinates.  It can be from a set of known strings, or an EPSG model from http://spatialreference.org",
@@ -4050,7 +5726,11 @@ module.exports = {
                   }
                 ],
                 "id": "oada-formats://vocab/oada/datum",
-                "registrationOrder": 10
+                "vocab": {
+                  "module": "oada",
+                  "term": "datum",
+                  "registrationOrder": 10
+                }
               },
               "moisture": {
                 "description": "moisture is a data type which holds a reading of the amount of moisture in a crop. It is typically in units of % water (%H2O).",
@@ -4071,7 +5751,11 @@ module.exports = {
                     "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/units",
-                    "registrationOrder": 1
+                    "vocab": {
+                      "module": "oada",
+                      "term": "units",
+                      "registrationOrder": 1
+                    }
                   },
                   "value": {
                     "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -4087,28 +5771,48 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/value",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "oada",
+                      "term": "value",
+                      "registrationOrder": 0
+                    }
                   },
                   "sum": {
                     "description": "sum represents a sum of numbers.  Used in a stats object.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum",
-                    "registrationOrder": 2
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum",
+                      "registrationOrder": 2
+                    }
                   },
                   "count": {
                     "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/count",
-                    "registrationOrder": 3
+                    "vocab": {
+                      "module": "oada",
+                      "term": "count",
+                      "registrationOrder": 3
+                    }
                   },
                   "sum-of-squares": {
                     "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum-of-squares",
-                    "registrationOrder": 4
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum-of-squares",
+                      "registrationOrder": 4
+                    }
                   }
                 },
-                "registrationOrder": 14
+                "vocab": {
+                  "module": "oada",
+                  "term": "moisture",
+                  "registrationOrder": 14
+                }
               },
               "weight": {
                 "description": "weight is a data type which holds a reading of weight, as in bushels, lbs, or kg.",
@@ -4129,7 +5833,11 @@ module.exports = {
                     "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/units",
-                    "registrationOrder": 1
+                    "vocab": {
+                      "module": "oada",
+                      "term": "units",
+                      "registrationOrder": 1
+                    }
                   },
                   "value": {
                     "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -4145,28 +5853,48 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/value",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "oada",
+                      "term": "value",
+                      "registrationOrder": 0
+                    }
                   },
                   "sum": {
                     "description": "sum represents a sum of numbers.  Used in a stats object.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum",
-                    "registrationOrder": 2
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum",
+                      "registrationOrder": 2
+                    }
                   },
                   "count": {
                     "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/count",
-                    "registrationOrder": 3
+                    "vocab": {
+                      "module": "oada",
+                      "term": "count",
+                      "registrationOrder": 3
+                    }
                   },
                   "sum-of-squares": {
                     "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum-of-squares",
-                    "registrationOrder": 4
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum-of-squares",
+                      "registrationOrder": 4
+                    }
                   }
                 },
-                "registrationOrder": 15
+                "vocab": {
+                  "module": "oada",
+                  "term": "weight",
+                  "registrationOrder": 15
+                }
               },
               "area": {
                 "description": "area is a data type which holds a reading of...area...",
@@ -4187,7 +5915,11 @@ module.exports = {
                     "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/units",
-                    "registrationOrder": 1
+                    "vocab": {
+                      "module": "oada",
+                      "term": "units",
+                      "registrationOrder": 1
+                    }
                   },
                   "value": {
                     "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -4203,28 +5935,48 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/value",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "oada",
+                      "term": "value",
+                      "registrationOrder": 0
+                    }
                   },
                   "sum": {
                     "description": "sum represents a sum of numbers.  Used in a stats object.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum",
-                    "registrationOrder": 2
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum",
+                      "registrationOrder": 2
+                    }
                   },
                   "count": {
                     "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/count",
-                    "registrationOrder": 3
+                    "vocab": {
+                      "module": "oada",
+                      "term": "count",
+                      "registrationOrder": 3
+                    }
                   },
                   "sum-of-squares": {
                     "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum-of-squares",
-                    "registrationOrder": 4
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum-of-squares",
+                      "registrationOrder": 4
+                    }
                   }
                 },
-                "registrationOrder": 16
+                "vocab": {
+                  "module": "oada",
+                  "term": "area",
+                  "registrationOrder": 16
+                }
               },
               "time": {
                 "description": "time is a data type which holds a reading of...time...",
@@ -4245,7 +5997,11 @@ module.exports = {
                     "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/units",
-                    "registrationOrder": 1
+                    "vocab": {
+                      "module": "oada",
+                      "term": "units",
+                      "registrationOrder": 1
+                    }
                   },
                   "value": {
                     "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -4261,28 +6017,48 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/value",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "oada",
+                      "term": "value",
+                      "registrationOrder": 0
+                    }
                   },
                   "sum": {
                     "description": "sum represents a sum of numbers.  Used in a stats object.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum",
-                    "registrationOrder": 2
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum",
+                      "registrationOrder": 2
+                    }
                   },
                   "count": {
                     "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/count",
-                    "registrationOrder": 3
+                    "vocab": {
+                      "module": "oada",
+                      "term": "count",
+                      "registrationOrder": 3
+                    }
                   },
                   "sum-of-squares": {
                     "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum-of-squares",
-                    "registrationOrder": 4
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum-of-squares",
+                      "registrationOrder": 4
+                    }
                   }
                 },
-                "registrationOrder": 18,
+                "vocab": {
+                  "module": "oada",
+                  "term": "time",
+                  "registrationOrder": 18
+                },
                 "units": {
                   "known": [
                     "unix-timestamp",
@@ -4300,13 +6076,25 @@ module.exports = {
                   "wheat"
                 ],
                 "id": "oada-formats://vocab/oada/crop-type",
-                "registrationOrder": 19
+                "vocab": {
+                  "module": "oada",
+                  "term": "crop-type",
+                  "registrationOrder": 19
+                }
               }
             },
-            "registrationOrder": 20
+            "vocab": {
+              "module": "oada",
+              "term": "data-point",
+              "registrationOrder": 20
+            }
           }
         },
-        "registrationOrder": 22
+        "vocab": {
+          "module": "oada",
+          "term": "data",
+          "registrationOrder": 22
+        }
       },
       "templates": {
         "description": "templates is a general key for holding a collection of data points indexed by random strings.  Templates serve as prototypes for data points under \"data\" keys. If you have a piece of information that exists is all or almost all of the data points in a particular group of points, you can put the repeated things in templates and then just put the name of the template into the data point.  The full data point is therefore a merge of the template object and the data point itself, with the data point overruling when there are any keys that exist in both objects.  Schema is therefore identical to \"data\".",
@@ -4337,7 +6125,11 @@ module.exports = {
               "description": "id (note this is NOT \"_id\") can be used to identify a particular data point, perhaps across documents which simply re-index the same data.",
               "type": "string",
               "id": "oada-formats://vocab/oada/id",
-              "registrationOrder": 5
+              "vocab": {
+                "module": "oada",
+                "term": "id",
+                "registrationOrder": 5
+              }
             },
             "location": {
               "description": "location represents a point in space, usually a GPS coordinate or geohash",
@@ -4392,41 +6184,69 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/datum",
-                  "registrationOrder": 10
+                  "vocab": {
+                    "module": "oada",
+                    "term": "datum",
+                    "registrationOrder": 10
+                  }
                 },
                 "latitude": {
                   "description": "latitude is a number",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/latitude",
-                  "registrationOrder": 7
+                  "vocab": {
+                    "module": "oada",
+                    "term": "latitude",
+                    "registrationOrder": 7
+                  }
                 },
                 "longitude": {
                   "description": "longitude is a number",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/longitude",
-                  "registrationOrder": 8
+                  "vocab": {
+                    "module": "oada",
+                    "term": "longitude",
+                    "registrationOrder": 8
+                  }
                 },
                 "altitude": {
                   "description": "altitude is a number",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/altitude",
-                  "registrationOrder": 9
+                  "vocab": {
+                    "module": "oada",
+                    "term": "altitude",
+                    "registrationOrder": 9
+                  }
                 },
                 "geohash": {
                   "description": "A geohash is a base 32 encoded string which represents the combination of latitude and longitude into a single number which, in general, has a property such that points close in number are close on the globe.",
                   "type": "string",
                   "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]+$",
                   "id": "oada-formats://vocab/oada/geohash",
-                  "registrationOrder": 6
+                  "vocab": {
+                    "module": "oada",
+                    "term": "geohash",
+                    "registrationOrder": 6
+                  }
                 }
               },
-              "registrationOrder": 11
+              "vocab": {
+                "module": "oada",
+                "term": "location",
+                "registrationOrder": 11
+              }
             },
             "template": {
               "description": "template sits inside a data point and gives the name of a template (key in the templates object) which serves as prototype for a given data point.  The full data point is the merge of that template object with the data point, with the data point taking precedence in key collisions. This is a string because its value is the key in templates, not the template itself.",
               "type": "string",
               "id": "oada-formats://vocab/oada/template",
-              "registrationOrder": 12
+              "vocab": {
+                "module": "oada",
+                "term": "template",
+                "registrationOrder": 12
+              }
             },
             "datum": {
               "description": "datum describes the model of the earth used for GPS coordinates.  It can be from a set of known strings, or an EPSG model from http://spatialreference.org",
@@ -4466,7 +6286,11 @@ module.exports = {
                 }
               ],
               "id": "oada-formats://vocab/oada/datum",
-              "registrationOrder": 10
+              "vocab": {
+                "module": "oada",
+                "term": "datum",
+                "registrationOrder": 10
+              }
             },
             "moisture": {
               "description": "moisture is a data type which holds a reading of the amount of moisture in a crop. It is typically in units of % water (%H2O).",
@@ -4487,7 +6311,11 @@ module.exports = {
                   "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                   "type": "string",
                   "id": "oada-formats://vocab/oada/units",
-                  "registrationOrder": 1
+                  "vocab": {
+                    "module": "oada",
+                    "term": "units",
+                    "registrationOrder": 1
+                  }
                 },
                 "value": {
                   "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -4503,28 +6331,48 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/value",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "oada",
+                    "term": "value",
+                    "registrationOrder": 0
+                  }
                 },
                 "sum": {
                   "description": "sum represents a sum of numbers.  Used in a stats object.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum",
-                  "registrationOrder": 2
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum",
+                    "registrationOrder": 2
+                  }
                 },
                 "count": {
                   "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/count",
-                  "registrationOrder": 3
+                  "vocab": {
+                    "module": "oada",
+                    "term": "count",
+                    "registrationOrder": 3
+                  }
                 },
                 "sum-of-squares": {
                   "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum-of-squares",
-                  "registrationOrder": 4
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum-of-squares",
+                    "registrationOrder": 4
+                  }
                 }
               },
-              "registrationOrder": 14
+              "vocab": {
+                "module": "oada",
+                "term": "moisture",
+                "registrationOrder": 14
+              }
             },
             "weight": {
               "description": "weight is a data type which holds a reading of weight, as in bushels, lbs, or kg.",
@@ -4545,7 +6393,11 @@ module.exports = {
                   "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                   "type": "string",
                   "id": "oada-formats://vocab/oada/units",
-                  "registrationOrder": 1
+                  "vocab": {
+                    "module": "oada",
+                    "term": "units",
+                    "registrationOrder": 1
+                  }
                 },
                 "value": {
                   "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -4561,28 +6413,48 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/value",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "oada",
+                    "term": "value",
+                    "registrationOrder": 0
+                  }
                 },
                 "sum": {
                   "description": "sum represents a sum of numbers.  Used in a stats object.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum",
-                  "registrationOrder": 2
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum",
+                    "registrationOrder": 2
+                  }
                 },
                 "count": {
                   "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/count",
-                  "registrationOrder": 3
+                  "vocab": {
+                    "module": "oada",
+                    "term": "count",
+                    "registrationOrder": 3
+                  }
                 },
                 "sum-of-squares": {
                   "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum-of-squares",
-                  "registrationOrder": 4
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum-of-squares",
+                    "registrationOrder": 4
+                  }
                 }
               },
-              "registrationOrder": 15
+              "vocab": {
+                "module": "oada",
+                "term": "weight",
+                "registrationOrder": 15
+              }
             },
             "area": {
               "description": "area is a data type which holds a reading of...area...",
@@ -4603,7 +6475,11 @@ module.exports = {
                   "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                   "type": "string",
                   "id": "oada-formats://vocab/oada/units",
-                  "registrationOrder": 1
+                  "vocab": {
+                    "module": "oada",
+                    "term": "units",
+                    "registrationOrder": 1
+                  }
                 },
                 "value": {
                   "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -4619,28 +6495,48 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/value",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "oada",
+                    "term": "value",
+                    "registrationOrder": 0
+                  }
                 },
                 "sum": {
                   "description": "sum represents a sum of numbers.  Used in a stats object.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum",
-                  "registrationOrder": 2
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum",
+                    "registrationOrder": 2
+                  }
                 },
                 "count": {
                   "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/count",
-                  "registrationOrder": 3
+                  "vocab": {
+                    "module": "oada",
+                    "term": "count",
+                    "registrationOrder": 3
+                  }
                 },
                 "sum-of-squares": {
                   "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum-of-squares",
-                  "registrationOrder": 4
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum-of-squares",
+                    "registrationOrder": 4
+                  }
                 }
               },
-              "registrationOrder": 16
+              "vocab": {
+                "module": "oada",
+                "term": "area",
+                "registrationOrder": 16
+              }
             },
             "time": {
               "description": "time is a data type which holds a reading of...time...",
@@ -4661,7 +6557,11 @@ module.exports = {
                   "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                   "type": "string",
                   "id": "oada-formats://vocab/oada/units",
-                  "registrationOrder": 1
+                  "vocab": {
+                    "module": "oada",
+                    "term": "units",
+                    "registrationOrder": 1
+                  }
                 },
                 "value": {
                   "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -4677,28 +6577,48 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/value",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "oada",
+                    "term": "value",
+                    "registrationOrder": 0
+                  }
                 },
                 "sum": {
                   "description": "sum represents a sum of numbers.  Used in a stats object.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum",
-                  "registrationOrder": 2
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum",
+                    "registrationOrder": 2
+                  }
                 },
                 "count": {
                   "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/count",
-                  "registrationOrder": 3
+                  "vocab": {
+                    "module": "oada",
+                    "term": "count",
+                    "registrationOrder": 3
+                  }
                 },
                 "sum-of-squares": {
                   "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum-of-squares",
-                  "registrationOrder": 4
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum-of-squares",
+                    "registrationOrder": 4
+                  }
                 }
               },
-              "registrationOrder": 18,
+              "vocab": {
+                "module": "oada",
+                "term": "time",
+                "registrationOrder": 18
+              },
               "units": {
                 "known": [
                   "unix-timestamp",
@@ -4716,10 +6636,18 @@ module.exports = {
                 "wheat"
               ],
               "id": "oada-formats://vocab/oada/crop-type",
-              "registrationOrder": 19
+              "vocab": {
+                "module": "oada",
+                "term": "crop-type",
+                "registrationOrder": 19
+              }
             }
           },
-          "registrationOrder": 20
+          "vocab": {
+            "module": "oada",
+            "term": "data-point",
+            "registrationOrder": 20
+          }
         },
         "id": "oada-formats://vocab/oada/data",
         "patternProperties": {
@@ -4745,7 +6673,11 @@ module.exports = {
                 "description": "id (note this is NOT \"_id\") can be used to identify a particular data point, perhaps across documents which simply re-index the same data.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/id",
-                "registrationOrder": 5
+                "vocab": {
+                  "module": "oada",
+                  "term": "id",
+                  "registrationOrder": 5
+                }
               },
               "location": {
                 "description": "location represents a point in space, usually a GPS coordinate or geohash",
@@ -4800,41 +6732,69 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/datum",
-                    "registrationOrder": 10
+                    "vocab": {
+                      "module": "oada",
+                      "term": "datum",
+                      "registrationOrder": 10
+                    }
                   },
                   "latitude": {
                     "description": "latitude is a number",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/latitude",
-                    "registrationOrder": 7
+                    "vocab": {
+                      "module": "oada",
+                      "term": "latitude",
+                      "registrationOrder": 7
+                    }
                   },
                   "longitude": {
                     "description": "longitude is a number",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/longitude",
-                    "registrationOrder": 8
+                    "vocab": {
+                      "module": "oada",
+                      "term": "longitude",
+                      "registrationOrder": 8
+                    }
                   },
                   "altitude": {
                     "description": "altitude is a number",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/altitude",
-                    "registrationOrder": 9
+                    "vocab": {
+                      "module": "oada",
+                      "term": "altitude",
+                      "registrationOrder": 9
+                    }
                   },
                   "geohash": {
                     "description": "A geohash is a base 32 encoded string which represents the combination of latitude and longitude into a single number which, in general, has a property such that points close in number are close on the globe.",
                     "type": "string",
                     "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]+$",
                     "id": "oada-formats://vocab/oada/geohash",
-                    "registrationOrder": 6
+                    "vocab": {
+                      "module": "oada",
+                      "term": "geohash",
+                      "registrationOrder": 6
+                    }
                   }
                 },
-                "registrationOrder": 11
+                "vocab": {
+                  "module": "oada",
+                  "term": "location",
+                  "registrationOrder": 11
+                }
               },
               "template": {
                 "description": "template sits inside a data point and gives the name of a template (key in the templates object) which serves as prototype for a given data point.  The full data point is the merge of that template object with the data point, with the data point taking precedence in key collisions. This is a string because its value is the key in templates, not the template itself.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/template",
-                "registrationOrder": 12
+                "vocab": {
+                  "module": "oada",
+                  "term": "template",
+                  "registrationOrder": 12
+                }
               },
               "datum": {
                 "description": "datum describes the model of the earth used for GPS coordinates.  It can be from a set of known strings, or an EPSG model from http://spatialreference.org",
@@ -4874,7 +6834,11 @@ module.exports = {
                   }
                 ],
                 "id": "oada-formats://vocab/oada/datum",
-                "registrationOrder": 10
+                "vocab": {
+                  "module": "oada",
+                  "term": "datum",
+                  "registrationOrder": 10
+                }
               },
               "moisture": {
                 "description": "moisture is a data type which holds a reading of the amount of moisture in a crop. It is typically in units of % water (%H2O).",
@@ -4895,7 +6859,11 @@ module.exports = {
                     "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/units",
-                    "registrationOrder": 1
+                    "vocab": {
+                      "module": "oada",
+                      "term": "units",
+                      "registrationOrder": 1
+                    }
                   },
                   "value": {
                     "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -4911,28 +6879,48 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/value",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "oada",
+                      "term": "value",
+                      "registrationOrder": 0
+                    }
                   },
                   "sum": {
                     "description": "sum represents a sum of numbers.  Used in a stats object.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum",
-                    "registrationOrder": 2
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum",
+                      "registrationOrder": 2
+                    }
                   },
                   "count": {
                     "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/count",
-                    "registrationOrder": 3
+                    "vocab": {
+                      "module": "oada",
+                      "term": "count",
+                      "registrationOrder": 3
+                    }
                   },
                   "sum-of-squares": {
                     "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum-of-squares",
-                    "registrationOrder": 4
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum-of-squares",
+                      "registrationOrder": 4
+                    }
                   }
                 },
-                "registrationOrder": 14
+                "vocab": {
+                  "module": "oada",
+                  "term": "moisture",
+                  "registrationOrder": 14
+                }
               },
               "weight": {
                 "description": "weight is a data type which holds a reading of weight, as in bushels, lbs, or kg.",
@@ -4953,7 +6941,11 @@ module.exports = {
                     "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/units",
-                    "registrationOrder": 1
+                    "vocab": {
+                      "module": "oada",
+                      "term": "units",
+                      "registrationOrder": 1
+                    }
                   },
                   "value": {
                     "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -4969,28 +6961,48 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/value",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "oada",
+                      "term": "value",
+                      "registrationOrder": 0
+                    }
                   },
                   "sum": {
                     "description": "sum represents a sum of numbers.  Used in a stats object.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum",
-                    "registrationOrder": 2
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum",
+                      "registrationOrder": 2
+                    }
                   },
                   "count": {
                     "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/count",
-                    "registrationOrder": 3
+                    "vocab": {
+                      "module": "oada",
+                      "term": "count",
+                      "registrationOrder": 3
+                    }
                   },
                   "sum-of-squares": {
                     "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum-of-squares",
-                    "registrationOrder": 4
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum-of-squares",
+                      "registrationOrder": 4
+                    }
                   }
                 },
-                "registrationOrder": 15
+                "vocab": {
+                  "module": "oada",
+                  "term": "weight",
+                  "registrationOrder": 15
+                }
               },
               "area": {
                 "description": "area is a data type which holds a reading of...area...",
@@ -5011,7 +7023,11 @@ module.exports = {
                     "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/units",
-                    "registrationOrder": 1
+                    "vocab": {
+                      "module": "oada",
+                      "term": "units",
+                      "registrationOrder": 1
+                    }
                   },
                   "value": {
                     "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -5027,28 +7043,48 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/value",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "oada",
+                      "term": "value",
+                      "registrationOrder": 0
+                    }
                   },
                   "sum": {
                     "description": "sum represents a sum of numbers.  Used in a stats object.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum",
-                    "registrationOrder": 2
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum",
+                      "registrationOrder": 2
+                    }
                   },
                   "count": {
                     "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/count",
-                    "registrationOrder": 3
+                    "vocab": {
+                      "module": "oada",
+                      "term": "count",
+                      "registrationOrder": 3
+                    }
                   },
                   "sum-of-squares": {
                     "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum-of-squares",
-                    "registrationOrder": 4
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum-of-squares",
+                      "registrationOrder": 4
+                    }
                   }
                 },
-                "registrationOrder": 16
+                "vocab": {
+                  "module": "oada",
+                  "term": "area",
+                  "registrationOrder": 16
+                }
               },
               "time": {
                 "description": "time is a data type which holds a reading of...time...",
@@ -5069,7 +7105,11 @@ module.exports = {
                     "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/units",
-                    "registrationOrder": 1
+                    "vocab": {
+                      "module": "oada",
+                      "term": "units",
+                      "registrationOrder": 1
+                    }
                   },
                   "value": {
                     "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -5085,28 +7125,48 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/value",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "oada",
+                      "term": "value",
+                      "registrationOrder": 0
+                    }
                   },
                   "sum": {
                     "description": "sum represents a sum of numbers.  Used in a stats object.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum",
-                    "registrationOrder": 2
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum",
+                      "registrationOrder": 2
+                    }
                   },
                   "count": {
                     "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/count",
-                    "registrationOrder": 3
+                    "vocab": {
+                      "module": "oada",
+                      "term": "count",
+                      "registrationOrder": 3
+                    }
                   },
                   "sum-of-squares": {
                     "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum-of-squares",
-                    "registrationOrder": 4
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum-of-squares",
+                      "registrationOrder": 4
+                    }
                   }
                 },
-                "registrationOrder": 18,
+                "vocab": {
+                  "module": "oada",
+                  "term": "time",
+                  "registrationOrder": 18
+                },
                 "units": {
                   "known": [
                     "unix-timestamp",
@@ -5124,13 +7184,25 @@ module.exports = {
                   "wheat"
                 ],
                 "id": "oada-formats://vocab/oada/crop-type",
-                "registrationOrder": 19
+                "vocab": {
+                  "module": "oada",
+                  "term": "crop-type",
+                  "registrationOrder": 19
+                }
               }
             },
-            "registrationOrder": 20
+            "vocab": {
+              "module": "oada",
+              "term": "data-point",
+              "registrationOrder": 20
+            }
           }
         },
-        "registrationOrder": 23
+        "vocab": {
+          "module": "oada",
+          "term": "templates",
+          "registrationOrder": 23
+        }
       },
       "geohash-data": {
         "description": "geohash-data is much like \"geohash-index\" except that the geohash strings in geohashes are links to resources, whereas in geohash-data the geohash strings are actual data points representing data values for that geohash.  This is used primarily in tiled-maps.  The allowable values are the same as the values under \"data\"",
@@ -5140,7 +7212,11 @@ module.exports = {
           "type": "string",
           "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]+$",
           "id": "oada-formats://vocab/oada/geohash",
-          "registrationOrder": 6
+          "vocab": {
+            "module": "oada",
+            "term": "geohash",
+            "registrationOrder": 6
+          }
         },
         "propertySchemaDefault": {
           "description": "data-point never appears as a word in any document or URL.  It is a general type of object that can hold any type of data.  It represents the type of object that can sit under \"data\" or \"templates\".",
@@ -5164,7 +7240,11 @@ module.exports = {
               "description": "id (note this is NOT \"_id\") can be used to identify a particular data point, perhaps across documents which simply re-index the same data.",
               "type": "string",
               "id": "oada-formats://vocab/oada/id",
-              "registrationOrder": 5
+              "vocab": {
+                "module": "oada",
+                "term": "id",
+                "registrationOrder": 5
+              }
             },
             "location": {
               "description": "location represents a point in space, usually a GPS coordinate or geohash",
@@ -5219,41 +7299,69 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/datum",
-                  "registrationOrder": 10
+                  "vocab": {
+                    "module": "oada",
+                    "term": "datum",
+                    "registrationOrder": 10
+                  }
                 },
                 "latitude": {
                   "description": "latitude is a number",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/latitude",
-                  "registrationOrder": 7
+                  "vocab": {
+                    "module": "oada",
+                    "term": "latitude",
+                    "registrationOrder": 7
+                  }
                 },
                 "longitude": {
                   "description": "longitude is a number",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/longitude",
-                  "registrationOrder": 8
+                  "vocab": {
+                    "module": "oada",
+                    "term": "longitude",
+                    "registrationOrder": 8
+                  }
                 },
                 "altitude": {
                   "description": "altitude is a number",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/altitude",
-                  "registrationOrder": 9
+                  "vocab": {
+                    "module": "oada",
+                    "term": "altitude",
+                    "registrationOrder": 9
+                  }
                 },
                 "geohash": {
                   "description": "A geohash is a base 32 encoded string which represents the combination of latitude and longitude into a single number which, in general, has a property such that points close in number are close on the globe.",
                   "type": "string",
                   "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]+$",
                   "id": "oada-formats://vocab/oada/geohash",
-                  "registrationOrder": 6
+                  "vocab": {
+                    "module": "oada",
+                    "term": "geohash",
+                    "registrationOrder": 6
+                  }
                 }
               },
-              "registrationOrder": 11
+              "vocab": {
+                "module": "oada",
+                "term": "location",
+                "registrationOrder": 11
+              }
             },
             "template": {
               "description": "template sits inside a data point and gives the name of a template (key in the templates object) which serves as prototype for a given data point.  The full data point is the merge of that template object with the data point, with the data point taking precedence in key collisions. This is a string because its value is the key in templates, not the template itself.",
               "type": "string",
               "id": "oada-formats://vocab/oada/template",
-              "registrationOrder": 12
+              "vocab": {
+                "module": "oada",
+                "term": "template",
+                "registrationOrder": 12
+              }
             },
             "datum": {
               "description": "datum describes the model of the earth used for GPS coordinates.  It can be from a set of known strings, or an EPSG model from http://spatialreference.org",
@@ -5293,7 +7401,11 @@ module.exports = {
                 }
               ],
               "id": "oada-formats://vocab/oada/datum",
-              "registrationOrder": 10
+              "vocab": {
+                "module": "oada",
+                "term": "datum",
+                "registrationOrder": 10
+              }
             },
             "moisture": {
               "description": "moisture is a data type which holds a reading of the amount of moisture in a crop. It is typically in units of % water (%H2O).",
@@ -5314,7 +7426,11 @@ module.exports = {
                   "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                   "type": "string",
                   "id": "oada-formats://vocab/oada/units",
-                  "registrationOrder": 1
+                  "vocab": {
+                    "module": "oada",
+                    "term": "units",
+                    "registrationOrder": 1
+                  }
                 },
                 "value": {
                   "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -5330,28 +7446,48 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/value",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "oada",
+                    "term": "value",
+                    "registrationOrder": 0
+                  }
                 },
                 "sum": {
                   "description": "sum represents a sum of numbers.  Used in a stats object.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum",
-                  "registrationOrder": 2
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum",
+                    "registrationOrder": 2
+                  }
                 },
                 "count": {
                   "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/count",
-                  "registrationOrder": 3
+                  "vocab": {
+                    "module": "oada",
+                    "term": "count",
+                    "registrationOrder": 3
+                  }
                 },
                 "sum-of-squares": {
                   "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum-of-squares",
-                  "registrationOrder": 4
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum-of-squares",
+                    "registrationOrder": 4
+                  }
                 }
               },
-              "registrationOrder": 14
+              "vocab": {
+                "module": "oada",
+                "term": "moisture",
+                "registrationOrder": 14
+              }
             },
             "weight": {
               "description": "weight is a data type which holds a reading of weight, as in bushels, lbs, or kg.",
@@ -5372,7 +7508,11 @@ module.exports = {
                   "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                   "type": "string",
                   "id": "oada-formats://vocab/oada/units",
-                  "registrationOrder": 1
+                  "vocab": {
+                    "module": "oada",
+                    "term": "units",
+                    "registrationOrder": 1
+                  }
                 },
                 "value": {
                   "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -5388,28 +7528,48 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/value",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "oada",
+                    "term": "value",
+                    "registrationOrder": 0
+                  }
                 },
                 "sum": {
                   "description": "sum represents a sum of numbers.  Used in a stats object.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum",
-                  "registrationOrder": 2
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum",
+                    "registrationOrder": 2
+                  }
                 },
                 "count": {
                   "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/count",
-                  "registrationOrder": 3
+                  "vocab": {
+                    "module": "oada",
+                    "term": "count",
+                    "registrationOrder": 3
+                  }
                 },
                 "sum-of-squares": {
                   "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum-of-squares",
-                  "registrationOrder": 4
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum-of-squares",
+                    "registrationOrder": 4
+                  }
                 }
               },
-              "registrationOrder": 15
+              "vocab": {
+                "module": "oada",
+                "term": "weight",
+                "registrationOrder": 15
+              }
             },
             "area": {
               "description": "area is a data type which holds a reading of...area...",
@@ -5430,7 +7590,11 @@ module.exports = {
                   "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                   "type": "string",
                   "id": "oada-formats://vocab/oada/units",
-                  "registrationOrder": 1
+                  "vocab": {
+                    "module": "oada",
+                    "term": "units",
+                    "registrationOrder": 1
+                  }
                 },
                 "value": {
                   "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -5446,28 +7610,48 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/value",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "oada",
+                    "term": "value",
+                    "registrationOrder": 0
+                  }
                 },
                 "sum": {
                   "description": "sum represents a sum of numbers.  Used in a stats object.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum",
-                  "registrationOrder": 2
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum",
+                    "registrationOrder": 2
+                  }
                 },
                 "count": {
                   "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/count",
-                  "registrationOrder": 3
+                  "vocab": {
+                    "module": "oada",
+                    "term": "count",
+                    "registrationOrder": 3
+                  }
                 },
                 "sum-of-squares": {
                   "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum-of-squares",
-                  "registrationOrder": 4
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum-of-squares",
+                    "registrationOrder": 4
+                  }
                 }
               },
-              "registrationOrder": 16
+              "vocab": {
+                "module": "oada",
+                "term": "area",
+                "registrationOrder": 16
+              }
             },
             "time": {
               "description": "time is a data type which holds a reading of...time...",
@@ -5488,7 +7672,11 @@ module.exports = {
                   "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                   "type": "string",
                   "id": "oada-formats://vocab/oada/units",
-                  "registrationOrder": 1
+                  "vocab": {
+                    "module": "oada",
+                    "term": "units",
+                    "registrationOrder": 1
+                  }
                 },
                 "value": {
                   "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -5504,28 +7692,48 @@ module.exports = {
                     }
                   ],
                   "id": "oada-formats://vocab/oada/value",
-                  "registrationOrder": 0
+                  "vocab": {
+                    "module": "oada",
+                    "term": "value",
+                    "registrationOrder": 0
+                  }
                 },
                 "sum": {
                   "description": "sum represents a sum of numbers.  Used in a stats object.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum",
-                  "registrationOrder": 2
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum",
+                    "registrationOrder": 2
+                  }
                 },
                 "count": {
                   "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/count",
-                  "registrationOrder": 3
+                  "vocab": {
+                    "module": "oada",
+                    "term": "count",
+                    "registrationOrder": 3
+                  }
                 },
                 "sum-of-squares": {
                   "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                   "type": "number",
                   "id": "oada-formats://vocab/oada/sum-of-squares",
-                  "registrationOrder": 4
+                  "vocab": {
+                    "module": "oada",
+                    "term": "sum-of-squares",
+                    "registrationOrder": 4
+                  }
                 }
               },
-              "registrationOrder": 18,
+              "vocab": {
+                "module": "oada",
+                "term": "time",
+                "registrationOrder": 18
+              },
               "units": {
                 "known": [
                   "unix-timestamp",
@@ -5543,10 +7751,18 @@ module.exports = {
                 "wheat"
               ],
               "id": "oada-formats://vocab/oada/crop-type",
-              "registrationOrder": 19
+              "vocab": {
+                "module": "oada",
+                "term": "crop-type",
+                "registrationOrder": 19
+              }
             }
           },
-          "registrationOrder": 20
+          "vocab": {
+            "module": "oada",
+            "term": "data-point",
+            "registrationOrder": 20
+          }
         },
         "id": "oada-formats://vocab/oada/geohash-data",
         "patternProperties": {
@@ -5572,7 +7788,11 @@ module.exports = {
                 "description": "id (note this is NOT \"_id\") can be used to identify a particular data point, perhaps across documents which simply re-index the same data.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/id",
-                "registrationOrder": 5
+                "vocab": {
+                  "module": "oada",
+                  "term": "id",
+                  "registrationOrder": 5
+                }
               },
               "location": {
                 "description": "location represents a point in space, usually a GPS coordinate or geohash",
@@ -5627,41 +7847,69 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/datum",
-                    "registrationOrder": 10
+                    "vocab": {
+                      "module": "oada",
+                      "term": "datum",
+                      "registrationOrder": 10
+                    }
                   },
                   "latitude": {
                     "description": "latitude is a number",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/latitude",
-                    "registrationOrder": 7
+                    "vocab": {
+                      "module": "oada",
+                      "term": "latitude",
+                      "registrationOrder": 7
+                    }
                   },
                   "longitude": {
                     "description": "longitude is a number",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/longitude",
-                    "registrationOrder": 8
+                    "vocab": {
+                      "module": "oada",
+                      "term": "longitude",
+                      "registrationOrder": 8
+                    }
                   },
                   "altitude": {
                     "description": "altitude is a number",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/altitude",
-                    "registrationOrder": 9
+                    "vocab": {
+                      "module": "oada",
+                      "term": "altitude",
+                      "registrationOrder": 9
+                    }
                   },
                   "geohash": {
                     "description": "A geohash is a base 32 encoded string which represents the combination of latitude and longitude into a single number which, in general, has a property such that points close in number are close on the globe.",
                     "type": "string",
                     "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]+$",
                     "id": "oada-formats://vocab/oada/geohash",
-                    "registrationOrder": 6
+                    "vocab": {
+                      "module": "oada",
+                      "term": "geohash",
+                      "registrationOrder": 6
+                    }
                   }
                 },
-                "registrationOrder": 11
+                "vocab": {
+                  "module": "oada",
+                  "term": "location",
+                  "registrationOrder": 11
+                }
               },
               "template": {
                 "description": "template sits inside a data point and gives the name of a template (key in the templates object) which serves as prototype for a given data point.  The full data point is the merge of that template object with the data point, with the data point taking precedence in key collisions. This is a string because its value is the key in templates, not the template itself.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/template",
-                "registrationOrder": 12
+                "vocab": {
+                  "module": "oada",
+                  "term": "template",
+                  "registrationOrder": 12
+                }
               },
               "datum": {
                 "description": "datum describes the model of the earth used for GPS coordinates.  It can be from a set of known strings, or an EPSG model from http://spatialreference.org",
@@ -5701,7 +7949,11 @@ module.exports = {
                   }
                 ],
                 "id": "oada-formats://vocab/oada/datum",
-                "registrationOrder": 10
+                "vocab": {
+                  "module": "oada",
+                  "term": "datum",
+                  "registrationOrder": 10
+                }
               },
               "moisture": {
                 "description": "moisture is a data type which holds a reading of the amount of moisture in a crop. It is typically in units of % water (%H2O).",
@@ -5722,7 +7974,11 @@ module.exports = {
                     "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/units",
-                    "registrationOrder": 1
+                    "vocab": {
+                      "module": "oada",
+                      "term": "units",
+                      "registrationOrder": 1
+                    }
                   },
                   "value": {
                     "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -5738,28 +7994,48 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/value",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "oada",
+                      "term": "value",
+                      "registrationOrder": 0
+                    }
                   },
                   "sum": {
                     "description": "sum represents a sum of numbers.  Used in a stats object.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum",
-                    "registrationOrder": 2
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum",
+                      "registrationOrder": 2
+                    }
                   },
                   "count": {
                     "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/count",
-                    "registrationOrder": 3
+                    "vocab": {
+                      "module": "oada",
+                      "term": "count",
+                      "registrationOrder": 3
+                    }
                   },
                   "sum-of-squares": {
                     "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum-of-squares",
-                    "registrationOrder": 4
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum-of-squares",
+                      "registrationOrder": 4
+                    }
                   }
                 },
-                "registrationOrder": 14
+                "vocab": {
+                  "module": "oada",
+                  "term": "moisture",
+                  "registrationOrder": 14
+                }
               },
               "weight": {
                 "description": "weight is a data type which holds a reading of weight, as in bushels, lbs, or kg.",
@@ -5780,7 +8056,11 @@ module.exports = {
                     "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/units",
-                    "registrationOrder": 1
+                    "vocab": {
+                      "module": "oada",
+                      "term": "units",
+                      "registrationOrder": 1
+                    }
                   },
                   "value": {
                     "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -5796,28 +8076,48 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/value",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "oada",
+                      "term": "value",
+                      "registrationOrder": 0
+                    }
                   },
                   "sum": {
                     "description": "sum represents a sum of numbers.  Used in a stats object.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum",
-                    "registrationOrder": 2
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum",
+                      "registrationOrder": 2
+                    }
                   },
                   "count": {
                     "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/count",
-                    "registrationOrder": 3
+                    "vocab": {
+                      "module": "oada",
+                      "term": "count",
+                      "registrationOrder": 3
+                    }
                   },
                   "sum-of-squares": {
                     "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum-of-squares",
-                    "registrationOrder": 4
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum-of-squares",
+                      "registrationOrder": 4
+                    }
                   }
                 },
-                "registrationOrder": 15
+                "vocab": {
+                  "module": "oada",
+                  "term": "weight",
+                  "registrationOrder": 15
+                }
               },
               "area": {
                 "description": "area is a data type which holds a reading of...area...",
@@ -5838,7 +8138,11 @@ module.exports = {
                     "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/units",
-                    "registrationOrder": 1
+                    "vocab": {
+                      "module": "oada",
+                      "term": "units",
+                      "registrationOrder": 1
+                    }
                   },
                   "value": {
                     "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -5854,28 +8158,48 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/value",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "oada",
+                      "term": "value",
+                      "registrationOrder": 0
+                    }
                   },
                   "sum": {
                     "description": "sum represents a sum of numbers.  Used in a stats object.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum",
-                    "registrationOrder": 2
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum",
+                      "registrationOrder": 2
+                    }
                   },
                   "count": {
                     "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/count",
-                    "registrationOrder": 3
+                    "vocab": {
+                      "module": "oada",
+                      "term": "count",
+                      "registrationOrder": 3
+                    }
                   },
                   "sum-of-squares": {
                     "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum-of-squares",
-                    "registrationOrder": 4
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum-of-squares",
+                      "registrationOrder": 4
+                    }
                   }
                 },
-                "registrationOrder": 16
+                "vocab": {
+                  "module": "oada",
+                  "term": "area",
+                  "registrationOrder": 16
+                }
               },
               "time": {
                 "description": "time is a data type which holds a reading of...time...",
@@ -5896,7 +8220,11 @@ module.exports = {
                     "description": "Known units of things.  Each type of data (below) has its own subset of known units defined.  A generic \"unit\" is just a string.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/units",
-                    "registrationOrder": 1
+                    "vocab": {
+                      "module": "oada",
+                      "term": "units",
+                      "registrationOrder": 1
+                    }
                   },
                   "value": {
                     "description": "value is a key which holds a value for a particular type of data point.  For example, if your data point has an \"area\" key, the value at the \"area\" key is an object with a \"value\" key and a \"units\" key.  Units can be in the template for the data point, too.",
@@ -5912,28 +8240,48 @@ module.exports = {
                       }
                     ],
                     "id": "oada-formats://vocab/oada/value",
-                    "registrationOrder": 0
+                    "vocab": {
+                      "module": "oada",
+                      "term": "value",
+                      "registrationOrder": 0
+                    }
                   },
                   "sum": {
                     "description": "sum represents a sum of numbers.  Used in a stats object.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum",
-                    "registrationOrder": 2
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum",
+                      "registrationOrder": 2
+                    }
                   },
                   "count": {
                     "description": "count represents a count of data point that contribute to a sum or sum-of-squares.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/count",
-                    "registrationOrder": 3
+                    "vocab": {
+                      "module": "oada",
+                      "term": "count",
+                      "registrationOrder": 3
+                    }
                   },
                   "sum-of-squares": {
                     "description": "sum-of-squares means the sum of the squared values of a set of numbers.  Useful for computing a standard deviation.",
                     "type": "number",
                     "id": "oada-formats://vocab/oada/sum-of-squares",
-                    "registrationOrder": 4
+                    "vocab": {
+                      "module": "oada",
+                      "term": "sum-of-squares",
+                      "registrationOrder": 4
+                    }
                   }
                 },
-                "registrationOrder": 18,
+                "vocab": {
+                  "module": "oada",
+                  "term": "time",
+                  "registrationOrder": 18
+                },
                 "units": {
                   "known": [
                     "unix-timestamp",
@@ -5951,38 +8299,66 @@ module.exports = {
                   "wheat"
                 ],
                 "id": "oada-formats://vocab/oada/crop-type",
-                "registrationOrder": 19
+                "vocab": {
+                  "module": "oada",
+                  "term": "crop-type",
+                  "registrationOrder": 19
+                }
               }
             },
-            "registrationOrder": 20
+            "vocab": {
+              "module": "oada",
+              "term": "data-point",
+              "registrationOrder": 20
+            }
           }
         },
-        "registrationOrder": 24
+        "vocab": {
+          "module": "oada",
+          "term": "geohash-data",
+          "registrationOrder": 24
+        }
       },
       "_id": {
         "description": "_id identifies a resource in the OADA API.",
         "type": "string",
         "id": "oada-formats://vocab/oada/_id",
-        "registrationOrder": 25
+        "vocab": {
+          "module": "oada",
+          "term": "_id",
+          "registrationOrder": 25
+        }
       },
       "_metaid": {
         "description": "_metaid is the id of a meta document",
         "type": "string",
         "id": "oada-formats://vocab/oada/_id",
-        "registrationOrder": 26
+        "vocab": {
+          "module": "oada",
+          "term": "_metaid",
+          "registrationOrder": 26
+        }
       },
       "_type": {
         "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
         "type": "string",
         "id": "oada-formats://vocab/oada/_type",
-        "registrationOrder": 27
+        "vocab": {
+          "module": "oada",
+          "term": "_type",
+          "registrationOrder": 27
+        }
       },
       "_rev": {
         "description": "_rev is the revision string for a resource in the OADA API.",
         "type": "string",
         "pattern": "^[0-9]+-.+$",
         "id": "oada-formats://vocab/oada/_rev",
-        "registrationOrder": 28
+        "vocab": {
+          "module": "oada",
+          "term": "_rev",
+          "registrationOrder": 28
+        }
       },
       "meta-versioned-link": {
         "description": "A meta-link is a link specifically to a meta document.  This is just a  convenience term to make it simpler to defind the true versioned and non-versioned links below",
@@ -6005,23 +8381,39 @@ module.exports = {
             "description": "_metaid is the id of a meta document",
             "type": "string",
             "id": "oada-formats://vocab/oada/_id",
-            "registrationOrder": 26
+            "vocab": {
+              "module": "oada",
+              "term": "_metaid",
+              "registrationOrder": 26
+            }
           },
           "_rev": {
             "description": "_rev is the revision string for a resource in the OADA API.",
             "type": "string",
             "pattern": "^[0-9]+-.+$",
             "id": "oada-formats://vocab/oada/_rev",
-            "registrationOrder": 28
+            "vocab": {
+              "module": "oada",
+              "term": "_rev",
+              "registrationOrder": 28
+            }
           },
           "_type": {
             "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
             "type": "string",
             "id": "oada-formats://vocab/oada/_type",
-            "registrationOrder": 27
+            "vocab": {
+              "module": "oada",
+              "term": "_type",
+              "registrationOrder": 27
+            }
           }
         },
-        "registrationOrder": 29
+        "vocab": {
+          "module": "oada",
+          "term": "meta-versioned-link",
+          "registrationOrder": 29
+        }
       },
       "meta-nonversioned-link": {
         "description": "Similar to meta-versioned-link, just without _rev",
@@ -6042,16 +8434,28 @@ module.exports = {
             "description": "_metaid is the id of a meta document",
             "type": "string",
             "id": "oada-formats://vocab/oada/_id",
-            "registrationOrder": 26
+            "vocab": {
+              "module": "oada",
+              "term": "_metaid",
+              "registrationOrder": 26
+            }
           },
           "_type": {
             "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
             "type": "string",
             "id": "oada-formats://vocab/oada/_type",
-            "registrationOrder": 27
+            "vocab": {
+              "module": "oada",
+              "term": "_type",
+              "registrationOrder": 27
+            }
           }
         },
-        "registrationOrder": 30
+        "vocab": {
+          "module": "oada",
+          "term": "meta-nonversioned-link",
+          "registrationOrder": 30
+        }
       },
       "resource-versioned-link": {
         "description": "A resource-link is a link specifically to a resource (not meta).  This is just a  convenience term to make it simpler to defind the true versioned and non-versioned links below",
@@ -6074,23 +8478,39 @@ module.exports = {
             "description": "_id identifies a resource in the OADA API.",
             "type": "string",
             "id": "oada-formats://vocab/oada/_id",
-            "registrationOrder": 25
+            "vocab": {
+              "module": "oada",
+              "term": "_id",
+              "registrationOrder": 25
+            }
           },
           "_rev": {
             "description": "_rev is the revision string for a resource in the OADA API.",
             "type": "string",
             "pattern": "^[0-9]+-.+$",
             "id": "oada-formats://vocab/oada/_rev",
-            "registrationOrder": 28
+            "vocab": {
+              "module": "oada",
+              "term": "_rev",
+              "registrationOrder": 28
+            }
           },
           "_type": {
             "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
             "type": "string",
             "id": "oada-formats://vocab/oada/_type",
-            "registrationOrder": 27
+            "vocab": {
+              "module": "oada",
+              "term": "_type",
+              "registrationOrder": 27
+            }
           }
         },
-        "registrationOrder": 31
+        "vocab": {
+          "module": "oada",
+          "term": "resource-versioned-link",
+          "registrationOrder": 31
+        }
       },
       "resource-nonversioned-link": {
         "description": "Similar to resource-versioned-link, just without _rev",
@@ -6103,7 +8523,11 @@ module.exports = {
           "_type"
         ],
         "id": "oada-formats://vocab/oada/resource-nonversioned-link",
-        "registrationOrder": 32
+        "vocab": {
+          "module": "oada",
+          "term": "resource-nonversioned-link",
+          "registrationOrder": 32
+        }
       },
       "versioned-link": {
         "description": "versioned-link is not intended to show up in any  URL's or documents anyway: it's just a prototype of a link.",
@@ -6129,23 +8553,39 @@ module.exports = {
                 "description": "_metaid is the id of a meta document",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/_id",
-                "registrationOrder": 26
+                "vocab": {
+                  "module": "oada",
+                  "term": "_metaid",
+                  "registrationOrder": 26
+                }
               },
               "_rev": {
                 "description": "_rev is the revision string for a resource in the OADA API.",
                 "type": "string",
                 "pattern": "^[0-9]+-.+$",
                 "id": "oada-formats://vocab/oada/_rev",
-                "registrationOrder": 28
+                "vocab": {
+                  "module": "oada",
+                  "term": "_rev",
+                  "registrationOrder": 28
+                }
               },
               "_type": {
                 "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/_type",
-                "registrationOrder": 27
+                "vocab": {
+                  "module": "oada",
+                  "term": "_type",
+                  "registrationOrder": 27
+                }
               }
             },
-            "registrationOrder": 29
+            "vocab": {
+              "module": "oada",
+              "term": "meta-versioned-link",
+              "registrationOrder": 29
+            }
           },
           {
             "description": "A resource-link is a link specifically to a resource (not meta).  This is just a  convenience term to make it simpler to defind the true versioned and non-versioned links below",
@@ -6168,27 +8608,47 @@ module.exports = {
                 "description": "_id identifies a resource in the OADA API.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/_id",
-                "registrationOrder": 25
+                "vocab": {
+                  "module": "oada",
+                  "term": "_id",
+                  "registrationOrder": 25
+                }
               },
               "_rev": {
                 "description": "_rev is the revision string for a resource in the OADA API.",
                 "type": "string",
                 "pattern": "^[0-9]+-.+$",
                 "id": "oada-formats://vocab/oada/_rev",
-                "registrationOrder": 28
+                "vocab": {
+                  "module": "oada",
+                  "term": "_rev",
+                  "registrationOrder": 28
+                }
               },
               "_type": {
                 "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/_type",
-                "registrationOrder": 27
+                "vocab": {
+                  "module": "oada",
+                  "term": "_type",
+                  "registrationOrder": 27
+                }
               }
             },
-            "registrationOrder": 31
+            "vocab": {
+              "module": "oada",
+              "term": "resource-versioned-link",
+              "registrationOrder": 31
+            }
           }
         ],
         "id": "oada-formats://vocab/oada/versioned-link",
-        "registrationOrder": 33
+        "vocab": {
+          "module": "oada",
+          "term": "versioned-link",
+          "registrationOrder": 33
+        }
       },
       "nonversioned-link": {
         "description": "An oada-link defaults to a versioned link.  It's not intended to show up in any  URL's or documents anyway: it's just a prototype of a link.  Its schema function expects a list of known resource _type's that may be linked from a particular key.",
@@ -6212,16 +8672,28 @@ module.exports = {
                 "description": "_metaid is the id of a meta document",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/_id",
-                "registrationOrder": 26
+                "vocab": {
+                  "module": "oada",
+                  "term": "_metaid",
+                  "registrationOrder": 26
+                }
               },
               "_type": {
                 "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                 "type": "string",
                 "id": "oada-formats://vocab/oada/_type",
-                "registrationOrder": 27
+                "vocab": {
+                  "module": "oada",
+                  "term": "_type",
+                  "registrationOrder": 27
+                }
               }
             },
-            "registrationOrder": 30
+            "vocab": {
+              "module": "oada",
+              "term": "meta-nonversioned-link",
+              "registrationOrder": 30
+            }
           },
           {
             "description": "Similar to resource-versioned-link, just without _rev",
@@ -6234,11 +8706,19 @@ module.exports = {
               "_type"
             ],
             "id": "oada-formats://vocab/oada/resource-nonversioned-link",
-            "registrationOrder": 32
+            "vocab": {
+              "module": "oada",
+              "term": "resource-nonversioned-link",
+              "registrationOrder": 32
+            }
           }
         ],
         "id": "oada-formats://vocab/oada/nonversioned-link",
-        "registrationOrder": 34
+        "vocab": {
+          "module": "oada",
+          "term": "nonversioned-link",
+          "registrationOrder": 34
+        }
       },
       "link": {
         "anyOf": [
@@ -6266,23 +8746,39 @@ module.exports = {
                     "description": "_metaid is the id of a meta document",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/_id",
-                    "registrationOrder": 26
+                    "vocab": {
+                      "module": "oada",
+                      "term": "_metaid",
+                      "registrationOrder": 26
+                    }
                   },
                   "_rev": {
                     "description": "_rev is the revision string for a resource in the OADA API.",
                     "type": "string",
                     "pattern": "^[0-9]+-.+$",
                     "id": "oada-formats://vocab/oada/_rev",
-                    "registrationOrder": 28
+                    "vocab": {
+                      "module": "oada",
+                      "term": "_rev",
+                      "registrationOrder": 28
+                    }
                   },
                   "_type": {
                     "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/_type",
-                    "registrationOrder": 27
+                    "vocab": {
+                      "module": "oada",
+                      "term": "_type",
+                      "registrationOrder": 27
+                    }
                   }
                 },
-                "registrationOrder": 29
+                "vocab": {
+                  "module": "oada",
+                  "term": "meta-versioned-link",
+                  "registrationOrder": 29
+                }
               },
               {
                 "description": "A resource-link is a link specifically to a resource (not meta).  This is just a  convenience term to make it simpler to defind the true versioned and non-versioned links below",
@@ -6305,27 +8801,47 @@ module.exports = {
                     "description": "_id identifies a resource in the OADA API.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/_id",
-                    "registrationOrder": 25
+                    "vocab": {
+                      "module": "oada",
+                      "term": "_id",
+                      "registrationOrder": 25
+                    }
                   },
                   "_rev": {
                     "description": "_rev is the revision string for a resource in the OADA API.",
                     "type": "string",
                     "pattern": "^[0-9]+-.+$",
                     "id": "oada-formats://vocab/oada/_rev",
-                    "registrationOrder": 28
+                    "vocab": {
+                      "module": "oada",
+                      "term": "_rev",
+                      "registrationOrder": 28
+                    }
                   },
                   "_type": {
                     "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/_type",
-                    "registrationOrder": 27
+                    "vocab": {
+                      "module": "oada",
+                      "term": "_type",
+                      "registrationOrder": 27
+                    }
                   }
                 },
-                "registrationOrder": 31
+                "vocab": {
+                  "module": "oada",
+                  "term": "resource-versioned-link",
+                  "registrationOrder": 31
+                }
               }
             ],
             "id": "oada-formats://vocab/oada/versioned-link",
-            "registrationOrder": 33
+            "vocab": {
+              "module": "oada",
+              "term": "versioned-link",
+              "registrationOrder": 33
+            }
           },
           {
             "description": "An oada-link defaults to a versioned link.  It's not intended to show up in any  URL's or documents anyway: it's just a prototype of a link.  Its schema function expects a list of known resource _type's that may be linked from a particular key.",
@@ -6349,16 +8865,28 @@ module.exports = {
                     "description": "_metaid is the id of a meta document",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/_id",
-                    "registrationOrder": 26
+                    "vocab": {
+                      "module": "oada",
+                      "term": "_metaid",
+                      "registrationOrder": 26
+                    }
                   },
                   "_type": {
                     "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                     "type": "string",
                     "id": "oada-formats://vocab/oada/_type",
-                    "registrationOrder": 27
+                    "vocab": {
+                      "module": "oada",
+                      "term": "_type",
+                      "registrationOrder": 27
+                    }
                   }
                 },
-                "registrationOrder": 30
+                "vocab": {
+                  "module": "oada",
+                  "term": "meta-nonversioned-link",
+                  "registrationOrder": 30
+                }
               },
               {
                 "description": "Similar to resource-versioned-link, just without _rev",
@@ -6371,15 +8899,27 @@ module.exports = {
                   "_type"
                 ],
                 "id": "oada-formats://vocab/oada/resource-nonversioned-link",
-                "registrationOrder": 32
+                "vocab": {
+                  "module": "oada",
+                  "term": "resource-nonversioned-link",
+                  "registrationOrder": 32
+                }
               }
             ],
             "id": "oada-formats://vocab/oada/nonversioned-link",
-            "registrationOrder": 34
+            "vocab": {
+              "module": "oada",
+              "term": "nonversioned-link",
+              "registrationOrder": 34
+            }
           }
         ],
         "id": "oada-formats://vocab/oada/link",
-        "registrationOrder": 35
+        "vocab": {
+          "module": "oada",
+          "term": "link",
+          "registrationOrder": 35
+        }
       },
       "_meta": {
         "description": "_meta is a link to the meta document for a resources.",
@@ -6402,23 +8942,39 @@ module.exports = {
             "description": "_metaid is the id of a meta document",
             "type": "string",
             "id": "oada-formats://vocab/oada/_id",
-            "registrationOrder": 26
+            "vocab": {
+              "module": "oada",
+              "term": "_metaid",
+              "registrationOrder": 26
+            }
           },
           "_rev": {
             "description": "_rev is the revision string for a resource in the OADA API.",
             "type": "string",
             "pattern": "^[0-9]+-.+$",
             "id": "oada-formats://vocab/oada/_rev",
-            "registrationOrder": 28
+            "vocab": {
+              "module": "oada",
+              "term": "_rev",
+              "registrationOrder": 28
+            }
           },
           "_type": {
             "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
             "type": "string",
             "id": "oada-formats://vocab/oada/_type",
-            "registrationOrder": 27
+            "vocab": {
+              "module": "oada",
+              "term": "_type",
+              "registrationOrder": 27
+            }
           }
         },
-        "registrationOrder": 36
+        "vocab": {
+          "module": "oada",
+          "term": "_meta",
+          "registrationOrder": 36
+        }
       },
       "crop-index": {
         "description": "crop-index is an object that sits inside other objects and gives links to documents based on the name of a particular crop. It's known keys are also not considered part of the OADA duck-typed language and therefore do not appear as vocabulary terms even though they will be in OADA URLs.  This is standard for indexes.",
@@ -6432,7 +8988,11 @@ module.exports = {
             "wheat"
           ],
           "id": "oada-formats://vocab/oada/crop-type",
-          "registrationOrder": 19
+          "vocab": {
+            "module": "oada",
+            "term": "crop-type",
+            "registrationOrder": 19
+          }
         },
         "propertySchemaDefault": {
           "anyOf": [
@@ -6460,23 +9020,39 @@ module.exports = {
                       "description": "_metaid is the id of a meta document",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_id",
-                      "registrationOrder": 26
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_metaid",
+                        "registrationOrder": 26
+                      }
                     },
                     "_rev": {
                       "description": "_rev is the revision string for a resource in the OADA API.",
                       "type": "string",
                       "pattern": "^[0-9]+-.+$",
                       "id": "oada-formats://vocab/oada/_rev",
-                      "registrationOrder": 28
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_rev",
+                        "registrationOrder": 28
+                      }
                     },
                     "_type": {
                       "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_type",
-                      "registrationOrder": 27
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_type",
+                        "registrationOrder": 27
+                      }
                     }
                   },
-                  "registrationOrder": 29
+                  "vocab": {
+                    "module": "oada",
+                    "term": "meta-versioned-link",
+                    "registrationOrder": 29
+                  }
                 },
                 {
                   "description": "A resource-link is a link specifically to a resource (not meta).  This is just a  convenience term to make it simpler to defind the true versioned and non-versioned links below",
@@ -6499,27 +9075,47 @@ module.exports = {
                       "description": "_id identifies a resource in the OADA API.",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_id",
-                      "registrationOrder": 25
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_id",
+                        "registrationOrder": 25
+                      }
                     },
                     "_rev": {
                       "description": "_rev is the revision string for a resource in the OADA API.",
                       "type": "string",
                       "pattern": "^[0-9]+-.+$",
                       "id": "oada-formats://vocab/oada/_rev",
-                      "registrationOrder": 28
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_rev",
+                        "registrationOrder": 28
+                      }
                     },
                     "_type": {
                       "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_type",
-                      "registrationOrder": 27
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_type",
+                        "registrationOrder": 27
+                      }
                     }
                   },
-                  "registrationOrder": 31
+                  "vocab": {
+                    "module": "oada",
+                    "term": "resource-versioned-link",
+                    "registrationOrder": 31
+                  }
                 }
               ],
               "id": "oada-formats://vocab/oada/versioned-link",
-              "registrationOrder": 33
+              "vocab": {
+                "module": "oada",
+                "term": "versioned-link",
+                "registrationOrder": 33
+              }
             },
             {
               "description": "An oada-link defaults to a versioned link.  It's not intended to show up in any  URL's or documents anyway: it's just a prototype of a link.  Its schema function expects a list of known resource _type's that may be linked from a particular key.",
@@ -6543,16 +9139,28 @@ module.exports = {
                       "description": "_metaid is the id of a meta document",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_id",
-                      "registrationOrder": 26
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_metaid",
+                        "registrationOrder": 26
+                      }
                     },
                     "_type": {
                       "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_type",
-                      "registrationOrder": 27
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_type",
+                        "registrationOrder": 27
+                      }
                     }
                   },
-                  "registrationOrder": 30
+                  "vocab": {
+                    "module": "oada",
+                    "term": "meta-nonversioned-link",
+                    "registrationOrder": 30
+                  }
                 },
                 {
                   "description": "Similar to resource-versioned-link, just without _rev",
@@ -6565,15 +9173,27 @@ module.exports = {
                     "_type"
                   ],
                   "id": "oada-formats://vocab/oada/resource-nonversioned-link",
-                  "registrationOrder": 32
+                  "vocab": {
+                    "module": "oada",
+                    "term": "resource-nonversioned-link",
+                    "registrationOrder": 32
+                  }
                 }
               ],
               "id": "oada-formats://vocab/oada/nonversioned-link",
-              "registrationOrder": 34
+              "vocab": {
+                "module": "oada",
+                "term": "nonversioned-link",
+                "registrationOrder": 34
+              }
             }
           ],
           "id": "oada-formats://vocab/oada/link",
-          "registrationOrder": 35
+          "vocab": {
+            "module": "oada",
+            "term": "link",
+            "registrationOrder": 35
+          }
         },
         "id": "oada-formats://vocab/oada/crop-index",
         "properties": {
@@ -6603,23 +9223,39 @@ module.exports = {
                         "description": "_metaid is the id of a meta document",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_id",
-                        "registrationOrder": 26
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_metaid",
+                          "registrationOrder": 26
+                        }
                       },
                       "_rev": {
                         "description": "_rev is the revision string for a resource in the OADA API.",
                         "type": "string",
                         "pattern": "^[0-9]+-.+$",
                         "id": "oada-formats://vocab/oada/_rev",
-                        "registrationOrder": 28
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_rev",
+                          "registrationOrder": 28
+                        }
                       },
                       "_type": {
                         "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_type",
-                        "registrationOrder": 27
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_type",
+                          "registrationOrder": 27
+                        }
                       }
                     },
-                    "registrationOrder": 29
+                    "vocab": {
+                      "module": "oada",
+                      "term": "meta-versioned-link",
+                      "registrationOrder": 29
+                    }
                   },
                   {
                     "description": "A resource-link is a link specifically to a resource (not meta).  This is just a  convenience term to make it simpler to defind the true versioned and non-versioned links below",
@@ -6642,27 +9278,47 @@ module.exports = {
                         "description": "_id identifies a resource in the OADA API.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_id",
-                        "registrationOrder": 25
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_id",
+                          "registrationOrder": 25
+                        }
                       },
                       "_rev": {
                         "description": "_rev is the revision string for a resource in the OADA API.",
                         "type": "string",
                         "pattern": "^[0-9]+-.+$",
                         "id": "oada-formats://vocab/oada/_rev",
-                        "registrationOrder": 28
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_rev",
+                          "registrationOrder": 28
+                        }
                       },
                       "_type": {
                         "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_type",
-                        "registrationOrder": 27
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_type",
+                          "registrationOrder": 27
+                        }
                       }
                     },
-                    "registrationOrder": 31
+                    "vocab": {
+                      "module": "oada",
+                      "term": "resource-versioned-link",
+                      "registrationOrder": 31
+                    }
                   }
                 ],
                 "id": "oada-formats://vocab/oada/versioned-link",
-                "registrationOrder": 33
+                "vocab": {
+                  "module": "oada",
+                  "term": "versioned-link",
+                  "registrationOrder": 33
+                }
               },
               {
                 "description": "An oada-link defaults to a versioned link.  It's not intended to show up in any  URL's or documents anyway: it's just a prototype of a link.  Its schema function expects a list of known resource _type's that may be linked from a particular key.",
@@ -6686,16 +9342,28 @@ module.exports = {
                         "description": "_metaid is the id of a meta document",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_id",
-                        "registrationOrder": 26
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_metaid",
+                          "registrationOrder": 26
+                        }
                       },
                       "_type": {
                         "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_type",
-                        "registrationOrder": 27
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_type",
+                          "registrationOrder": 27
+                        }
                       }
                     },
-                    "registrationOrder": 30
+                    "vocab": {
+                      "module": "oada",
+                      "term": "meta-nonversioned-link",
+                      "registrationOrder": 30
+                    }
                   },
                   {
                     "description": "Similar to resource-versioned-link, just without _rev",
@@ -6708,15 +9376,27 @@ module.exports = {
                       "_type"
                     ],
                     "id": "oada-formats://vocab/oada/resource-nonversioned-link",
-                    "registrationOrder": 32
+                    "vocab": {
+                      "module": "oada",
+                      "term": "resource-nonversioned-link",
+                      "registrationOrder": 32
+                    }
                   }
                 ],
                 "id": "oada-formats://vocab/oada/nonversioned-link",
-                "registrationOrder": 34
+                "vocab": {
+                  "module": "oada",
+                  "term": "nonversioned-link",
+                  "registrationOrder": 34
+                }
               }
             ],
             "id": "oada-formats://vocab/oada/link",
-            "registrationOrder": 35
+            "vocab": {
+              "module": "oada",
+              "term": "link",
+              "registrationOrder": 35
+            }
           },
           "soybeans": {
             "anyOf": [
@@ -6744,23 +9424,39 @@ module.exports = {
                         "description": "_metaid is the id of a meta document",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_id",
-                        "registrationOrder": 26
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_metaid",
+                          "registrationOrder": 26
+                        }
                       },
                       "_rev": {
                         "description": "_rev is the revision string for a resource in the OADA API.",
                         "type": "string",
                         "pattern": "^[0-9]+-.+$",
                         "id": "oada-formats://vocab/oada/_rev",
-                        "registrationOrder": 28
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_rev",
+                          "registrationOrder": 28
+                        }
                       },
                       "_type": {
                         "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_type",
-                        "registrationOrder": 27
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_type",
+                          "registrationOrder": 27
+                        }
                       }
                     },
-                    "registrationOrder": 29
+                    "vocab": {
+                      "module": "oada",
+                      "term": "meta-versioned-link",
+                      "registrationOrder": 29
+                    }
                   },
                   {
                     "description": "A resource-link is a link specifically to a resource (not meta).  This is just a  convenience term to make it simpler to defind the true versioned and non-versioned links below",
@@ -6783,27 +9479,47 @@ module.exports = {
                         "description": "_id identifies a resource in the OADA API.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_id",
-                        "registrationOrder": 25
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_id",
+                          "registrationOrder": 25
+                        }
                       },
                       "_rev": {
                         "description": "_rev is the revision string for a resource in the OADA API.",
                         "type": "string",
                         "pattern": "^[0-9]+-.+$",
                         "id": "oada-formats://vocab/oada/_rev",
-                        "registrationOrder": 28
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_rev",
+                          "registrationOrder": 28
+                        }
                       },
                       "_type": {
                         "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_type",
-                        "registrationOrder": 27
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_type",
+                          "registrationOrder": 27
+                        }
                       }
                     },
-                    "registrationOrder": 31
+                    "vocab": {
+                      "module": "oada",
+                      "term": "resource-versioned-link",
+                      "registrationOrder": 31
+                    }
                   }
                 ],
                 "id": "oada-formats://vocab/oada/versioned-link",
-                "registrationOrder": 33
+                "vocab": {
+                  "module": "oada",
+                  "term": "versioned-link",
+                  "registrationOrder": 33
+                }
               },
               {
                 "description": "An oada-link defaults to a versioned link.  It's not intended to show up in any  URL's or documents anyway: it's just a prototype of a link.  Its schema function expects a list of known resource _type's that may be linked from a particular key.",
@@ -6827,16 +9543,28 @@ module.exports = {
                         "description": "_metaid is the id of a meta document",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_id",
-                        "registrationOrder": 26
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_metaid",
+                          "registrationOrder": 26
+                        }
                       },
                       "_type": {
                         "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_type",
-                        "registrationOrder": 27
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_type",
+                          "registrationOrder": 27
+                        }
                       }
                     },
-                    "registrationOrder": 30
+                    "vocab": {
+                      "module": "oada",
+                      "term": "meta-nonversioned-link",
+                      "registrationOrder": 30
+                    }
                   },
                   {
                     "description": "Similar to resource-versioned-link, just without _rev",
@@ -6849,15 +9577,27 @@ module.exports = {
                       "_type"
                     ],
                     "id": "oada-formats://vocab/oada/resource-nonversioned-link",
-                    "registrationOrder": 32
+                    "vocab": {
+                      "module": "oada",
+                      "term": "resource-nonversioned-link",
+                      "registrationOrder": 32
+                    }
                   }
                 ],
                 "id": "oada-formats://vocab/oada/nonversioned-link",
-                "registrationOrder": 34
+                "vocab": {
+                  "module": "oada",
+                  "term": "nonversioned-link",
+                  "registrationOrder": 34
+                }
               }
             ],
             "id": "oada-formats://vocab/oada/link",
-            "registrationOrder": 35
+            "vocab": {
+              "module": "oada",
+              "term": "link",
+              "registrationOrder": 35
+            }
           },
           "wheat": {
             "anyOf": [
@@ -6885,23 +9625,39 @@ module.exports = {
                         "description": "_metaid is the id of a meta document",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_id",
-                        "registrationOrder": 26
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_metaid",
+                          "registrationOrder": 26
+                        }
                       },
                       "_rev": {
                         "description": "_rev is the revision string for a resource in the OADA API.",
                         "type": "string",
                         "pattern": "^[0-9]+-.+$",
                         "id": "oada-formats://vocab/oada/_rev",
-                        "registrationOrder": 28
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_rev",
+                          "registrationOrder": 28
+                        }
                       },
                       "_type": {
                         "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_type",
-                        "registrationOrder": 27
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_type",
+                          "registrationOrder": 27
+                        }
                       }
                     },
-                    "registrationOrder": 29
+                    "vocab": {
+                      "module": "oada",
+                      "term": "meta-versioned-link",
+                      "registrationOrder": 29
+                    }
                   },
                   {
                     "description": "A resource-link is a link specifically to a resource (not meta).  This is just a  convenience term to make it simpler to defind the true versioned and non-versioned links below",
@@ -6924,27 +9680,47 @@ module.exports = {
                         "description": "_id identifies a resource in the OADA API.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_id",
-                        "registrationOrder": 25
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_id",
+                          "registrationOrder": 25
+                        }
                       },
                       "_rev": {
                         "description": "_rev is the revision string for a resource in the OADA API.",
                         "type": "string",
                         "pattern": "^[0-9]+-.+$",
                         "id": "oada-formats://vocab/oada/_rev",
-                        "registrationOrder": 28
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_rev",
+                          "registrationOrder": 28
+                        }
                       },
                       "_type": {
                         "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_type",
-                        "registrationOrder": 27
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_type",
+                          "registrationOrder": 27
+                        }
                       }
                     },
-                    "registrationOrder": 31
+                    "vocab": {
+                      "module": "oada",
+                      "term": "resource-versioned-link",
+                      "registrationOrder": 31
+                    }
                   }
                 ],
                 "id": "oada-formats://vocab/oada/versioned-link",
-                "registrationOrder": 33
+                "vocab": {
+                  "module": "oada",
+                  "term": "versioned-link",
+                  "registrationOrder": 33
+                }
               },
               {
                 "description": "An oada-link defaults to a versioned link.  It's not intended to show up in any  URL's or documents anyway: it's just a prototype of a link.  Its schema function expects a list of known resource _type's that may be linked from a particular key.",
@@ -6968,16 +9744,28 @@ module.exports = {
                         "description": "_metaid is the id of a meta document",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_id",
-                        "registrationOrder": 26
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_metaid",
+                          "registrationOrder": 26
+                        }
                       },
                       "_type": {
                         "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_type",
-                        "registrationOrder": 27
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_type",
+                          "registrationOrder": 27
+                        }
                       }
                     },
-                    "registrationOrder": 30
+                    "vocab": {
+                      "module": "oada",
+                      "term": "meta-nonversioned-link",
+                      "registrationOrder": 30
+                    }
                   },
                   {
                     "description": "Similar to resource-versioned-link, just without _rev",
@@ -6990,18 +9778,34 @@ module.exports = {
                       "_type"
                     ],
                     "id": "oada-formats://vocab/oada/resource-nonversioned-link",
-                    "registrationOrder": 32
+                    "vocab": {
+                      "module": "oada",
+                      "term": "resource-nonversioned-link",
+                      "registrationOrder": 32
+                    }
                   }
                 ],
                 "id": "oada-formats://vocab/oada/nonversioned-link",
-                "registrationOrder": 34
+                "vocab": {
+                  "module": "oada",
+                  "term": "nonversioned-link",
+                  "registrationOrder": 34
+                }
               }
             ],
             "id": "oada-formats://vocab/oada/link",
-            "registrationOrder": 35
+            "vocab": {
+              "module": "oada",
+              "term": "link",
+              "registrationOrder": 35
+            }
           }
         },
-        "registrationOrder": 37
+        "vocab": {
+          "module": "oada",
+          "term": "crop-index",
+          "registrationOrder": 37
+        }
       },
       "geohash-length-index": {
         "description": "geohash-length-index is an indexing scheme that groups data by geohash string lengths. As with all indexes, it is not a document type itself and therefore cannot be linked to.",
@@ -7046,23 +9850,39 @@ module.exports = {
                       "description": "_metaid is the id of a meta document",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_id",
-                      "registrationOrder": 26
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_metaid",
+                        "registrationOrder": 26
+                      }
                     },
                     "_rev": {
                       "description": "_rev is the revision string for a resource in the OADA API.",
                       "type": "string",
                       "pattern": "^[0-9]+-.+$",
                       "id": "oada-formats://vocab/oada/_rev",
-                      "registrationOrder": 28
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_rev",
+                        "registrationOrder": 28
+                      }
                     },
                     "_type": {
                       "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_type",
-                      "registrationOrder": 27
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_type",
+                        "registrationOrder": 27
+                      }
                     }
                   },
-                  "registrationOrder": 29
+                  "vocab": {
+                    "module": "oada",
+                    "term": "meta-versioned-link",
+                    "registrationOrder": 29
+                  }
                 },
                 {
                   "description": "A resource-link is a link specifically to a resource (not meta).  This is just a  convenience term to make it simpler to defind the true versioned and non-versioned links below",
@@ -7085,27 +9905,47 @@ module.exports = {
                       "description": "_id identifies a resource in the OADA API.",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_id",
-                      "registrationOrder": 25
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_id",
+                        "registrationOrder": 25
+                      }
                     },
                     "_rev": {
                       "description": "_rev is the revision string for a resource in the OADA API.",
                       "type": "string",
                       "pattern": "^[0-9]+-.+$",
                       "id": "oada-formats://vocab/oada/_rev",
-                      "registrationOrder": 28
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_rev",
+                        "registrationOrder": 28
+                      }
                     },
                     "_type": {
                       "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_type",
-                      "registrationOrder": 27
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_type",
+                        "registrationOrder": 27
+                      }
                     }
                   },
-                  "registrationOrder": 31
+                  "vocab": {
+                    "module": "oada",
+                    "term": "resource-versioned-link",
+                    "registrationOrder": 31
+                  }
                 }
               ],
               "id": "oada-formats://vocab/oada/versioned-link",
-              "registrationOrder": 33
+              "vocab": {
+                "module": "oada",
+                "term": "versioned-link",
+                "registrationOrder": 33
+              }
             },
             {
               "description": "An oada-link defaults to a versioned link.  It's not intended to show up in any  URL's or documents anyway: it's just a prototype of a link.  Its schema function expects a list of known resource _type's that may be linked from a particular key.",
@@ -7129,16 +9969,28 @@ module.exports = {
                       "description": "_metaid is the id of a meta document",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_id",
-                      "registrationOrder": 26
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_metaid",
+                        "registrationOrder": 26
+                      }
                     },
                     "_type": {
                       "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_type",
-                      "registrationOrder": 27
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_type",
+                        "registrationOrder": 27
+                      }
                     }
                   },
-                  "registrationOrder": 30
+                  "vocab": {
+                    "module": "oada",
+                    "term": "meta-nonversioned-link",
+                    "registrationOrder": 30
+                  }
                 },
                 {
                   "description": "Similar to resource-versioned-link, just without _rev",
@@ -7151,18 +10003,34 @@ module.exports = {
                     "_type"
                   ],
                   "id": "oada-formats://vocab/oada/resource-nonversioned-link",
-                  "registrationOrder": 32
+                  "vocab": {
+                    "module": "oada",
+                    "term": "resource-nonversioned-link",
+                    "registrationOrder": 32
+                  }
                 }
               ],
               "id": "oada-formats://vocab/oada/nonversioned-link",
-              "registrationOrder": 34
+              "vocab": {
+                "module": "oada",
+                "term": "nonversioned-link",
+                "registrationOrder": 34
+              }
             }
           ],
           "id": "oada-formats://vocab/oada/link",
-          "registrationOrder": 35
+          "vocab": {
+            "module": "oada",
+            "term": "link",
+            "registrationOrder": 35
+          }
         },
         "id": "oada-formats://vocab/oada/geohash-length-index",
-        "registrationOrder": 38
+        "vocab": {
+          "module": "oada",
+          "term": "geohash-length-index",
+          "registrationOrder": 38
+        }
       },
       "geohash-index": {
         "description": "geohash-index is a key that holds under it a set of geohash keys of a particular length.  It is necessary because some geohashes may be legitimate words and therefore we need to place all the geohashes specifically under one key. This key usually sits at the top-level of a document reached via a geohash-length-index. It is intended to hold links to resources containing data that is grouped under a particular geohash.",
@@ -7172,7 +10040,11 @@ module.exports = {
           "type": "string",
           "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]+$",
           "id": "oada-formats://vocab/oada/geohash",
-          "registrationOrder": 6
+          "vocab": {
+            "module": "oada",
+            "term": "geohash",
+            "registrationOrder": 6
+          }
         },
         "propertySchemaDefault": {
           "anyOf": [
@@ -7200,23 +10072,39 @@ module.exports = {
                       "description": "_metaid is the id of a meta document",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_id",
-                      "registrationOrder": 26
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_metaid",
+                        "registrationOrder": 26
+                      }
                     },
                     "_rev": {
                       "description": "_rev is the revision string for a resource in the OADA API.",
                       "type": "string",
                       "pattern": "^[0-9]+-.+$",
                       "id": "oada-formats://vocab/oada/_rev",
-                      "registrationOrder": 28
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_rev",
+                        "registrationOrder": 28
+                      }
                     },
                     "_type": {
                       "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_type",
-                      "registrationOrder": 27
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_type",
+                        "registrationOrder": 27
+                      }
                     }
                   },
-                  "registrationOrder": 29
+                  "vocab": {
+                    "module": "oada",
+                    "term": "meta-versioned-link",
+                    "registrationOrder": 29
+                  }
                 },
                 {
                   "description": "A resource-link is a link specifically to a resource (not meta).  This is just a  convenience term to make it simpler to defind the true versioned and non-versioned links below",
@@ -7239,27 +10127,47 @@ module.exports = {
                       "description": "_id identifies a resource in the OADA API.",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_id",
-                      "registrationOrder": 25
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_id",
+                        "registrationOrder": 25
+                      }
                     },
                     "_rev": {
                       "description": "_rev is the revision string for a resource in the OADA API.",
                       "type": "string",
                       "pattern": "^[0-9]+-.+$",
                       "id": "oada-formats://vocab/oada/_rev",
-                      "registrationOrder": 28
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_rev",
+                        "registrationOrder": 28
+                      }
                     },
                     "_type": {
                       "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_type",
-                      "registrationOrder": 27
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_type",
+                        "registrationOrder": 27
+                      }
                     }
                   },
-                  "registrationOrder": 31
+                  "vocab": {
+                    "module": "oada",
+                    "term": "resource-versioned-link",
+                    "registrationOrder": 31
+                  }
                 }
               ],
               "id": "oada-formats://vocab/oada/versioned-link",
-              "registrationOrder": 33
+              "vocab": {
+                "module": "oada",
+                "term": "versioned-link",
+                "registrationOrder": 33
+              }
             },
             {
               "description": "An oada-link defaults to a versioned link.  It's not intended to show up in any  URL's or documents anyway: it's just a prototype of a link.  Its schema function expects a list of known resource _type's that may be linked from a particular key.",
@@ -7283,16 +10191,28 @@ module.exports = {
                       "description": "_metaid is the id of a meta document",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_id",
-                      "registrationOrder": 26
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_metaid",
+                        "registrationOrder": 26
+                      }
                     },
                     "_type": {
                       "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                       "type": "string",
                       "id": "oada-formats://vocab/oada/_type",
-                      "registrationOrder": 27
+                      "vocab": {
+                        "module": "oada",
+                        "term": "_type",
+                        "registrationOrder": 27
+                      }
                     }
                   },
-                  "registrationOrder": 30
+                  "vocab": {
+                    "module": "oada",
+                    "term": "meta-nonversioned-link",
+                    "registrationOrder": 30
+                  }
                 },
                 {
                   "description": "Similar to resource-versioned-link, just without _rev",
@@ -7305,15 +10225,27 @@ module.exports = {
                     "_type"
                   ],
                   "id": "oada-formats://vocab/oada/resource-nonversioned-link",
-                  "registrationOrder": 32
+                  "vocab": {
+                    "module": "oada",
+                    "term": "resource-nonversioned-link",
+                    "registrationOrder": 32
+                  }
                 }
               ],
               "id": "oada-formats://vocab/oada/nonversioned-link",
-              "registrationOrder": 34
+              "vocab": {
+                "module": "oada",
+                "term": "nonversioned-link",
+                "registrationOrder": 34
+              }
             }
           ],
           "id": "oada-formats://vocab/oada/link",
-          "registrationOrder": 35
+          "vocab": {
+            "module": "oada",
+            "term": "link",
+            "registrationOrder": 35
+          }
         },
         "id": "oada-formats://vocab/oada/geohash-index",
         "patternProperties": {
@@ -7343,23 +10275,39 @@ module.exports = {
                         "description": "_metaid is the id of a meta document",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_id",
-                        "registrationOrder": 26
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_metaid",
+                          "registrationOrder": 26
+                        }
                       },
                       "_rev": {
                         "description": "_rev is the revision string for a resource in the OADA API.",
                         "type": "string",
                         "pattern": "^[0-9]+-.+$",
                         "id": "oada-formats://vocab/oada/_rev",
-                        "registrationOrder": 28
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_rev",
+                          "registrationOrder": 28
+                        }
                       },
                       "_type": {
                         "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_type",
-                        "registrationOrder": 27
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_type",
+                          "registrationOrder": 27
+                        }
                       }
                     },
-                    "registrationOrder": 29
+                    "vocab": {
+                      "module": "oada",
+                      "term": "meta-versioned-link",
+                      "registrationOrder": 29
+                    }
                   },
                   {
                     "description": "A resource-link is a link specifically to a resource (not meta).  This is just a  convenience term to make it simpler to defind the true versioned and non-versioned links below",
@@ -7382,27 +10330,47 @@ module.exports = {
                         "description": "_id identifies a resource in the OADA API.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_id",
-                        "registrationOrder": 25
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_id",
+                          "registrationOrder": 25
+                        }
                       },
                       "_rev": {
                         "description": "_rev is the revision string for a resource in the OADA API.",
                         "type": "string",
                         "pattern": "^[0-9]+-.+$",
                         "id": "oada-formats://vocab/oada/_rev",
-                        "registrationOrder": 28
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_rev",
+                          "registrationOrder": 28
+                        }
                       },
                       "_type": {
                         "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_type",
-                        "registrationOrder": 27
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_type",
+                          "registrationOrder": 27
+                        }
                       }
                     },
-                    "registrationOrder": 31
+                    "vocab": {
+                      "module": "oada",
+                      "term": "resource-versioned-link",
+                      "registrationOrder": 31
+                    }
                   }
                 ],
                 "id": "oada-formats://vocab/oada/versioned-link",
-                "registrationOrder": 33
+                "vocab": {
+                  "module": "oada",
+                  "term": "versioned-link",
+                  "registrationOrder": 33
+                }
               },
               {
                 "description": "An oada-link defaults to a versioned link.  It's not intended to show up in any  URL's or documents anyway: it's just a prototype of a link.  Its schema function expects a list of known resource _type's that may be linked from a particular key.",
@@ -7426,16 +10394,28 @@ module.exports = {
                         "description": "_metaid is the id of a meta document",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_id",
-                        "registrationOrder": 26
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_metaid",
+                          "registrationOrder": 26
+                        }
                       },
                       "_type": {
                         "description": "_type identifies the content-type of a resource in the OADA API and  is required for all OADA-defined formats.  It usually looks like application/vnd.oada.something.1+json.",
                         "type": "string",
                         "id": "oada-formats://vocab/oada/_type",
-                        "registrationOrder": 27
+                        "vocab": {
+                          "module": "oada",
+                          "term": "_type",
+                          "registrationOrder": 27
+                        }
                       }
                     },
-                    "registrationOrder": 30
+                    "vocab": {
+                      "module": "oada",
+                      "term": "meta-nonversioned-link",
+                      "registrationOrder": 30
+                    }
                   },
                   {
                     "description": "Similar to resource-versioned-link, just without _rev",
@@ -7448,18 +10428,34 @@ module.exports = {
                       "_type"
                     ],
                     "id": "oada-formats://vocab/oada/resource-nonversioned-link",
-                    "registrationOrder": 32
+                    "vocab": {
+                      "module": "oada",
+                      "term": "resource-nonversioned-link",
+                      "registrationOrder": 32
+                    }
                   }
                 ],
                 "id": "oada-formats://vocab/oada/nonversioned-link",
-                "registrationOrder": 34
+                "vocab": {
+                  "module": "oada",
+                  "term": "nonversioned-link",
+                  "registrationOrder": 34
+                }
               }
             ],
             "id": "oada-formats://vocab/oada/link",
-            "registrationOrder": 35
+            "vocab": {
+              "module": "oada",
+              "term": "link",
+              "registrationOrder": 35
+            }
           }
         },
-        "registrationOrder": 39
+        "vocab": {
+          "module": "oada",
+          "term": "geohash-index",
+          "registrationOrder": 39
+        }
       },
       "context": {
         "description": "\"context\" is used for documents to describe their contents, regardless of their position in an OADA bookmarks graph.  Typically a particular oada resource type will require a particular set of context items to exist.  You make a context object by \"flattening\" the logical bookmarks URL for a given type of data, and only including indexing schemes in the list.  Do not include the value of an index as a key in context, it should only be the value of it's indexing scheme's key.",
@@ -7493,7 +10489,11 @@ module.exports = {
               "wheat"
             ],
             "id": "oada-formats://vocab/oada/crop-type",
-            "registrationOrder": 19
+            "vocab": {
+              "module": "oada",
+              "term": "crop-type",
+              "registrationOrder": 19
+            }
           },
           "geohash-length-index": {
             "oneOf": [
@@ -7514,7 +10514,11 @@ module.exports = {
             "type": "string",
             "pattern": "^[0-9bcdefghjkmnpqrstuvwxyz]+$",
             "id": "oada-formats://vocab/oada/geohash",
-            "registrationOrder": 6
+            "vocab": {
+              "module": "oada",
+              "term": "geohash",
+              "registrationOrder": 6
+            }
           }
         },
         "id": "oada-formats://vocab/oada/context",
@@ -7529,7 +10533,11 @@ module.exports = {
           ],
           "type": "string"
         },
-        "registrationOrder": 40
+        "vocab": {
+          "module": "oada",
+          "term": "context",
+          "registrationOrder": 40
+        }
       }
     }
   }
